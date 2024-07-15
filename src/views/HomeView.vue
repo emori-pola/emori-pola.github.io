@@ -3,7 +3,8 @@
     <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
     あああ
-    <a href="about">About</a>
+    <router-link to="/about">About</router-link>
+    <div class="bg-gradient-to-r from-green-400 to-blue-500">tailwind</div>
   </div>
 </template>
 
