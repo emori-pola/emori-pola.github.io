@@ -5,6 +5,12 @@
     あああ
     <router-link to="/about">About</router-link>
     <div class="bg-gradient-to-r from-green-400 to-blue-500">tailwind</div>
+
+    <div>
+      <h2>title</h2>
+      作品説明
+      <div><span>tag</span></div>
+    </div>
   </div>
 </template>
 
