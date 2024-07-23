@@ -13,6 +13,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+  {
+    path: "/oshitimer",
+    name: "oshitimer",
+    component: () =>
+      import(/* webpackChunkName: "oshitimer" */ "../views/OshitimerView.vue"),
+  },
 ];
 
 const router = createRouter({
