@@ -6,22 +6,28 @@
       </section>
       <section class="w-[min(1040px,81.25vw)] m-auto">
         <ul>
-          <li v-for="(item, index) in items" :key="index" class="mb-8">
+          <li
+            v-for="(product, index) in products"
+            :key="index"
+            class="mb-gutter-y"
+          >
             <a
-              :href="item.link"
+              :href="product.link"
               class="grid grid-cols-1 md:grid-cols-custom gap-x-gutter-x"
             >
               <div class="">
-                <img :src="item.image" :alt="item.title" />
+                <img :src="product.image" :alt="product.title" />
               </div>
-              <div class="text-left">
-                <h2 class="text-header05 mb-5">{{ item.title }}</h2>
-                <p class="mb-5">
-                  {{ item.description }}
+              <div class="text-left py-gutter-y-0.5">
+                <h2 class="text-header05 mb-gutter-y-0.5">
+                  {{ product.title }}
+                </h2>
+                <p class="mb-gutter-y-0.5">
+                  {{ product.description }}
                 </p>
                 <ul>
                   <li
-                    v-for="(tag, idx) in item.tags"
+                    v-for="(tag, idx) in product.tags"
                     :key="idx"
                     class="bg-BG-tertiary inline-block rounded-full py-1 px-2 mr-2 text-label01"
                   >
@@ -38,35 +44,13 @@
 </template>
 
 <script>
+import { products } from "@/products-data";
 export default {
   name: "HomeView",
   components: {},
   data() {
     return {
-      items: [
-        {
-          title: "推しタイマー",
-          description:
-            "しかしだからお自分に蒙り事は多少横着といなが、その女では並べたてとかいう三つがあるばいるたない。",
-          image: "/images/sample-img.png",
-          link: "/oshitimer",
-          tags: ["iOS App"],
-        },
-        {
-          title: "National Gallery",
-          description: "このプロジェクトは...",
-          image: "/images/sample-img.png",
-          link: "/national-gallery",
-          tags: ["iOS App", "Coursera"],
-        },
-        {
-          title: "National Gallery",
-          description: "このプロジェクトは...",
-          image: "/images/sample-img.png",
-          link: "/national-gallery",
-          tags: ["iOS App", "Coursera"],
-        },
-      ],
+      products,
     };
   },
 };

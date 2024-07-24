@@ -10,14 +10,17 @@ const routes = [
   {
     path: "/about",
     name: "about",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    component: () => import("../views/AboutView.vue"),
   },
   {
     path: "/oshitimer",
     name: "oshitimer",
-    component: () =>
-      import(/* webpackChunkName: "oshitimer" */ "../views/OshitimerView.vue"),
+    component: () => import("../views/OshitimerView.vue"),
+  },
+  {
+    path: "/national-gallery",
+    name: "national-gallery",
+    component: () => import("../views/National-galleryView.vue"),
   },
 ];
 
