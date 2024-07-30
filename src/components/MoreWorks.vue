@@ -3,9 +3,9 @@
     <h2 class="text-header01 mb-gutter-y-0.5 text-left">More Works</h2>
     <ul class="grid grid-cols-3 gap-gutter-x">
       <li v-for="(product, index) in filteredProducts" :key="index">
-        <a :href="product.link">
-          <img class="mb-4" :src="product.image" :alt="product.title" />
-          <h4 class="text-left text-header05 mb-2">{{ product.title }}</h4>
+        <a :href="'/' + product.id">
+          <img class="mb-4" :src="product.image" :alt="product.name" />
+          <h4 class="text-left text-header05 mb-2">{{ product.name }}</h4>
           <ul class="text-left">
             <li
               v-for="(tag, idx) in product.tags"
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { products } from "@/products-data";
+import { caseStudyData } from "@/case-study-data";
 
 export default {
   props: {
@@ -33,7 +33,9 @@ export default {
   },
   computed: {
     filteredProducts() {
-      return products.filter((product) => product.link !== this.excludeLink);
+      console.log("Case Study Data:", caseStudyData); // デバッグ用
+      console.log("Exclude Link:", this.excludeLink); // デバッグ用
+      return caseStudyData.filter((product) => product.id !== this.excludeLink);
     },
   },
 };

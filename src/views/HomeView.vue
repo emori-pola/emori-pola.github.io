@@ -10,23 +10,23 @@
       <section class="w-[min(1040px,81.25vw)] m-auto">
         <ul>
           <li
-            v-for="(product, index) in products"
+            v-for="(product, index) in caseStudyData"
             :key="index"
             class="mb-gutter-y"
           >
             <a
-              :href="product.link"
+              :href="'/' + product.id"
               class="grid grid-cols-1 md:grid-cols-custom gap-x-gutter-x"
             >
               <div class="">
-                <img :src="product.image" :alt="product.title" />
+                <img :src="product.image" :alt="product.name" />
               </div>
               <div class="text-left py-gutter-y-0.5">
                 <h2 class="text-header05 mb-gutter-y-0.5">
-                  {{ product.title }}
+                  {{ product.name }}
                 </h2>
                 <p class="mb-gutter-y-0.5">
-                  {{ product.description }}
+                  {{ product.intro }}
                 </p>
                 <ul>
                   <li
@@ -47,13 +47,13 @@
 </template>
 
 <script>
-import { products } from "@/products-data";
+import { caseStudyData } from "@/case-study-data";
 export default {
   name: "HomeView",
   components: {},
   data() {
     return {
-      products,
+      caseStudyData,
     };
   },
 };

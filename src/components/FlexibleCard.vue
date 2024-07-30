@@ -1,7 +1,7 @@
 <template>
   <ul class="grid grid-cols-4 gap-gutter-x-0.5">
     <li
-      v-for="(card, index) in caseStudy[0].nationalGallery.painPoints"
+      v-for="(card, index) in data"
       :key="index"
       class="bg-BG-secondary p-gutter-x-0.5"
     >
@@ -12,13 +12,13 @@
 </template>
 
 <script>
-import { caseStudy } from "@/case-study-data";
-
 export default {
-  data() {
-    return {
-      caseStudy: caseStudy,
-    };
+  name: "FlexibleCard",
+  props: {
+    data: {
+      type: Array,
+      required: true,
+    },
   },
 };
 </script>

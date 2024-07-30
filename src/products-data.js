@@ -15,10 +15,10 @@ export const products = [
     tags: ["iOS App", "Coursera"],
   },
   {
-    title: "Another Project",
+    title: "hosync",
     description: "別のプロジェクトの説明...",
     image: "/images/sample-img.png",
-    link: "/another-project",
+    link: "/hosync",
     tags: ["Web App", "Design"],
   },
   {

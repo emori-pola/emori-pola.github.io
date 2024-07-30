@@ -153,3 +153,14 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  name: "AboutView",
+  computed: {
+    caseStudies() {
+      return this.$i18n.messages[this.$i18n.locale].caseStudies;
+    },
+  },
+};
+</script>

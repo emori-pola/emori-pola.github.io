@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import CaseStudyView from "@/views/CaseStudyView.vue";
 
 const routes = [
   {
@@ -13,14 +14,9 @@ const routes = [
     component: () => import("../views/AboutView.vue"),
   },
   {
-    path: "/oshitimer",
-    name: "oshitimer",
-    component: () => import("../views/OshitimerView.vue"),
-  },
-  {
-    path: "/national-gallery",
-    name: "national-gallery",
-    component: () => import("../views/National-galleryView.vue"),
+    path: "/:id",
+    name: "CaseStudy",
+    component: CaseStudyView,
   },
 ];
 
