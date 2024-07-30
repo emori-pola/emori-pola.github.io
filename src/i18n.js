@@ -1,25 +1,24 @@
 import { createI18n } from "vue-i18n";
-import { caseStudyDataEn, caseStudyDataJa } from "@/case-study-data";
+import { caseStudyData } from "@/case-study-data";
 
 const messages = {
   en: {
-    home: {
-      title: "Hi, I'm Yuka, a web designer.",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    message: {
+      hello: "This is an English text.",
+      caseStudies: caseStudyData.en,
     },
-    caseStudies: caseStudyDataEn,
   },
   ja: {
-    home: {
-      title: "こんにちは、私はウェブデザイナーのユカです。",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    message: {
+      hello: "これは日本語のテキストです。",
+      caseStudies: caseStudyData.ja,
     },
-    caseStudies: caseStudyDataJa,
   },
 };
 
 const i18n = createI18n({
-  locale: "en",
+  locale: "en", // 初期設定の言語
+  fallbackLocale: "en", // フォールバック言語の設定
   messages,
 });
 
