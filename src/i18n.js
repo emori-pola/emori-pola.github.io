@@ -1,16 +1,10 @@
 import { createI18n } from "vue-i18n";
+import en from "./en";
+import ja from "./ja";
 
 const messages = {
-  en: {
-    message: {
-      hello: "This is an English text.",
-    },
-  },
-  ja: {
-    message: {
-      hello: "これは日本語のテキストです。",
-    },
-  },
+  en,
+  ja,
 };
 
 const getBrowserLanguage = () => {

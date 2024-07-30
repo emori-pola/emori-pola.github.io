@@ -2,10 +2,8 @@
   <div class="pt-[160px]">
     <main>
       <section class="mb-gutter-y pb-gutter-y">
-        <h1 class="text-header02 mb-2">Hi, I'm Yuka, a web designer.</h1>
-        <p class="text-header06">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
+        <h1 class="text-header02 mb-2">{{ $t("home.title") }}</h1>
+        <p class="text-header06">{{ $t("home.description") }}</p>
       </section>
       <section class="w-[min(1040px,81.25vw)] m-auto">
         <ul>
@@ -48,6 +46,9 @@
 
 <script>
 import { caseStudyData } from "@/case-study-data";
+import { useI18n } from "vue-i18n";
+import { computed } from "vue";
+
 export default {
   name: "HomeView",
   components: {},
@@ -55,6 +56,11 @@ export default {
     return {
       caseStudyData,
     };
+  },
+  setup() {
+    const { t } = useI18n();
+    const caseStudies = computed(() => Object.values(t("caseStudies")));
+    return { t, caseStudies };
   },
 };
 </script>
