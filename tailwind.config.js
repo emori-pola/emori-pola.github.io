@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
@@ -51,17 +53,30 @@ module.exports = {
         "gutter-y": "min(3.125vw,2.5rem)",
         "gutter-y-2": "min(6.25vw,5rem)",
       },
-      gridTemplateColumns: {
-        custom: "min(48.9vw,626px) 1fr", // カスタムグリッドテンプレートを定義
+      keyframes: {
+        scroll: {
+          from: { transform: "translateX(0)" },
+          to: {
+            transform: "translateX( var(--translate-x, -50% ) )",
+          },
+        },
+        rscroll: {
+          from: { transform: "translateX( var(--translate-x, -50% ) )" },
+          to: { transform: "translateX(0)" },
+        },
       },
+      gridTemplateColumns: {
+        custom: "min(48.9vw,626px) 1fr",
+      },
+
       fontFamily: {
         sortsMillGoudy: ['"Sorts Mill Goudy"', "serif"],
-        ptSans: ['"PT Sans"', "sans-serif"],
+        ptSans: ["PT Sans", "sans-serif"],
       },
     },
   },
   plugins: [
-    function ({ addUtilities, theme }) {
+    plugin(function ({ addUtilities, theme }) {
       const newUtilities = {
         ".text-header01": {
           fontSize: theme("fontSize.header01"),
@@ -75,12 +90,24 @@ module.exports = {
           fontSize: theme("fontSize.header03"),
           fontFamily: theme("fontFamily.sortsMillGoudy"),
         },
+        ".text-header04": {
+          fontSize: theme("fontSize.header04"),
+          fontFamily: theme("fontFamily.ptSans"),
+        },
+        ".text-header05": {
+          fontSize: theme("fontSize.header05"),
+          fontFamily: theme("fontFamily.ptSans"),
+        },
+        ".text-header06": {
+          fontSize: theme("fontSize.header06"),
+          fontFamily: theme("fontFamily.ptSans"),
+        },
         ".text-body01": {
           fontSize: theme("fontSize.body01"),
           fontFamily: theme("fontFamily.ptSans"),
         },
       };
       addUtilities(newUtilities, ["responsive", "hover"]);
-    },
+    }),
   ],
 };

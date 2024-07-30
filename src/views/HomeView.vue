@@ -1,8 +1,11 @@
 <template>
-  <div>
+  <div class="pt-[160px]">
     <main>
-      <section>
-        <h1 class="text-header02">タイトル</h1>
+      <section class="mb-gutter-y pb-gutter-y">
+        <h1 class="text-header02 mb-2">Hi, I'm Yuka, a web designer.</h1>
+        <p class="text-header06">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
       </section>
       <section class="w-[min(1040px,81.25vw)] m-auto">
         <ul>

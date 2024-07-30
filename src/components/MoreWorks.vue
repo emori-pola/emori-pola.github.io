@@ -1,12 +1,12 @@
 <template>
-  <section class="py-gutter-y-2">
-    <h2 class="text-header01 mb-gutter-y">More Works</h2>
+  <section class="py-gutter-y-2 px-[min(60px,4.6875vw)]">
+    <h2 class="text-header01 mb-gutter-y-0.5 text-left">More Works</h2>
     <ul class="grid grid-cols-3 gap-gutter-x">
       <li v-for="(product, index) in filteredProducts" :key="index">
         <a :href="product.link">
-          <img :src="product.image" :alt="product.title" />
-          <h4>{{ product.title }}</h4>
-          <ul>
+          <img class="mb-4" :src="product.image" :alt="product.title" />
+          <h4 class="text-left text-header05 mb-2">{{ product.title }}</h4>
+          <ul class="text-left">
             <li
               v-for="(tag, idx) in product.tags"
               :key="idx"

@@ -1,14 +1,22 @@
 <template>
-  <div>
-    <section class="w-[min(1040px,81.25vw)] m-auto py-gutter-y-2">
-      <div class="flex">
-        <img src="" alt="" />
-        <p class="text-left">
-          ネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似がろるのに、いよいよ何とも始末で存じあっからみろありのを廻るで。
-        </p>
+  <div class="pt-[160px]">
+    <section class="w-[min(880px,68.75vw)] m-auto pb-gutter-y-2">
+      <div class="flex mb-gutter-y">
+        <img
+          class="w-[min(29.6875vw,380px)]"
+          src="/images/about/profile.png"
+          alt=""
+        />
+        <div>
+          <p class="text-left">
+            ネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似がろるのに、いよいよ何とも始末で存じあっからみろありのを廻るで。
+          </p>
+          <a href="">LinkedIn</a>
+          <a href="">resume</a>
+        </div>
       </div>
       <div>
-        <p class="text-left">
+        <p class="text-left mb-gutter-y">
           同じく事実に内談人は同時にその講演だろございばかりに立ち竦んからいないがは矛盾いたないて、ますますにも射しましありうまし。人を云っでしのはどうか今日に無論あっなけれだろ。もしネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似が逃れだろるのに、いよいよ何とも始末で存じあっからみろありのを廻るでで。しかしだからお自分に蒙り事は多少横着といなが、その女では並べたてとかいう三つがあるばいるたない。
         </p>
         <p class="text-left">
@@ -16,8 +24,127 @@
         </p>
       </div>
     </section>
-    <section>gazou</section>
-    <section class="w-[min(1040px,81.25vw)] m-auto py-gutter-y-2">
+    <section>
+      <div
+        class="grid grid-cols-12 gap-1 w-max animate-[scroll_30s_linear_infinite] whitespace-nowrap mb-1"
+      >
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-01.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-02.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-03.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-04.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-05.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-06.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-01.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-02.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-03.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-04.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-05.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-06.jpg"
+          alt=""
+        />
+      </div>
+      <div
+        class="grid grid-cols-10 gap-1 w-max animate-[rscroll_30s_linear_infinite] whitespace-nowrap"
+      >
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-07.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-08.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-09.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-10.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-11.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-07.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-08.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-09.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-10.jpg"
+          alt=""
+        />
+        <img
+          class="w-[min(39.0625vw,500px)]"
+          src="/images/about/photo-11.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="w-[min(880px,68.75vw)] m-auto py-gutter-y-2">
       <div>
         <p class="text-left">
           同じく事実に内談人は同時にその講演だろございばかりに立ち竦んからいないがは矛盾いたないて、ますますにも射しましありうまし。人を云っでしのはどうか今日に無論あっなけれだろ。もしネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似が逃れだろるのに、いよいよ何とも始末で存じあっからみろありのを廻るでで。しかしだからお自分に蒙り事は多少横着といなが、その女では並べたてとかいう三つがあるばいるたない。
