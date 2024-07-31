@@ -22,7 +22,8 @@
 </template>
 
 <script>
-import { caseStudyData } from "@/case-study-data";
+import { useI18n } from "vue-i18n";
+import { computed } from "vue";
 
 export default {
   props: {
@@ -31,12 +32,17 @@ export default {
       required: true,
     },
   },
-  computed: {
-    filteredProducts() {
-      console.log("Case Study Data:", caseStudyData); // デバッグ用
-      console.log("Exclude Link:", this.excludeLink); // デバッグ用
-      return caseStudyData.filter((product) => product.id !== this.excludeLink);
-    },
+  setup(props) {
+    const { tm } = useI18n();
+
+    const filteredProducts = computed(() => {
+      const caseStudies = tm("caseStudies");
+      return caseStudies.filter((product) => product.id !== props.excludeLink);
+    });
+
+    return {
+      filteredProducts,
+    };
   },
 };
 </script>

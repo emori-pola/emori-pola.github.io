@@ -1,26 +1,24 @@
 <template>
   <div class="pt-[160px]">
-    <section class="w-[min(880px,68.75vw)] m-auto pb-gutter-y-2">
-      <div class="flex mb-gutter-y">
-        <img
-          class="w-[min(29.6875vw,380px)]"
-          src="/images/about/profile.png"
-          alt=""
-        />
-        <div>
-          <p class="text-left">
-            ネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似がろるのに、いよいよ何とも始末で存じあっからみろありのを廻るで。
+    <section class="w-[min(780px,60.9375vw)] m-auto pb-gutter-y-2">
+      <div
+        class="grid grid-cols-[min(29.6875vw,380px),1fr] gap-gutter-x mb-gutter-y-1.5"
+      >
+        <img src="/images/about/profile.png" alt="" />
+        <div class="pt-gutter-y">
+          <p class="text-left mb-4">
+            {{ $tm("about.content") }}
           </p>
-          <a href="">LinkedIn</a>
-          <a href="">resume</a>
+          <a class="block text-right mb-2" href="">LinkedIn</a>
+          <a class="block text-right" href="">resume</a>
         </div>
       </div>
       <div>
         <p class="text-left mb-gutter-y">
-          同じく事実に内談人は同時にその講演だろございばかりに立ち竦んからいないがは矛盾いたないて、ますますにも射しましありうまし。人を云っでしのはどうか今日に無論あっなけれだろ。もしネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似が逃れだろるのに、いよいよ何とも始末で存じあっからみろありのを廻るでで。しかしだからお自分に蒙り事は多少横着といなが、その女では並べたてとかいう三つがあるばいるたない。
+          {{ $tm("about.content2") }}
         </p>
         <p class="text-left">
-          同じく事実に内談人は同時にその講演だろございばかりに立ち竦んからいないがは矛盾いたないて、ますますにも射しましありうまし。人を云っでしのはどうか今日に無論あっなけれだろ。もしネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似が逃れだろるのに、いよいよ何とも始末で存じあっからみろありのを廻るでで。しかしだからお自分に蒙り事は多少横着といなが、その女では並べたてとかいう三つがあるばいるたない。
+          {{ $tm("about.content3") }}
         </p>
       </div>
     </section>
@@ -144,10 +142,10 @@
         />
       </div>
     </section>
-    <section class="w-[min(880px,68.75vw)] m-auto py-gutter-y-2">
+    <section class="w-[min(780px,60.9375vw)] m-auto py-gutter-y-2">
       <div>
         <p class="text-left">
-          同じく事実に内談人は同時にその講演だろございばかりに立ち竦んからいないがは矛盾いたないて、ますますにも射しましありうまし。人を云っでしのはどうか今日に無論あっなけれだろ。もしネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似が逃れだろるのに、いよいよ何とも始末で存じあっからみろありのを廻るでで。しかしだからお自分に蒙り事は多少横着といなが、その女では並べたてとかいう三つがあるばいるたない。
+          {{ $tm("about.content4") }}
         </p>
       </div>
     </section>
@@ -155,12 +153,13 @@
 </template>
 
 <script>
+import { useI18n } from "vue-i18n";
+
 export default {
   name: "AboutView",
-  computed: {
-    caseStudies() {
-      return this.$i18n.messages[this.$i18n.locale].caseStudies;
-    },
+  setup() {
+    const { tm } = useI18n();
+    return { tm };
   },
 };
 </script>

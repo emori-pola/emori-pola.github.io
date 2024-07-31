@@ -17,7 +17,6 @@
       <div :class="currentLangClass">
         <button class="mr-2" @click="switchLanguage('en')">EN</button> /
         <button class="ml-2" @click="switchLanguage('ja')">JP</button>
-        <p>{{ $t("message.hello") }}</p>
       </div>
     </div>
   </header>
@@ -31,14 +30,21 @@
 
 <script>
 import { useI18n } from "vue-i18n";
+import { computed } from "vue";
 
 export default {
   setup() {
     const { locale } = useI18n();
-    const switchLanguage = (lang) => {
-      locale.value = lang;
+    const currentLangClass = computed(() =>
+      locale.value === "en" ? "font-english" : "font-japanese"
+    );
+
+    return {
+      currentLangClass,
+      switchLanguage(lang) {
+        locale.value = lang;
+      },
     };
-    return { switchLanguage };
   },
 };
 </script>

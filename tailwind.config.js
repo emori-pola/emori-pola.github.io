@@ -48,9 +48,11 @@ module.exports = {
       spacing: {
         "gutter-x-0.5": "min(1.5625vw,1.25rem)", //20px
         "gutter-x": "min(3.125vw,2.5rem)", //40px
+        "gutter-x-1.5": "min(4.6875vw,3.75rem)", //60px
         "gutter-x-2": "min(6.25vw,5rem)", //80px
         "gutter-y-0.5": "min(1.5625vw,1.25rem)",
         "gutter-y": "min(3.125vw,2.5rem)",
+        "gutter-y-1.5": "min(4.6875vw,3.75rem)",
         "gutter-y-2": "min(6.25vw,5rem)",
       },
       keyframes: {

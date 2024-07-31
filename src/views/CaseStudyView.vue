@@ -135,7 +135,10 @@
 </template>
 
 <script>
-import { caseStudyData } from "@/case-study-data";
+// import { caseStudyData } from "@/case-study-data";
+import { useRoute } from "vue-router";
+import { useI18n } from "vue-i18n";
+import { computed } from "vue";
 import MoreWorks from "@/components/MoreWorks.vue";
 import UserJourneyMap from "@/components/UserJourneyMap.vue";
 import PersonaCard from "@/components/PersonaCard.vue";
@@ -149,35 +152,53 @@ export default {
     PersonaCard,
     FlexibleCard,
   },
-  data() {
+  setup() {
+    const { tm } = useI18n();
+    const route = useRoute();
+    const caseStudyId = computed(() => route.params.id);
+
+    const caseStudy = computed(() => {
+      const id = caseStudyId.value;
+      const data = tm(`caseStudies`).find((study) => study.id === id);
+      console.log("Loaded case study data:", data); // デバッグ用
+      return data;
+    });
+
+    console.log("Case study ID:", caseStudyId.value); // デバッグ用
+
     return {
-      caseStudy: null,
+      caseStudy,
     };
   },
-  computed: {
-    caseStudyId() {
-      console.log("Route parameter id:", this.$route.params.id); // デバッグ用
-      return this.$route.params.id;
-    },
-  },
-  watch: {
-    caseStudyId: {
-      handler(newId) {
-        this.loadCaseStudy(newId);
-      },
-      immediate: true,
-    },
-  },
-  methods: {
-    loadCaseStudy(id) {
-      const study = caseStudyData.find((study) => study.id === id);
-      if (study) {
-        this.caseStudy = study;
-        console.log("Loaded case study:", this.caseStudy); // デバッグ用
-      } else {
-        console.log("Case study not found for id:", id); // デバッグ用
-      }
-    },
-  },
+  //   data() {
+  //     return {
+  //       caseStudy: null,
+  //     };
+  //   },
+  //   computed: {
+  //     caseStudyId() {
+  //       console.log("Route parameter id:", this.$route.params.id); // デバッグ用
+  //       return this.$route.params.id;
+  //     },
+  //   },
+  //   watch: {
+  //     caseStudyId: {
+  //       handler(newId) {
+  //         this.loadCaseStudy(newId);
+  //       },
+  //       immediate: true,
+  //     },
+  //   },
+  //   methods: {
+  //     loadCaseStudy(id) {
+  //       const study = caseStudyData.find((study) => study.id === id);
+  //       if (study) {
+  //         this.caseStudy = study;
+  //         console.log("Loaded case study:", this.caseStudy); // デバッグ用
+  //       } else {
+  //         console.log("Case study not found for id:", id); // デバッグ用
+  //       }
+  //     },
+  //   },
 };
 </script>
