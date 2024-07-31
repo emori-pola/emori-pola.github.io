@@ -1,7 +1,7 @@
 <template>
   <section class="py-gutter-y-2 px-[min(60px,4.6875vw)]">
     <h2 class="text-header01 mb-gutter-y-0.5 text-left">More Works</h2>
-    <ul class="grid grid-cols-3 gap-gutter-x">
+    <ul class="grid grid-cols-1 md:grid-cols-3 gap-gutter-x">
       <li v-for="(product, index) in filteredProducts" :key="index">
         <a :href="'/' + product.id">
           <img class="mb-4" :src="product.image" :alt="product.name" />

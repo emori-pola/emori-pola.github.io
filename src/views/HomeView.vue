@@ -1,8 +1,10 @@
 <template>
-  <div class="pt-[160px]">
+  <div class="md:pt-[140px] lg:pt-[160px] pt-[90px]">
     <main>
-      <section class="mb-gutter-y pb-gutter-y">
-        <h1 class="text-header02 mb-2">{{ $tm("home.title") }}</h1>
+      <section class="w-[min(1040px,81.25vw)] m-auto mb-gutter-y pb-gutter-y">
+        <h1 class="text-header03 md:text-header02 mb-2">
+          {{ $tm("home.title") }}
+        </h1>
         <p class="text-header06">{{ $tm("home.description") }}</p>
       </section>
       <section class="w-[min(1040px,81.25vw)] m-auto">
@@ -10,7 +12,7 @@
           <li
             v-for="(product, index) in caseStudies"
             :key="index"
-            class="mb-gutter-y"
+            class="md:mb-gutter-y mb-gutter-y-2"
           >
             <a
               :href="'/' + product.id"
@@ -19,7 +21,7 @@
               <div>
                 <img :src="product.image" :alt="product.name" />
               </div>
-              <div class="text-left py-gutter-y-0.5">
+              <div class="text-left py-gutter-y md:py-0 lg:py-gutter-y-0.5">
                 <h2 class="text-header05 mb-gutter-y-0.5">
                   {{ product.name }}
                 </h2>

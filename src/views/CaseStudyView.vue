@@ -1,8 +1,8 @@
 <!-- src/views/CaseStudyView.vue -->
 <template>
-  <div class="pt-[160px]" v-if="caseStudy">
+  <div class="md:pt-[140px] lg:pt-[160px] pt-[90px]" v-if="caseStudy">
     <section class="py-gutter-y-2">
-      <div class="w-[min(880px,68.75vw)] m-auto">
+      <div class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto">
         <h1 class="text-header02 text-left">{{ caseStudy.name }}</h1>
         <p class="text-left">{{ caseStudy.intro }}</p>
       </div>
@@ -10,7 +10,9 @@
 
     <section v-if="caseStudy.overview" class="bg-BG-secondary py-gutter-y-2">
       <h2 class="text-header01 mb-gutter-y">Overview</h2>
-      <ul class="w-[min(880px,68.75vw)] m-auto grid grid-cols-2 gap-gutter-x">
+      <ul
+        class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto grid grid-cols-1 md:grid-cols-2 gap-gutter-x"
+      >
         <li v-for="(section, index) in caseStudy.overview" :key="index">
           <h3 class="text-header05 text-olive mb-gutter-y-0.5 text-left">
             {{ section.header }}
@@ -22,10 +24,10 @@
 
     <section
       v-if="caseStudy.research"
-      class="w-[min(880px,68.75vw)] m-auto py-gutter-y-2"
+      class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto py-gutter-y-2"
     >
       <h2 class="text-header01 mb-gutter-y">Research</h2>
-      <p class="text-left w-[min(760px,59.375vw)] m-auto mb-gutter-y">
+      <p class="text-left lg:w-[min(760px,59.375vw)] m-auto mb-gutter-y">
         {{ caseStudy.research }}
       </p>
       <div class="mb-gutter-y" v-if="caseStudy.painPoints">
@@ -48,10 +50,10 @@
     </section>
     <section
       v-if="caseStudy.design"
-      class="w-[min(880px,68.75vw)] m-auto py-gutter-y-2"
+      class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto py-gutter-y-2"
     >
       <h2 class="text-header01 mb-gutter-y">Design</h2>
-      <p class="text-left w-[min(760px,59.375vw)] m-auto mb-gutter-y">
+      <p class="text-left lg:w-[min(760px,59.375vw)] m-auto mb-gutter-y">
         {{ caseStudy.design }}
       </p>
 
@@ -122,9 +124,11 @@
       </div>
     </section>
     <section v-if="caseStudy.nextStep" class="bg-BG-secondary">
-      <div class="w-[min(880px,68.75vw)] m-auto py-gutter-y-2">
+      <div
+        class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto py-gutter-y-2"
+      >
         <h2 class="text-header01 mb-gutter-y">Next Step</h2>
-        <p class="text-left w-[min(760px,59.375vw)] m-auto">
+        <p class="text-left lg:w-[min(760px,59.375vw)] m-auto">
           {{ caseStudy.nextStep }}
         </p>
       </div>

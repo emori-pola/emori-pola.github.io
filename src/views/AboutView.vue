@@ -1,8 +1,10 @@
 <template>
-  <div class="pt-[160px]">
-    <section class="w-[min(780px,60.9375vw)] m-auto pb-gutter-y-2">
+  <div class="md:pt-[140px] lg:pt-[160px] pt-[90px]">
+    <section
+      class="w-[min(1040px,81.25vw)] lg:w-[min(780px,60.9375vw)] m-auto pb-gutter-y-2"
+    >
       <div
-        class="grid grid-cols-[min(29.6875vw,380px),1fr] gap-gutter-x mb-gutter-y-1.5"
+        class="grid grid-cols-1 md:grid-cols-[min(29.6875vw,380px),1fr] gap-gutter-y-2 md:gap-gutter-x mb-gutter-y-2 md:mb-gutter-y-1.5"
       >
         <img src="/images/about/profile.png" alt="" />
         <div class="pt-gutter-y">
@@ -22,7 +24,7 @@
         </p>
       </div>
     </section>
-    <section>
+    <section class="overflow-hidden">
       <div
         class="grid grid-cols-12 gap-1 w-max animate-[scroll_30s_linear_infinite] whitespace-nowrap mb-1"
       >
@@ -142,7 +144,9 @@
         />
       </div>
     </section>
-    <section class="w-[min(780px,60.9375vw)] m-auto py-gutter-y-2">
+    <section
+      class="w-[min(1040px,81.25vw)] md:w-[min(780px,60.9375vw)] m-auto py-gutter-y-2"
+    >
       <div>
         <p class="text-left">
           {{ $tm("about.content4") }}
