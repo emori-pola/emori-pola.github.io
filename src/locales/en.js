@@ -30,37 +30,41 @@ export default {
         {
           header: "Responsibilities",
           content:
-            "ユーザー・リサーチ、問題を定義し、アイデア発想のフェーズに情報を提供するためのインサイトを提供 ペルソナ、ユーザージャーニー、エンパシーマップ、ユーザフローの定義、ビジュアルデザイン",
+            "List the responsibilities you had throughout the project - e.g., user research, wireframing, prototyping, etc. ",
         },
         {
           header: "Role",
-          content: "リサーチ、UX/UI デザイン",
+          content:
+            "Identify your role in the project - e.g., lead UX designer, UX researcher, etc. ",
         },
       ],
       research:
-        "私は架空のインタビューを行い、共感マップを作成して、私がデザインしようとしているユーザーとそのニーズを理解しました。リサーチを通じて特定された主な利用者グループは、言葉の壁があるためにオーディオツアーを十分に楽しめない、芸術に興味のある外国人だった。        このユーザー・グループは、オーディオ・ツアー・アプリの顧客に関する当初の想定を裏付けたが、リサーチによって、ユーザーがオーディオ・ツアー・アプリを楽しむことを制限する要因は言語だけではないことも明らかになった。他のユーザーの問題には、混雑していたり、時間が迫っていたりして、美術館を見終えるのが難しいというものがあった。",
+        "I conducted fictional interviews and created empathy maps to understand the users I’m designing for and their needs. A primary use group identified through research was foreigner interested in art who don’t fully enjoy audio-tour to have a language barrier. This user group confirmed initial assumptions about audio-tour app customers,  but research also revealed that language was not the only factor limiting users from enjoying the audio-tour app. Other user problems included crowded or time that make it difficult for them to finish seeing the museum",
 
       painPoints: [
         {
           header: "language",
-          content: "外国人には言葉の壁がある。",
+          content: "Foreigner have a language barrier.",
         },
         {
-          header: "Accesibility",
-          content: "オーディオツアーアプリは音声のみで、支援オプションはない。",
+          header: "Accessibility",
+          content:
+            "Audio-tour app are equipped with audio only, no assistive options",
         },
         {
-          header: "混雑",
-          content: "オーディオツアーアプリは混雑時のサポートを提供しない。",
+          header: "Crowded",
+          content: "Audio-tour app does not provide support during busy times.",
         },
         {
           header: "Time",
-          content: "ビジターには移動などで時間の制約がある。",
+          content: "Visitors have time constraints due to travel, etc.",
         },
       ],
       persona: [
         {
           name: "Gabriel",
+          image: "/images/national-gallery/persona-gabriel.png",
+          alt: "persona image Gabriel",
           age: "21",
           education: "University student, 3th year",
           hometown: "Rio de Janeiro, Brazil",
@@ -117,6 +121,30 @@ export default {
           alt: "user flow",
         },
       ],
+      userStory: [
+        {
+          user: "As an International student interested in art",
+          action: "I want to change speed and display text of an audio guide",
+          benefit: "so that I can fully enjoy the contents of the museum.",
+        },
+      ],
+      problemStatement: [
+        {
+          user: "Gabriel is a foreigner student",
+          need: "who needs to completely understand of the content of the audio guide if they select non-native language",
+          insight:
+            "because they can pay same amount of money and receive equivalent service whether their native language or not",
+        },
+      ],
+      goalStatement: [
+        {
+          what: "Our audio guide app will let users use an audio playback function that makes it easy for anyone to understand the content",
+          who: "which will affect visitor who use the audio app in languages other than their native language",
+          why: "by giving them to ability to enjoy same",
+          mesure:
+            "We will measure effectiveness by tracking uses the function in app.",
+        },
+      ],
       design:
         "私は架空のインタビューを行い、共感マップを作成して、私がデザインしようとしているユーザーとそのニーズを理解しました。リサーチを通じて特定された主な利用者グループは、言葉の壁があるためにオーディオツアーを十分に楽しめない、芸術に興味のある外国人だった。        このユーザー・グループは、オーディオ・ツアー・アプリの顧客に関する当初の想定を裏付けたが、リサーチによって、ユーザーがオーディオ・ツアー・アプリを楽しむことを制限する要因は言語だけではないことも明らかになった。        他のユーザーの問題には、混雑していたり、時間が迫っていたりして、美術館を見終えるのが難しいというものがあった。",
       wireframes: [
@@ -144,6 +172,35 @@ export default {
             "Users need a clearer map display with photos and descriptions.",
         },
       ],
+      affinityDiagram: [
+        {
+          image: "/images/national-gallery/affinity-diagram.png",
+          alt: "Affinity Diagram",
+        },
+      ],
+      prioritizedInsights: [
+        {
+          content:
+            "Based on the theme that: lack of map description made it difficult to find, an insight is: users need a clearer map display with photos and descriptions.",
+          image: "",
+        },
+        {
+          content:
+            "Based on the theme that: for most users, the differences between “the artwork in detail” and “the audio guide in detail” are not clear, an insight is: users need a more straightforward structure.",
+          image: "",
+        },
+        {
+          content:
+            "Based on the theme that: for not everyone, the music playback UI is familiar, an insight is: users need a UI that they can understand even if they are not familiar with music playback UI.",
+          image: "",
+        },
+      ],
+      mockups: [
+        {
+          image: "/images/national-gallery/mockups.png",
+          alt: "mockups",
+        },
+      ],
       nextStep:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus arcu, eleifend sed malesuada in, auctor nec lectus. Aliquam varius sodales elit id hendrerit. Duis quis enim in quam tempor venenatis.",
     },
@@ -156,7 +213,7 @@ export default {
     },
     {
       id: "hosync",
-      name: "Hosync",
+      name: "Hōsync",
       tags: ["iOS App", "Coursera"],
       image: "/images/sample-img.png",
       intro: "text",

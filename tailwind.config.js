@@ -16,7 +16,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        lime: {
+        yuzu: {
           DEFAULT: "#DAF14F",
           dark: "#99A939",
         },
@@ -42,6 +42,12 @@ module.exports = {
           primary: {
             DEFAULT: "#5F5A42",
             dark: "#E6E2CD",
+          },
+        },
+        Link: {
+          primary: {
+            DEFAULT: "#226798",
+            dark: "#226798",
           },
         },
       },

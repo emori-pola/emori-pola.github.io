@@ -1,5 +1,8 @@
 <template>
   <h3 class="text-header04 text-left py-gutter-y-0.5">ペルソナ</h3>
+  <p class="text-left mb-4">
+    インタビューの実施、そこからの洞察によって導き出されたペルソナは2人です。
+  </p>
   <div
     v-for="(card, index) in data"
     :key="index"
@@ -10,8 +13,8 @@
     >
       <img
         class="md:w-[240px] w-[200px] lg:w-full"
-        src="/images/national-gallery/persona-gabriel.png"
-        alt=""
+        :src="card.image"
+        :alt="card.alt"
       />
       <div>
         <p class="text-header04 py-4 md:text-left">{{ card.name }}</p>

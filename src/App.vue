@@ -15,8 +15,21 @@
         >
       </nav>
       <div :class="currentLangClass">
-        <button class="mr-2" @click="switchLanguage('en')">EN</button> /
-        <button class="ml-2" @click="switchLanguage('ja')">JP</button>
+        <button
+          :class="{ 'text-olive font-bold': currentLanguage === 'en' }"
+          class="mr-1"
+          @click="switchLanguage('en')"
+        >
+          EN
+        </button>
+        /
+        <button
+          :class="{ 'text-olive font-bold': currentLanguage === 'ja' }"
+          class="ml-1"
+          @click="switchLanguage('ja')"
+        >
+          JP
+        </button>
       </div>
     </div>
   </header>
@@ -38,12 +51,16 @@ export default {
     const currentLangClass = computed(() =>
       locale.value === "en" ? "font-english" : "font-japanese"
     );
+    const currentLanguage = computed(() => locale.value);
+
+    const switchLanguage = (lang) => {
+      locale.value = lang;
+    };
 
     return {
       currentLangClass,
-      switchLanguage(lang) {
-        locale.value = lang;
-      },
+      currentLanguage,
+      switchLanguage,
     };
   },
 };

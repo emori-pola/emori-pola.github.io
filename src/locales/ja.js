@@ -5,40 +5,84 @@ export default {
   },
   about: {
     content:
-      "ネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似がろるのに、いよいよ何とも始末で存じあっからみろありのを廻るで。",
+      "9年間デザイナーとして教育や金融、健康用品メーカーなど様々な業界に携わってきました。これまで2社で働き、アイルランドに移住を機にフリーランスとして働いていました。現在は札幌に在住。",
     content2:
       "ネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似がろるのに、いよいよ何とも始末で存じあっからみろありのを廻るで。",
     content3:
       "ネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似がろるのに、いよいよ何とも始末で存じあっからみろありのを廻るで。",
     content4:
-      "ネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似がろるのに、いよいよ何とも始末で存じあっからみろありのを廻るで。",
+      "アイルランドではヨーロッパ旅行を楽しみ、イタリア語を学び、イタリア料理を作っていました。海外の暮らしは人間の多様性を感じ、異文化を学び、日本の良さを再確認するものでした。",
   },
   caseStudies: [
+    {
+      id: "oshitimer",
+      name: "推しタイマー",
+      tags: ["iOSアプリ"],
+      image: "/images/sample-img.png",
+      intro: "text",
+    },
+    {
+      id: "hosync",
+      name: "Hōsync",
+      tags: ["iOSアプリ", "Coursera"],
+      image: "/images/sample-img.png",
+      intro: "text",
+      overview: [
+        {
+          header: "Problem",
+          content:
+            "法律は一般人にも関係があるにも関わらず、難しく専門家が見るものだと思われています。",
+        },
+        {
+          header: "Goal",
+          content:
+            "一般人でも法律を身近に感じることができ、一般人でも法律を理解できるアプリを提供する。",
+        },
+        {
+          header: "My Role",
+          content:
+            "デザイン思考の各プロセス（共感、定義、概念化、試作、テスト）のもと行われた個人プロジェクトです。",
+        },
+        {
+          header: "Responsibilities",
+          content:
+            "・ユーザーリサーチの実施\n・問題の定義、それに基づいた洞察\n・ペルソナ、ユーザージャーニー、共感マップ、ユーザフローの定義\n・ビジュアルデザイン",
+        },
+      ],
+      research:
+        "仕事で法律に直接関わってはいないが法律に興味がある一般の人にインタビューを実施しました。",
+    },
     {
       id: "national-gallery",
       name: "National Gallery",
       tags: ["iOSアプリ", "Coursera"],
       image: "/images/sample-img.png",
       intro:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus arcu, eleifend sed malesuada in, auctor nec lectus. Aliquam varius sodales elit id hendrerit. Duis quis enim in quam tempor venenatis.",
+        "美術館を訪れた人が母国語ではなくてもわかりやすいオーディオガイドアプリをCourceraの課題で制作。",
       overview: [
         {
           header: "Problem",
           content:
-            "オーディオガイドは音声を聞くことに重点を置いた物が多くあります。ネイティブの言語が対応していない場合、理解するのに苦労することがあります。視覚的にわかりやすいデザイン、ノンネイティブの補助をしながらより使いやすいアプリが必要です。",
+            "オーディオガイドは音声を聞くことのみに重点を置いたものが多くあります。ネイティブの言語が対応していない場合、理解するのに苦労します。ノンネイティブでもネイティブと同等のオーディオアプリ体験をしたいと考えています。",
+        },
+        {
+          header: "Goal",
+          content:
+            "視覚的にわかりやすいデザイン、訪れたあとでも見返すことができ、ノンネイティブだけではなく、時間が限られている観光客もフォローできる機能を提供する。",
+        },
+        {
+          header: "My Role",
+          content:
+            "デザイン思考の各プロセス（共感、定義、概念化、試作、テスト）のもと行われた個人プロジェクトです。",
         },
         {
           header: "Responsibilities",
           content:
-            "ユーザー・リサーチ、問題を定義し、アイデア発想のフェーズに情報を提供するためのインサイトを提供 ペルソナ、ユーザージャーニー、エンパシーマップ、ユーザフローの定義、ビジュアルデザイン",
-        },
-        {
-          header: "Role",
-          content: "リサーチ、UX/UI デザイン",
+            "・ユーザーリサーチの実施\n・問題の定義、それに基づいた洞察\n・ペルソナ、ユーザージャーニー、共感マップ、ユーザフローの定義\n・ビジュアルデザイン",
         },
       ],
       research:
-        "私は架空のインタビューを行い、共感マップを作成して、私がデザインしようとしているユーザーとそのニーズを理解しました。リサーチを通じて特定された主な利用者グループは、言葉の壁があるためにオーディオツアーを十分に楽しめない、芸術に興味のある外国人だった。        このユーザー・グループは、オーディオ・ツアー・アプリの顧客に関する当初の想定を裏付けたが、リサーチによって、ユーザーがオーディオ・ツアー・アプリを楽しむことを制限する要因は言語だけではないことも明らかになった。他のユーザーの問題には、混雑していたり、時間が迫っていたりして、美術館を見終えるのが難しいというものがあった。",
+        "オーディオガイドを利用するときのユーザーの行動や気持ちを理解するために架空のインタビューを行いました。インタビューは次の項目を知るために行いました。\n\n・どういった時にオーディオガイドを使うか\n・どういった時にオーディオガイドにストレスや不便を感じるか\n・オーディオガイドに期待していることは何か\n\nインタビューを通じて特定された主なユーザーグループは、言葉の壁がありオーディオガイドを十分に楽しめない、芸術に興味のある外国人でした。このグループは、当初の想定通りでしたが、ユーザーがオーディオガイドアプリを楽しむことを制限する要因は言語だけではないことも明らかになりました。他の問題としては、混雑していたり、時間が迫っていたりして美術館を見終えるのが難しいというものがあった。",
 
       painPoints: [
         {
@@ -47,86 +91,69 @@ export default {
         },
         {
           header: "アクセシビリティ",
-          content: "オーディオツアーアプリは音声のみで、支援オプションはない。",
+          content: "オーディオガイドアプリは音声のみで、支援オプションはない。",
         },
         {
           header: "混雑",
-          content: "オーディオツアーアプリは混雑時のサポートを提供しない。",
+          content: "オーディオガイドアプリは混雑時のサポートを提供しない。",
         },
         {
           header: "時間",
-          content: "ビジターには移動などで時間の制約がある。",
+          content: "ユーザーには移動などで時間の制約がある。",
         },
       ],
       persona: [
         {
           name: "ガブリエル",
+          image: "/images/national-gallery/persona-gabriel.png",
+          alt: "ペルソナ画像　ガブリエル",
           age: "21",
           education: "大学3年生",
-          hometown: "Rio de Janeiro, Brazil",
-          family: "Lives with parents",
-          occupation: "Full time student",
+          hometown: "リオデジャネイロ、ブラジル",
+          family: "両親と同居",
+          occupation: "全日制の学生",
           header:
-            "If I am paying to use an audio guide,\nI want to use it to its fullest.",
+            "オーディオガイドを使うためにお金を払うなら、最大限に活用したい。",
           goals: [
-            "to completely understand of the content of the audio guide",
-            "To obtain information that would only be available at the museum",
+            "オーディオガイドの内容を完全に理解すること",
+            "美術館でしか得られない情報を入手すること",
           ],
           frustrations: [
-            "It is difficult to fully understand English if it is the language of choice (content is too difficult, speed is too fast, etc.) because it does not support one's native language.",
+            "オーディオガイドの言語が母国語をサポートしていないため、英語を選ぶと完全に理解するのが難しい（内容が難しすぎる、速度が速すぎる、など）。",
           ],
-          bio: "Gabriel is a junior in college. He is studying abroad in Europe. He is interested in art and often goes to museums. He frequently uses audio guides. Although English is not his native language and he understands it reasonably well, he chooses English when there is no native language in the audio guide, but it is difficult for him to understand it completely because the speed is too fast and there are words he does not",
-        },
-        {
-          name: "ガブリエル",
-          age: "21",
-          education: "大学3年生",
-          hometown: "Rio de Janeiro, Brazil",
-          family: "Lives with parents",
-          occupation: "Full time student",
-          header:
-            "If I am paying to use an audio guide,\nI want to use it to its fullest.",
-          goals: [
-            "to completely understand of the content of the audio guide",
-            "To obtain information that would only be available at the museum",
-          ],
-          frustrations: [
-            "It is difficult to fully understand English if it is the language of choice (content is too difficult, speed is too fast, etc.) because it does not support one's native language.",
-          ],
-          bio: "Gabriel is a junior in college. He is studying abroad in Europe. He is interested in art and often goes to museums. He frequently uses audio guides. Although English is not his native language and he understands it reasonably well, he chooses English when there is no native language in the audio guide, but it is difficult for him to understand it completely because the speed is too fast and there are words he does not",
+          bio: "ガブリエルは大学3年生で、ヨーロッパに留学中です。彼は芸術に興味があり、よく美術館に行きます。オーディオガイドを頻繁に利用しています。英語が母国語ではないため、それを合理的に理解できますが、オーディオガイドに母国語がない場合は英語を選びます。しかし、速度が速すぎたり、知らない単語があったりして完全に理解するのは難しいと感じています。",
         },
       ],
       userJourney: [
         {
           action: "美術館に到着",
-          task: "A. find a exhibition\nB. search an artist of the exhibition\nC. decide to go\nD. go to the museum",
+          task: "A. 展覧会を見つける\nB. 展覧会のアーティストを検索する\nC. 行くことを決める\nD. 美術館に行く",
           feeling:
-            "happy to find the interesting exhibition\nWorried that language might be a barrier",
+            "興味深い展覧会を見つけてうれしい\n言語が障壁になるかもしれないと心配",
         },
         {
-          action: "Buy a ticket and audio-tour app",
-          task: "A. queue at the ticket office\nB. buy a ticket and audio-tour",
-          feeling: "Disappointed that the line is long",
-          opportunities: "Offer a way to book ticket and audio-tour advance",
+          action: "チケットとオーディオガイドを購入",
+          task: "A. チケットオフィスに並ぶ\nB. チケットとオーディオツアーを購入",
+          feeling: "列が長くてがっかり",
+          opportunities: "チケットとオーディオツアーを事前に予約する方法を提供",
         },
         {
-          action: "Start touring the museum",
-          task: "A. enter the museum\nB. View exhibits",
-          feeling: "Excited about the museum",
+          action: "美術館のツアーを開始",
+          task: "A. 美術館に入る\nB. 展示を鑑賞",
+          feeling: "美術館にワクワク",
         },
         {
-          action: "Use the audio-tour app",
-          task: "A. select English\nB. listen the audio guide\nC. listen again same section",
+          action: "オーディオガイドアプリを使用",
+          task: "A. 英語を選択\nB. オーディオガイドを聞く\nC. 同じセクションを再度聞く",
           feeling:
-            "Overwhelmed by audio-tour speed\nIrritated by difficult understanding the audio-tour",
-          opportunities: "Provide option to changing speed and display text",
+            "オーディオツアーの速度に圧倒される\nオーディオツアーを理解するのが難しくてイライラする",
+          opportunities: "速度を変更し、テキストを表示するオプションを提供",
         },
         {
-          action: "Leave the museum",
-          task: "A. finish the audio-tour and exhibition\nB. leave the museum\nC. search information by native language",
-          feeling:
-            "Satisfied with the content of the exhibition\nDisappointed not to  understand all content",
-          opportunities: "Provide text data for audio-tour",
+          action: "美術館を去る",
+          task: "A. オーディオツアーと展示を終了\nB. 美術館を去る\nC. 母国語で情報を検索",
+          feeling: "展示の内容に満足\nすべての内容を理解できずにがっかり",
+          opportunities: "オーディオツアーのテキストデータを提供",
         },
       ],
       userFlow: [
@@ -135,17 +162,41 @@ export default {
           alt: "user flow",
         },
       ],
+      userStory: [
+        {
+          user: "As an International student interested in art",
+          action: "I want to change speed and display text of an audio guide",
+          benefit: "so that I can fully enjoy the contents of the museum.",
+        },
+      ],
+      problemStatement: [
+        {
+          user: "Gabriel is a foreigner student",
+          need: "who needs to completely understand of the content of the audio guide if they select non-native language",
+          insight:
+            "because they can pay same amount of money and receive equivalent service whether their native language or not",
+        },
+      ],
+      goalStatement: [
+        {
+          what: "Our audio guide app will let users use an audio playback function that makes it easy for anyone to understand the content",
+          who: "which will affect visitor who use the audio app in languages other than their native language",
+          why: "by giving them to ability to enjoy same",
+          mesure:
+            "We will measure effectiveness by tracking uses the function in app.",
+        },
+      ],
       design:
-        "私は架空のインタビューを行い、共感マップを作成して、私がデザインしようとしているユーザーとそのニーズを理解しました。リサーチを通じて特定された主な利用者グループは、言葉の壁があるためにオーディオツアーを十分に楽しめない、芸術に興味のある外国人だった。        このユーザー・グループは、オーディオ・ツアー・アプリの顧客に関する当初の想定を裏付けたが、リサーチによって、ユーザーがオーディオ・ツアー・アプリを楽しむことを制限する要因は言語だけではないことも明らかになった。        他のユーザーの問題には、混雑していたり、時間が迫っていたりして、美術館を見終えるのが難しいというものがあった。",
+        "ガブリエルの目的を達成できるためのプロトタイプの作成に移ります。",
       wireframes: [
         {
-          image: "/images/national-gallery/low-fidelity-prototype.png",
+          image: "/images/national-gallery/wireframes.png",
           alt: "Paper wireframes",
         },
       ],
       digitalWireframes: [
         {
-          image: "/images/national-gallery/low-fidelity-prototype.png",
+          image: "/images/national-gallery/degital-wireframes.png",
           alt: "Digital wireframes",
         },
       ],
@@ -159,26 +210,53 @@ export default {
       usabilityStudy: [
         {
           content:
-            "Users need a clearer map display with photos and descriptions.",
+            "Low-fidelity prototypeのユーザビリティテストを知り合い5人に実施しました。",
+        },
+      ],
+      affinityDiagram: [
+        {
+          image: "/images/national-gallery/affinity-diagram.png",
+          alt: "Affinity Diagram",
+        },
+      ],
+      prioritizedInsights: [
+        {
+          header: "地図の説明が不足しているため、見つけるのが難しかった。",
+          content:
+            "参加者の5人中5人が、地図上で作品を見つけるのに苦労していた。\n洞察: ユーザーは写真と説明付きのより明確な地図表示を必要としている。\n“I was a bit confused when I saw the map from the home screen because the circle is a bit ambiguous and not sure what represents” (Participant C)",
+          image: "/images/national-gallery/insight01.png",
+        },
+        {
+          header:
+            "多くのユーザーにとって、「詳細なアートワーク」と「詳細なオーディオガイド」の違いは明確ではない。",
+          content:
+            "Based on the theme that: for most users, the differences between “the artwork in detail” and “the audio guide in detail” are not clear, an insight is: users need a more straightforward structure.",
+          image: "/images/national-gallery/insight02.png",
+        },
+        {
+          header: "すべての人にとって音楽再生UIは馴染みがあるわけではない。",
+          content:
+            "Based on the theme that: for not everyone, the music playback UI is familiar, an insight is: users need a UI that they can understand even if they are not familiar with music playback UI.",
+          image: "/images/national-gallery/insight03.png",
+        },
+      ],
+      mockups: [
+        {
+          image: "/images/national-gallery/mockups.png",
+          alt: "mockups",
+        },
+      ],
+      highFidelityPrototype: [
+        {
+          image: "/images/national-gallery/high-fidelity-prototype.png",
+          alt: "High-fidelity prototype",
+          link: "https://www.figma.com/proto/uCk4y0U1mv4M7lEsB0s7KW/Audio-guide-app?page-id=22%3A2&node-id=22-3&viewport=963%2C981%2C0.5&scaling=scale-down&starting-point-node-id=22%3A3",
         },
       ],
       nextStep:
         "同じく事実に内談人は同時にその講演だろございばかりに立ち竦んからいないがは矛盾いたないて、ますますにも射しましありうまし。人を云っでしのはどうか今日に無論あっなけれだろ。もしネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似が逃れだろるのに、いよいよ何とも始末で存じあっからみろありのを廻るでで。しかしだからお自分に蒙り事は多少横着といなが、その女では並べたてとかいう三つがあるばいるたない。",
     },
-    {
-      id: "oshitimer",
-      name: "推しタイマー",
-      tags: ["iOSアプリ"],
-      image: "/images/sample-img.png",
-      intro: "text",
-    },
-    {
-      id: "hosync",
-      name: "ホシンク",
-      tags: ["iOSアプリ", "Coursera"],
-      image: "/images/sample-img.png",
-      intro: "text",
-    },
+
     {
       id: "re-thinkuma",
       name: "Re:ThinKuma",
