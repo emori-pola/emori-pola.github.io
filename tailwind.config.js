@@ -3,6 +3,9 @@ const plugin = require("tailwindcss/plugin");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   theme: {
     fontSize: {
       header01: ["3.5rem", "3.745rem"],
@@ -74,7 +77,7 @@ module.exports = {
         },
       },
       gridTemplateColumns: {
-        custom: "min(48.9vw,626px) 1fr",
+        custom: "min(46.875vw,600px) 1fr",
       },
 
       fontFamily: {

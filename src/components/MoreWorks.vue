@@ -3,8 +3,12 @@
     <h2 class="text-header01 mb-gutter-y-0.5 text-left">More Works</h2>
     <ul class="grid grid-cols-1 md:grid-cols-3 gap-gutter-x">
       <li v-for="(product, index) in filteredProducts" :key="index">
-        <a :href="'/' + product.id">
+        <a
+          class="transition-opacity duration-300 ease-out hover:opacity-70"
+          :href="'/' + product.id"
+        >
           <img class="mb-4" :src="product.image" :alt="product.name" />
+          <p class="text-left">{{ product.year }}</p>
           <h4 class="text-left text-header05 mb-2">{{ product.name }}</h4>
           <ul class="text-left">
             <li

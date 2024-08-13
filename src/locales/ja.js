@@ -15,18 +15,17 @@ export default {
   },
   caseStudies: [
     {
-      id: "oshitimer",
-      name: "推しタイマー",
-      tags: ["iOSアプリ"],
-      image: "/images/sample-img.png",
-      intro: "text",
-    },
-    {
       id: "hosync",
       name: "Hōsync",
+      year: "2023",
       tags: ["iOSアプリ", "Coursera"],
-      image: "/images/sample-img.png",
-      intro: "text",
+      image: "/images/hosync/thumbnail.jpg",
+      intro:
+        "法律に詳しくない人のための生活に役立つ法律情報アプリをCaurseraの課題で作成しました。",
+      hero: "/images/hosync/hero.jpg",
+      heroClass:
+        " md:translate-y-[-50%] md:left-[min(120px,9.375vw)] lg:left-[min(200px,15.625vw)] md:top-[50%] md:w-[33vw] lg:w-[25vw]",
+
       overview: [
         {
           header: "Problem",
@@ -48,17 +47,270 @@ export default {
           content:
             "・ユーザーリサーチの実施\n・問題の定義、それに基づいた洞察\n・ペルソナ、ユーザージャーニー、共感マップ、ユーザフローの定義\n・ビジュアルデザイン",
         },
+        {
+          header: "制作年",
+          content: "2023年",
+        },
+        {
+          header: "使用ソフト",
+          content:
+            "Figma, FigJam, Googleスライド, Googleスプレッドシート, Googleドキュメント",
+        },
+      ],
+      link: [
+        {
+          name: "High-Fidelity prototype",
+          url: "",
+        },
       ],
       research:
-        "仕事で法律に直接関わってはいないが法律に興味がある一般の人にインタビューを実施しました。",
+        "仕事で法律に直接関わってはいないが法律に興味がある一般の人にインタビューを実施しました。\nインタビューは次の項目を知るために行いました。\n\n・一般人がどの程度法令に触れたことがあるのか\n・どう言った形でサービスを作れば一般人も使ってもらえるか\n・このアプリが一般人にどう役に立つ可能性があるのか",
+      painPointsContent:
+        "インタビューによって明確になった問題を次の3つにまとめました。",
+      painPoints: [
+        {
+          header: "わかりやすさ",
+          content: "法律の原文は一般人には何が書いてあるのかわかりにくい",
+        },
+        {
+          header: "探しやすさ",
+          content: "どの法律が自分に関係しているのかわからない",
+        },
+        {
+          header: "便利機能",
+          content: "繰り返し定期的に使えるような仕組みが必要",
+        },
+      ],
+      persona: [
+        {
+          name: "吉田 卓也",
+          image: "/images/hosync/persona-yoshida.png",
+          alt: "ペルソナ画像　吉田 卓也",
+          age: "38",
+          education: "学士号",
+          hometown: "山形",
+          family: "妻、２人の子供",
+          occupation: "サラリーマン",
+          header:
+            "家族とこれからも楽しく生活したいので自分もしっかりしなければいけないと思います。",
+          goals: [
+            "節税制度に気づくことができ、節約につながる",
+            "車に関する法律を知ることで運転時に役立つ",
+            "家に関する法律を知ることで家を建てる時に役立つ",
+            "子供に関する制度などに気づき生活に役立つ",
+          ],
+          frustrations: [
+            "子供に関する制度に気づかず損をしていたことがあった。",
+            "家の購入を考えているので調べたが、毎年少し制度が変わるので追うのが面倒。",
+          ],
+          bio: "吉田卓也はサラリーマンで、妻と子供が2人います。東京に住んでいます。最近子供達が大きくなってきたので埼玉の新築の購入を考えています。家族で旅行に行きたいので車も所有したいと思っています。結婚してから資産形成について考えるようになりました。それまではあまり詳しくありませんでした。",
+        },
+        {
+          name: "長谷川 夏実",
+          image: "/images/hosync/persona-hasegawa.png",
+          alt: "ペルソナ画像　吉田 卓也",
+          age: "31",
+          education: "学士号",
+          hometown: "滋賀",
+          family: "一人暮らし",
+          occupation: "フリーランスデザイナー",
+          header:
+            "デザイナーとして日々勉強をしています。もちろん、経費で落とせるものは落としたいです。",
+          goals: [
+            "著作権の情報を知ることができ、仕事に生かせる",
+            "確定申告時に便利な制度を見つけて利用できる  ",
+          ],
+          frustrations: [
+            "節税の制度に気づかないと損をしてしまう",
+            "デザイナーに関する法律はアンテナは張っているが誰かの発信によって情報を得ているので必ずしも確実とは言えない。",
+          ],
+          bio: "長谷川夏美はフリーランスのデザイナーとして都内で働いています。確定申告を毎年行っています。仕事の関係上、著作権についても調べたことがありますが専門家ではありません。自分自身で調べるので必要最低限の知識は持っています。",
+        },
+      ],
+      userJourney: [
+        {
+          name: "吉田 卓也",
+          table: [
+            {
+              action: "家を建てるにあたって事前に情報を収集しようと考える",
+              task: "A. スマートフォンを手に取る\nB. Googleで調べる",
+              feeling: "初めての経験による不安、焦り",
+              opportunities:
+                "Hōsyncにも家を建てる人向けのノウハウページがあるとここで直接Hōsyncを訪れてくれる可能性がある",
+            },
+            {
+              action: "サイトを訪れ様々な法令があることに気づく",
+              task: "A. 最初に出てきたサイトを訪れる\nB. 内容を読む\nC.法令に関して興味を持つ",
+              feeling:
+                "全体像を把握することで少しの安堵\n法令に関して難しさを感じストレス",
+            },
+            {
+              action: "家を建てる人向けの法令について調べる",
+              task: "A. 法令に関してGoogleで検索する\nB. Hōsyncを見つける",
+              feeling: "自分に理解できるか不安",
+            },
+            {
+              action: "法令がまとまっているサイトを見つける",
+              task: "A. Hōsyncのサイトを訪れる\nB. 生活に関係する法令から家に関するものを見つける\n",
+              feeling: "色々な選択肢があって困惑",
+              opportunities:
+                "自分に合った法令を簡単に探せるような検索機能が必要",
+            },
+            {
+              action: "家を建てる人向けの法令をまとめて見れる",
+              task: "A.法令を把握する",
+              feeling: "要約が載っているため理解できて安堵",
+              opportunities:
+                "法令が更新されることを知ってもらいアプリの通知機能の魅力を知ってもらう",
+            },
+          ],
+        },
+        {
+          name: "長谷川 夏実",
+          table: [
+            {
+              action: "SNSで著作権の改正を知る",
+              task: "A. SNSを見る\nB. 著作権の改正を知る",
+              feeling: "詳しくわからずストレス",
+              opportunities: "SNSでも発信していけばより早く見つけてもらえる",
+            },
+            {
+              action: "詳しく調べてみる",
+              task: "A. Googleで検索",
+              feeling: "新しい情報への興味",
+            },
+            {
+              action: "Hōsyncを見つける",
+              task: "A. Hōsyncにアクセスする\nB. 著作権のページを見つける",
+              feeling:
+                "知らないサイトで不安\nすぐに知りたいものが見つかって嬉しい",
+              opportunities: "知りたい情報に素早く見つけられるようにする",
+            },
+            {
+              action: "改正について理解する",
+              task: "A. 著作権改正の要約を見る\nB. 全文を見る",
+              feeling: "わかりやすくて安心",
+              opportunities:
+                "改正の内容だけでなく、法令全文も見ることができるようにする",
+            },
+            {
+              action: "仕事で使う場面に遭遇する",
+              task: "A. 著作権改正に関する事象に遭遇する\nB. 内容を思い出す\nC.確認のためHōsyncに再度アクセスする",
+              feeling: "突然法令の知識が必要になり焦り",
+              opportunities:
+                "一度アクセスしたものを再度アクセスしやすいようにする",
+            },
+          ],
+        },
+      ],
+      competitor: [
+        {
+          header: "競合調査",
+          content:
+            "業界理解のためにオーディオガイドアプリを出している競合がどのような体験を提供しているのか、調査を実施しました。",
+          strengths: [
+            "マップを使用していて現在地もわかる",
+            "信頼性のある解説",
+            "美術館にいなくても使用できる",
+            "ブックマーク機能",
+            "チケットの予約",
+          ],
+          weaknesses: [
+            "マップが重い",
+            "対応している言語が少ない",
+            "スクリーンリーダーが対応していない",
+            "わからない単語を調べたくてもテキストのコピーができない",
+          ],
+        },
+      ],
+      definingTheProblems: [
+        {
+          name: "吉田 卓也",
+          userStory:
+            "2人の子供を持つ親として家庭生活を安定させ、充実させたいです。そのため自分たちに関係のある情報は把握したいと考えています",
+          problemStatement:
+            "吉田卓也は2人の子供を持つ親です。家を建てる際に関係する法令を簡単に把握できることを必要としています。なぜならもうすぐ家を建てる準備を始めるが専門家ではなく知識が乏しいためです。",
+          goalStatement:
+            "Hōsyncは興味のあるカテゴリの法令を調べる機能を提供します。この機能は法令に詳しくない一般人に法令を理解でき、情報を得ることで生活に役立てられます。アプリ内での一般人向けのページのアクセス数を追跡することで効果を測定します。",
+        },
+        {
+          name: "長谷川 夏実",
+          userStory:
+            "プロのデザイナーとして業界の情報は把握をした上で責任を持って仕事をやりたいです。そのためより効率的で確実な方法で情報収集したいと考えています。",
+          problemStatement:
+            "ガ払い、同等のサービスを受けることができるからです。",
+          goalStatement:
+            "Hōsyncは興味のある法令を登録する機能を提供します。この機能は法令を追っていない一般人に自分に関係する法令の改正に気づくことができ、仕事に役立てられます。アプリ内での通知機能の使用状況を追跡することで効果を測定します。",
+        },
+      ],
+      userFlow: [
+        {
+          image: "/images/hosync/user-flow.png",
+          alt: "user flow",
+        },
+      ],
+      storyboard: {
+        content:
+          "実際に吉田 卓也がアプリを使用する場面を想定してストーリーボードを書き起こしました。",
+        bigPicture: {
+          image: "/images/hosync/storyboard_bigpicture.jpg",
+          alt: "Big Picture",
+        },
+        closeUp: {
+          image: "/images/hosync/storyboard_closeup.jpg",
+          alt: "Close Up",
+        },
+      },
+      prototype:
+        "ガブリエルの目的を達成できるためのプロトタイプの作成に移ります。",
+      wireframes: [
+        {
+          image: "/images/hosync/wireframes.png",
+          alt: "Paper wireframes",
+        },
+      ],
+      digitalWireframes: [
+        {
+          image: "/images/hosync/degital-wireframes.png",
+          alt: "Digital wireframes",
+        },
+      ],
+      lowFidelityPrototype: [
+        {
+          image: "/images/hosync/low-fidelity-prototype.png",
+          alt: "Low-fidelity prototype",
+          link: "https://www.figma.com/proto/BoqfATRjhVyCEjQY8qVVSM/H%C5%8Dsync?page-id=18%3A282&node-id=51-312&viewport=406%2C358%2C0.5&t=df4RKqT07OzJFdtS-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=51%3A312",
+        },
+      ],
+      usabilityStudy: [
+        {
+          content:
+            "ユーザーが自分に関連する法令を簡単に探せて情報を得られる設計になっているか把握する必要があるため、ユーザビリティテストを実施しました。",
+        },
+      ],
+      design:
+        "ユーザビリティテストの結果をもとにモックアップの作成を行いました。",
+      mockups: [
+        {
+          image: "/images/hosync/mockups.png",
+          alt: "mockups",
+          caption: "",
+        },
+      ],
     },
+
     {
       id: "national-gallery",
       name: "National Gallery",
+      year: "2022",
       tags: ["iOSアプリ", "Coursera"],
-      image: "/images/sample-img.png",
+      image: "/images/national-gallery/thumbnail.jpg",
       intro:
         "美術館を訪れた人が母国語ではなくてもわかりやすいオーディオガイドアプリをCourceraの課題で制作。",
+      hero: "/images/national-gallery/hero.jpg",
+      heroClass:
+        "w-[min(1040px,81.25vw)] translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%]",
+
       overview: [
         {
           header: "Problem",
@@ -80,9 +332,19 @@ export default {
           content:
             "・ユーザーリサーチの実施\n・問題の定義、それに基づいた洞察\n・ペルソナ、ユーザージャーニー、共感マップ、ユーザフローの定義\n・ビジュアルデザイン",
         },
+        {
+          header: "制作年",
+          content: "2022年",
+        },
+        {
+          header: "使用ソフト",
+          content: "Figma",
+        },
       ],
       research:
         "オーディオガイドを利用するときのユーザーの行動や気持ちを理解するために架空のインタビューを行いました。インタビューは次の項目を知るために行いました。\n\n・どういった時にオーディオガイドを使うか\n・どういった時にオーディオガイドにストレスや不便を感じるか\n・オーディオガイドに期待していることは何か\n\nインタビューを通じて特定された主なユーザーグループは、言葉の壁がありオーディオガイドを十分に楽しめない、芸術に興味のある外国人でした。このグループは、当初の想定通りでしたが、ユーザーがオーディオガイドアプリを楽しむことを制限する要因は言語だけではないことも明らかになりました。他の問題としては、混雑していたり、時間が迫っていたりして美術館を見終えるのが難しいというものがあった。",
+      painPointsContent:
+        "インタビューによって明確になった問題を次の4つにまとめました。",
 
       painPoints: [
         {
@@ -126,34 +388,60 @@ export default {
       ],
       userJourney: [
         {
-          action: "美術館に到着",
-          task: "A. 展覧会を見つける\nB. 展覧会のアーティストを検索する\nC. 行くことを決める\nD. 美術館に行く",
-          feeling:
-            "興味深い展覧会を見つけてうれしい\n言語が障壁になるかもしれないと心配",
+          name: "ガブリエル",
+          table: [
+            {
+              action: "美術館に到着",
+              task: "A. 展覧会を見つける\nB. 展覧会のアーティストを検索する\nC. 行くことを決める\nD. 美術館に行く",
+              feeling:
+                "興味深い展覧会を見つけてうれしい\n言語が障壁になるかもしれないと心配",
+            },
+            {
+              action: "チケットとオーディオガイドを購入",
+              task: "A. チケットオフィスに並ぶ\nB. チケットとオーディオツアーを購入",
+              feeling: "列が長くてがっかり",
+              opportunities:
+                "チケットとオーディオツアーを事前に予約する方法を提供",
+            },
+            {
+              action: "美術館のツアーを開始",
+              task: "A. 美術館に入る\nB. 展示を鑑賞",
+              feeling: "美術館にワクワク",
+            },
+            {
+              action: "オーディオガイドアプリを使用",
+              task: "A. 英語を選択\nB. オーディオガイドを聞く\nC. 同じセクションを再度聞く",
+              feeling:
+                "オーディオツアーの速度に圧倒される\nオーディオツアーを理解するのが難しくてイライラする",
+              opportunities: "速度を変更し、テキストを表示するオプションを提供",
+            },
+            {
+              action: "美術館を去る",
+              task: "A. オーディオツアーと展示を終了\nB. 美術館を去る\nC. 母国語で情報を検索",
+              feeling: "展示の内容に満足\nすべての内容を理解できずにがっかり",
+              opportunities: "オーディオツアーのテキストデータを提供",
+            },
+          ],
         },
+      ],
+      competitor: [
         {
-          action: "チケットとオーディオガイドを購入",
-          task: "A. チケットオフィスに並ぶ\nB. チケットとオーディオツアーを購入",
-          feeling: "列が長くてがっかり",
-          opportunities: "チケットとオーディオツアーを事前に予約する方法を提供",
-        },
-        {
-          action: "美術館のツアーを開始",
-          task: "A. 美術館に入る\nB. 展示を鑑賞",
-          feeling: "美術館にワクワク",
-        },
-        {
-          action: "オーディオガイドアプリを使用",
-          task: "A. 英語を選択\nB. オーディオガイドを聞く\nC. 同じセクションを再度聞く",
-          feeling:
-            "オーディオツアーの速度に圧倒される\nオーディオツアーを理解するのが難しくてイライラする",
-          opportunities: "速度を変更し、テキストを表示するオプションを提供",
-        },
-        {
-          action: "美術館を去る",
-          task: "A. オーディオツアーと展示を終了\nB. 美術館を去る\nC. 母国語で情報を検索",
-          feeling: "展示の内容に満足\nすべての内容を理解できずにがっかり",
-          opportunities: "オーディオツアーのテキストデータを提供",
+          header: "競合調査",
+          content:
+            "業界理解のためにオーディオガイドアプリを出している競合がどのような体験を提供しているのか、調査を実施しました。",
+          strengths: [
+            "マップを使用していて現在地もわかる",
+            "信頼性のある解説",
+            "美術館にいなくても使用できる",
+            "ブックマーク機能",
+            "チケットの予約",
+          ],
+          weaknesses: [
+            "マップが重い",
+            "対応している言語が少ない",
+            "スクリーンリーダーが対応していない",
+            "わからない単語を調べたくてもテキストのコピーができない",
+          ],
         },
       ],
       userFlow: [
@@ -162,32 +450,34 @@ export default {
           alt: "user flow",
         },
       ],
-      userStory: [
+      researchResult:
+        "以上の調査から言語が対応していない場合のサポートを提供することでアプリの価値をより高められるのではないかと確信しました。",
+      definingTheProblems: [
         {
-          user: "As an International student interested in art",
-          action: "I want to change speed and display text of an audio guide",
-          benefit: "so that I can fully enjoy the contents of the museum.",
+          name: "ガブリエル",
+          userStory:
+            "アートに興味のある留学生として、私はオーディオガイドの速度を変更し、テキストを表示したいです。そうすることで、美術館の内容を完全に楽しむことができます。",
+          problemStatement:
+            "ガブリエルは外国人の学生で、非母国語を選択した場合でもオーディオガイドの内容を完全に理解する必要があります。なぜなら、母国語かどうかに関わらず、同じ金額を支払い、同等のサービスを受けることができるからです。",
+          goalStatement:
+            "私たちのオーディオガイドアプリは、誰でも内容を理解しやすくするオーディオ再生機能を提供します。この機能は、母国語以外の言語でオーディオアプリを使用する訪問者に影響を与え、同じように楽しむ能力を提供します。アプリ内での機能使用回数を追跡することで効果を測定します。",
         },
       ],
-      problemStatement: [
-        {
-          user: "Gabriel is a foreigner student",
-          need: "who needs to completely understand of the content of the audio guide if they select non-native language",
-          insight:
-            "because they can pay same amount of money and receive equivalent service whether their native language or not",
+      storyboard: {
+        content:
+          "実際にガブリエルがアプリを使用する場面を想定してストーリーボードを書き起こしました。",
+        bigPicture: {
+          image: "/images/national-gallery/storyboard_bigpicture.jpg",
+          alt: "Big Picture",
         },
-      ],
-      goalStatement: [
-        {
-          what: "Our audio guide app will let users use an audio playback function that makes it easy for anyone to understand the content",
-          who: "which will affect visitor who use the audio app in languages other than their native language",
-          why: "by giving them to ability to enjoy same",
-          mesure:
-            "We will measure effectiveness by tracking uses the function in app.",
+        closeUp: {
+          image: "/images/national-gallery/storyboard_closeup.jpg",
+          alt: "Close Up",
         },
-      ],
-      design:
+      },
+      prototype:
         "ガブリエルの目的を達成できるためのプロトタイプの作成に移ります。",
+
       wireframes: [
         {
           image: "/images/national-gallery/wireframes.png",
@@ -240,10 +530,14 @@ export default {
           image: "/images/national-gallery/insight03.png",
         },
       ],
+      design:
+        "ユーザビリティテストの結果をもとにモックアップの作成を行いました。",
+
       mockups: [
         {
           image: "/images/national-gallery/mockups.png",
           alt: "mockups",
+          caption: "",
         },
       ],
       highFidelityPrototype: [
@@ -256,13 +550,138 @@ export default {
       nextStep:
         "同じく事実に内談人は同時にその講演だろございばかりに立ち竦んからいないがは矛盾いたないて、ますますにも射しましありうまし。人を云っでしのはどうか今日に無論あっなけれだろ。もしネルソン君がふり我別段尊重が繰りん場所その国家私かお話しにというお馳走たですですんば、その昨日はあなたか心持国家がして、ネルソンさんののの思いの私で同時にお会得として私家屋にご希望に聞きようにせっかくご真似が逃れだろるのに、いよいよ何とも始末で存じあっからみろありのを廻るでで。しかしだからお自分に蒙り事は多少横着といなが、その女では並べたてとかいう三つがあるばいるたない。",
     },
-
     {
-      id: "re-thinkuma",
-      name: "Re:ThinKuma",
-      tags: ["iOSアプリ"],
-      image: "/images/sample-img.png",
-      intro: "text",
+      id: "oshitimer",
+      name: "推しタイマー",
+      year: "2020",
+      tags: ["iOSアプリ", "配信中"],
+      image: "/images/oshitimer/thumbnail.jpg",
+      intro:
+        "2万4千ダウンロードのタイマーアプリ\n好きな画像を入れて視覚的にわかりやすく、楽しくタイマーを測れるアプリです。エンジニアと二人でハッカソンを実施し、リリースしました。",
+      hero: "/images/oshitimer/hero.jpg",
+      heroClass:
+        "md:translate-y-[-50%] md:translate-x-[-50%] md:left-[75%] md:top-[50%] md:w-[35vw] lg:w-[29vw] md:text-BG-secondary",
+
+      overview: [
+        {
+          header: "Problem",
+          content:
+            "タイマーアプリはありふれているが、自分に合ったアプリが見つけられない。",
+        },
+        {
+          header: "Goal",
+          content:
+            "机や筋トレ中に置いておいてもおしゃれで、やる気になるようなアプリを提供する。",
+        },
+        {
+          header: "My Role",
+          content:
+            "アプリデザイナーとしてエンジニアと共同で作成した個人プロジェクトです。",
+        },
+        {
+          header: "Responsibilities",
+          content:
+            "・問題の定義\n・iOSデザイン\n・アイコンデザイン\n・webサイトデザイン\n・モーションデザイン\n・ディレクション",
+        },
+        {
+          header: "制作年",
+          content: "2020年",
+        },
+        {
+          header: "使用ソフト",
+          content: "Figma, Adobe AfterEffects, Xcode, Illustrator",
+        },
+      ],
+      link: [
+        {
+          name: "iOS App Store",
+          url: "https://apps.apple.com/jp/app/%E6%8E%A8%E3%81%97%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id1503076204",
+        },
+        {
+          name: "Web site",
+          url: "https://oshitimer.pola.club/",
+        },
+      ],
+      research:
+        "筋トレをするときにタイマーアプリを使っていましたが、使いごごちが良くなく、いまいちモチベーションがあがらないと感じていました。\nそこで自分たちで理想のタイマーアプリを作ることを決めました。\nまず、現状のアプリに足りない部分と理想のアプリとはどういったアプリか洗い出しました。",
+      competitor: [
+        {
+          header: "競合調査",
+          content: "",
+
+          weaknesses: [
+            "見た目が微妙",
+            "iPad非対応",
+            "進捗がわかりにくい",
+            "ダークモードがない",
+            "ポートレートモードに対応していない",
+          ],
+          ideal: [
+            "どれくらい勉強や筋トレが続いたかのチェックしたい",
+            "机などに置いておいてもおしゃれ",
+            "やる気につながるようなアプリ",
+            "操作が簡単でわかりやすい",
+            "フレキシブルな1セットの設定が可能（30sec x 1 and 15sec x 1）",
+            "広告がない",
+          ],
+        },
+      ],
+      prototype: "要件がまとまったところでアイディア出しを始めました。",
+      sketch: [
+        {
+          image: "/images/oshitimer/sketch.png",
+          alt: "推しタイマー初期スケッチ",
+          caption: "推しタイマーのアイディア出しの段階のラフスケッチです。",
+        },
+      ],
+      animation: [
+        {
+          content:
+            "アプリの一番重要なタイマーのアニメーションのイメージをAfter effectsで作成し、エンジニアに実装のイメージを共有しました。",
+          image: "/images/oshitimer/animation.gif",
+          alt: "推しタイマーアニメーションイメージ",
+        },
+      ],
+      design:
+        "アイディア出しから機能要件を確定し、アニメーションでイメージを固めた後の最新のモックアップです。\nリリースから好評をいただき機能の追加も実施しています。追加した内容は以下です。\n・有料プランの追加\n・写真を複数枚登録できるように機能拡大\n・カラーバリエーションの追加など\n",
+      mockups: [
+        {
+          image: "/images/oshitimer/mockups.png",
+          alt: "mockups",
+          caption:
+            "デフォルトカラーのモックアップです。ライトモードとダークモードを切り替えることができます。",
+        },
+        {
+          image: "/images/oshitimer/mockups2.png",
+          alt: "mockups カラーバリエーション",
+          caption:
+            "カラーバリエーションのモックアップです。初期のカラー緑にプラスして10色追加しました。",
+        },
+      ],
+      photo: [
+        {
+          image: "/images/oshitimer/photo.jpg",
+          alt: "制作風景",
+          caption: "制作風景。アイルランドの自宅で新年早々ハッカソンを開催",
+        },
+      ],
+      logo: [
+        {
+          image: "/images/oshitimer/logo.png",
+          alt: "アプリアイコのラフスケッチ",
+          caption: "アプリアイコンのラフスケッチ",
+        },
+      ],
+      nextStep:
+        "自分たちの理想を詰め込んだタイマーアプリでしたが、想像以上にたくさんの方に使ってもらうことができました。今までにないアイディアと方向性が数あるタイマーアプリの中から選んでもらえる理由になったのではないかと考えています。\n\n今までは自分たちが欲しいと思うものを作っていましたが、今後はユーザーを明確に定義しユーザーテストなどの実施により、ユーザーがより使いやすく便利になるようなアプリを目指しています。\n\n今後の追加予定の機能は下記です。\n・複数のタイマーを設定できる機能\n・SNSシェアボタン\n・カレンダー機能",
     },
+
+    // {
+    //   id: "re-thinkuma",
+    //   name: "Re:ThinKuma",
+    //   tags: ["iOSアプリ"],
+    //   image: "/images/sample-img.png",
+    //   intro: "text",
+    // },
   ],
 };

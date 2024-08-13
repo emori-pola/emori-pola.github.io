@@ -3,14 +3,22 @@
     class="w-full flex items-center z-50 fixed justify-between pt-gutter-y px-[min(120px,9.375vw)]"
   >
     <div class="">
-      <router-link to="/"><img src="/images/logo.svg" alt="" /></router-link>
+      <router-link
+        to="/"
+        class="transition-opacity duration-300 ease-out hover:opacity-70"
+        ><img src="/images/logo.svg" alt=""
+      /></router-link>
     </div>
     <div class="flex items-center">
       <nav class="mr-gutter-x">
-        <router-link class="font-sortsMillGoudy text-[1.5rem] mr-4" to="/"
+        <router-link
+          class="font-sortsMillGoudy text-[1.5rem] mr-4 transition-opacity duration-300 ease-out hover:opacity-30"
+          to="/"
           >Home</router-link
         >
-        <router-link class="font-sortsMillGoudy text-[1.5rem]" to="/about"
+        <router-link
+          class="font-sortsMillGoudy text-[1.5rem] transition-opacity duration-300 ease-out hover:opacity-30"
+          to="/about"
           >About</router-link
         >
       </nav>
@@ -76,5 +84,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #5f5a42;
+}
+.router-link-active {
+  color: #e3d8c3;
 }
 </style>

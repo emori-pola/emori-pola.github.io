@@ -15,12 +15,276 @@ export default {
   },
   caseStudies: [
     {
+      id: "hosync",
+      name: "Hōsync",
+      year: "2023",
+      tags: ["iOS App", "Coursera"],
+      image: "/images/hosync/thumbnail.jpg",
+      intro:
+        "A useful legal information app for everyday life for those who are not familiar with the law",
+      hero: "/images/hosync/hero.jpg",
+      heroClass: "translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%]",
+      overview: [
+        {
+          header: "Problem",
+          content:
+            "Although the law is relevant to the general public, it is perceived as difficult and something only experts should understand.",
+        },
+        {
+          header: "Goal",
+          content:
+            "To provide an app that makes the law feel accessible and understandable to the general public.",
+        },
+        {
+          header: "My Role",
+          content:
+            "This was an individual project carried out under the processes of design thinking (empathize, define, ideate, prototype, test).",
+        },
+        {
+          header: "Responsibilities",
+          content:
+            "・Conducting user research\n・Defining problems and deriving insights\n・Creating personas, user journeys, empathy maps, and user flows\n・Visual design",
+        },
+        {
+          header: "Year of Production",
+          content: "2023",
+        },
+        {
+          header: "Software",
+          content: "Figma",
+        },
+      ],
+
+      research:
+        "We interviewed general people who are not directly involved with the law in their work but are interested in it. The interviews were conducted to understand the following points:\n\n・To what extent general people have come into contact with the law\n・How to create a service that general people would use\n・How this app could potentially benefit the general public",
+      painPoints: [
+        {
+          header: "Clarity",
+          content: "There is a language barrier for foreigners.",
+        },
+        {
+          header: "Ease of Finding",
+          content:
+            "Audio guide apps only provide voice, with no support options.",
+        },
+        {
+          header: "Convenience Features",
+          content:
+            "Audio guide apps do not provide support during crowded times.",
+        },
+      ],
+      persona: [
+        {
+          name: "Takuya Yoshida",
+          image: "/images/hosync/persona-yoshida.png",
+          alt: "Persona Image Takuya Yoshida",
+          age: "38",
+          education: "Bachelor's Degree",
+          hometown: "Yamagata",
+          family: "Wife and two children",
+          occupation: "Office Worker",
+          header:
+            "I think I need to be more responsible so that I can continue to enjoy life with my family.",
+          goals: [
+            "To be aware of tax saving systems and save money",
+            "To know the laws related to cars, which will be useful when driving",
+            "To know the laws related to houses, which will be useful when building a house",
+            "To be aware of the systems related to children and use them to improve our lives",
+          ],
+          frustrations: [
+            "I missed out on some benefits because I was not aware of the systems related to children.",
+            "I am considering buying a house, but it is troublesome to keep up with the system changes every year.",
+          ],
+          bio: "Takuya Yoshida is an office worker with a wife and two children. He lives in Tokyo. As his children have grown, he is considering buying a new house in Saitama. He also wants to own a car so that he can go on trips with his family. Since getting married, he has been thinking more about asset formation, something he wasn't very knowledgeable about before.",
+        },
+        {
+          name: "Natsumi Hasegawa",
+          image: "/images/hosync/persona-hasegawa.png",
+          alt: "Persona Image Natsumi Hasegawa",
+          age: "31",
+          education: "Bachelor's Degree",
+          hometown: "Shiga",
+          family: "Lives alone",
+          occupation: "Freelance Designer",
+          header:
+            "As a designer, I am constantly studying. Of course, I want to expense everything I can.",
+          goals: [
+            "To know information about copyright and use it in my work",
+            "To find and use convenient systems during tax filing",
+          ],
+          frustrations: [
+            "If I am not aware of tax-saving systems, I could lose money.",
+            "I keep an eye out for laws related to designers, but I get information from others, so it is not always reliable.",
+          ],
+          bio: "Natsumi Hasegawa works as a freelance designer in Tokyo. She files her taxes every year. Due to the nature of her work, she has researched copyright, but she is not an expert. She has a basic knowledge from her own research.",
+        },
+      ],
+      userJourney: [
+        {
+          name: "Takuya Yoshida",
+          table: [
+            {
+              action: "Considers gathering information before building a house",
+              task: "A. Picks up his smartphone\nB. Searches on Google",
+              feeling: "Anxiety and urgency due to first-time experience",
+              opportunities:
+                "If Hōsync has a know-how page for people building houses, they may visit Hōsync directly at this stage.",
+            },
+            {
+              action: "Visits a site and realizes there are various laws",
+              task: "A. Visits the first site that comes up\nB. Reads the content\nC. Becomes interested in the laws",
+              feeling:
+                "A bit of relief from understanding the big picture\nStress from finding the laws difficult",
+            },
+            {
+              action: "Researches laws related to building a house",
+              task: "A. Searches Google for laws\nB. Finds Hōsync",
+              feeling: "Anxiety about whether he can understand",
+            },
+            {
+              action: "Finds a site that compiles laws",
+              task: "A. Visits the Hōsync site\nB. Finds laws related to houses from laws related to daily life",
+              feeling: "Confusion due to various options",
+              opportunities:
+                "Need a search function that makes it easy to find laws suited to oneself",
+            },
+            {
+              action:
+                "Can view laws related to building a house comprehensively",
+              task: "A. Understands the laws",
+              feeling: "Relief from understanding thanks to summaries",
+              opportunities:
+                "Inform users that laws are updated and highlight the attractiveness of the app's notification function",
+            },
+          ],
+        },
+        {
+          name: "Natsumi Hasegawa",
+          table: [
+            {
+              action: "Learns about a copyright amendment on social media",
+              task: "A. Looks at social media\nB. Learns about the copyright amendment",
+              feeling: "Stress from not understanding the details",
+              opportunities:
+                "Posting on social media as well can help users find information faster",
+            },
+            {
+              action: "Researches in detail",
+              task: "A. Searches on Google",
+              feeling: "Interest in new information",
+            },
+            {
+              action: "Finds Hōsync",
+              task: "A. Accesses Hōsync\nB. Finds the copyright page",
+              feeling:
+                "Anxiety about an unfamiliar site\nHappiness from quickly finding what she wants to know",
+              opportunities:
+                "Make it easy to find the desired information quickly",
+            },
+            {
+              action: "Understands the amendment",
+              task: "A. Views the summary of the copyright amendment\nB. Views the full text",
+              feeling: "Reassured by the clarity",
+              opportunities:
+                "Provide not only the amendment details but also the full text of the law",
+            },
+            {
+              action:
+                "Encounters a situation where the knowledge is needed for work",
+              task: "A. Encounters a situation related to the copyright amendment\nB. Remembers the content\nC. Accesses Hōsync again to confirm",
+              feeling: "Panic from suddenly needing legal knowledge",
+              opportunities:
+                "Make it easy to re-access previously accessed information",
+            },
+          ],
+        },
+      ],
+
+      definingTheProblems: [
+        {
+          name: "Takuya Yoshida",
+          userStory:
+            "As a parent of two children, I want to stabilize and enrich my family life. Therefore, I want to understand information that is relevant to us.",
+          problemStatement:
+            "Takuya Yoshida is a parent of two children. He needs to easily understand the laws related to building a house because he is about to start preparing to build one but is not an expert and lacks knowledge.",
+          goalStatement:
+            "Hōsync provides a function to search for laws in categories of interest. This function allows ordinary people who are not familiar with laws to understand them and use the information to improve their lives. We will measure the effectiveness by tracking the number of accesses to the general public pages in the app.",
+        },
+        {
+          name: "Natsumi Hasegawa",
+          userStory:
+            "As a professional designer, I want to work responsibly with knowledge of industry information. Therefore, I want to collect information in a more efficient and reliable way.",
+          problemStatement:
+            "Natsumi Hasegawa is a freelance designer. She needs to be aware of changes in laws that affect her work because keeping up with these changes is crucial for her profession.",
+          goalStatement:
+            "Hōsync provides a function to register laws of interest. This function helps ordinary people who are not tracking laws to notice amendments related to their work. We will measure the effectiveness by tracking the usage of the notification function in the app.",
+        },
+      ],
+      userFlow: [
+        {
+          image: "/images/hosync/user-flow.png",
+          alt: "user flow",
+        },
+      ],
+      storyboard: {
+        content:
+          "We created a storyboard imagining the scene where Takuya Yoshida uses the app.",
+        bigPicture: {
+          image: "/images/hosync/storyboard_bigpicture.jpg",
+          alt: "Big Picture",
+        },
+        closeUp: {
+          image: "/images/hosync/storyboard_closeup.jpg",
+          alt: "Close Up",
+        },
+      },
+      prototype:
+        "We will move on to creating a prototype to achieve Gabriel's goals.",
+      wireframes: [
+        {
+          image: "/images/hosync/wireframes.png",
+          alt: "Paper wireframes",
+        },
+      ],
+      digitalWireframes: [
+        {
+          image: "/images/hosync/degital-wireframes.png",
+          alt: "Digital wireframes",
+        },
+      ],
+      lowFidelityPrototype: [
+        {
+          image: "/images/hosync/low-fidelity-prototype.png",
+          alt: "Low-fidelity prototype",
+          link: "https://www.figma.com/proto/BoqfATRjhVyCEjQY8qVVSM/H%C5%8Dsync?page-id=18%3A282&node-id=51-312&viewport=406%2C358%2C0.5&t=df4RKqT07OzJFdtS-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=51%3A312",
+        },
+      ],
+      usabilityStudy: [
+        {
+          content:
+            "We conducted a usability test to understand if the design allows users to easily find and obtain information about laws relevant to them.",
+        },
+      ],
+      design:
+        "Based on the results of the usability test, we created the mockups.",
+      mockups: [
+        {
+          image: "/images/hosync/mockups.png",
+          alt: "mockups",
+        },
+      ],
+    },
+
+    {
       id: "national-gallery",
       name: "National Gallery",
+      year: "2022",
       tags: ["iOS App", "Coursera"],
-      image: "/images/sample-img.png",
+      image: "/images/national-gallery/thumbnail.jpg",
       intro:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus arcu, eleifend sed malesuada in, auctor nec lectus. Aliquam varius sodales elit id hendrerit. Duis quis enim in quam tempor venenatis.",
+      hero: "/images/national-gallery/hero.jpg",
+      heroClass: "translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%]",
       overview: [
         {
           header: "Problem",
@@ -121,30 +385,25 @@ export default {
           alt: "user flow",
         },
       ],
-      userStory: [
-        {
-          user: "As an International student interested in art",
-          action: "I want to change speed and display text of an audio guide",
-          benefit: "so that I can fully enjoy the contents of the museum.",
+      userStory:
+        "As an International student interested in art I want to change speed and display text of an audio guideso that I can fully enjoy the contents of the museum.",
+
+      problemStatement:
+        "Gabriel is a foreigner student who needs to completely understand of the content of the audio guide if they select non-native language because they can pay same amount of money and receive equivalent service whether their native language or not",
+      goalStatement:
+        "Our audio guide app will let users use an audio playback function that makes it easy for anyone to understand the content which will affect visitor who use the audio app in languages other than their native language by giving them to ability to enjoy same We will measure effectiveness by tracking uses the function in app.",
+      storyboard: {
+        content:
+          "実際にガブリエルがアプリを使用する場面を想定してストーリーボードを書き起こしました。",
+        bigPicture: {
+          image: "/images/national-gallery/storyboard_bigpicture.jpg",
+          alt: "Big Picture",
         },
-      ],
-      problemStatement: [
-        {
-          user: "Gabriel is a foreigner student",
-          need: "who needs to completely understand of the content of the audio guide if they select non-native language",
-          insight:
-            "because they can pay same amount of money and receive equivalent service whether their native language or not",
+        closeUp: {
+          image: "/images/national-gallery/storyboard_closeup.jpg",
+          alt: "Close Up",
         },
-      ],
-      goalStatement: [
-        {
-          what: "Our audio guide app will let users use an audio playback function that makes it easy for anyone to understand the content",
-          who: "which will affect visitor who use the audio app in languages other than their native language",
-          why: "by giving them to ability to enjoy same",
-          mesure:
-            "We will measure effectiveness by tracking uses the function in app.",
-        },
-      ],
+      },
       design:
         "私は架空のインタビューを行い、共感マップを作成して、私がデザインしようとしているユーザーとそのニーズを理解しました。リサーチを通じて特定された主な利用者グループは、言葉の壁があるためにオーディオツアーを十分に楽しめない、芸術に興味のある外国人だった。        このユーザー・グループは、オーディオ・ツアー・アプリの顧客に関する当初の想定を裏付けたが、リサーチによって、ユーザーがオーディオ・ツアー・アプリを楽しむことを制限する要因は言語だけではないことも明らかになった。        他のユーザーの問題には、混雑していたり、時間が迫っていたりして、美術館を見終えるのが難しいというものがあった。",
       wireframes: [
@@ -204,26 +463,16 @@ export default {
       nextStep:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus arcu, eleifend sed malesuada in, auctor nec lectus. Aliquam varius sodales elit id hendrerit. Duis quis enim in quam tempor venenatis.",
     },
+
     {
       id: "oshitimer",
       name: "Oshi Timer",
+      year: "2020",
       tags: ["iOS App"],
-      image: "/images/sample-img.png",
+      image: "/images/oshitimer/thumbnail.jpg",
       intro: "text",
-    },
-    {
-      id: "hosync",
-      name: "Hōsync",
-      tags: ["iOS App", "Coursera"],
-      image: "/images/sample-img.png",
-      intro: "text",
-    },
-    {
-      id: "re-thinkuma",
-      name: "Re:ThinKuma",
-      tags: ["iOS App"],
-      image: "/images/sample-img.png",
-      intro: "text",
+      hero: "/images/oshitimer/hero.jpg",
+      heroClass: "translate-y-[-50%] right-0 top-[50%]",
     },
   ],
 };

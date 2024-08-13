@@ -1,6 +1,7 @@
 <template>
   <ul
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-y md:gap-gutter-x-0.5"
+    :class="gridClass"
+    class="grid grid-cols-1 md:grid-cols-2 gap-gutter-y md:gap-gutter-x-0.5"
   >
     <li
       v-for="(card, index) in data"
@@ -20,6 +21,26 @@ export default {
     data: {
       type: Array,
       required: true,
+    },
+  },
+  computed: {
+    gridClass() {
+      const length = this.data.length;
+      let lgClass = "lg:grid-cols-1";
+
+      if (length === 2) {
+        lgClass = "lg:grid-cols-2";
+      } else if (length === 3) {
+        lgClass = "lg:grid-cols-3";
+      } else if (length == 4) {
+        lgClass = "lg:grid-cols-4";
+      } else if (length >= 5) {
+        lgClass = "lg:grid-cols-3";
+      }
+
+      return {
+        [lgClass]: true,
+      };
     },
   },
 };

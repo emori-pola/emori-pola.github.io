@@ -16,15 +16,17 @@
           >
             <a
               :href="'/' + product.id"
-              class="grid grid-cols-1 md:grid-cols-custom gap-x-gutter-x"
+              class="grid grid-cols-1 md:grid-cols-custom gap-x-gutter-x transition-opacity duration-300 ease-out hover:opacity-70"
             >
               <div>
                 <img :src="product.image" :alt="product.name" />
               </div>
               <div class="text-left py-gutter-y md:py-0 lg:py-gutter-y-0.5">
-                <h2 class="text-header05 mb-gutter-y-0.5">
+                <p class="text-[14px] mb-2">{{ product.year }}</p>
+                <h2 class="text-header05 mb-4">
                   {{ product.name }}
                 </h2>
+
                 <p class="mb-gutter-y-0.5">{{ product.intro }}</p>
                 <ul>
                   <li
