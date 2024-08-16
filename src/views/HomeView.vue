@@ -1,11 +1,18 @@
 <template>
-  <div class="md:pt-[140px] lg:pt-[160px] pt-[90px]">
+  <div class="">
     <main>
-      <section class="w-[min(1040px,81.25vw)] m-auto mb-gutter-y pb-gutter-y">
-        <h1 class="text-header03 md:text-header02 mb-2">
-          {{ $tm("home.title") }}
-        </h1>
-        <p class="text-header06">{{ $tm("home.description") }}</p>
+      <section class="mb-gutter-y pb-gutter-y relative">
+        <div
+          class="m-auto absolute translate-y-[-50%] top-[61%] left-[16vw] text-left"
+        >
+          <h1 class="text-header03 md:text-header01 mb-2 whitespace-pre-wrap">
+            {{ $tm("home.title") }}
+          </h1>
+          <p class="text-header06 whitespace-pre-wrap">
+            {{ $tm("home.description") }}
+          </p>
+        </div>
+        <img class="w-full" src="/images/kv.png" alt="" />
       </section>
       <section class="w-[min(1040px,81.25vw)] m-auto">
         <ul>

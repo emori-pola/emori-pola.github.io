@@ -294,8 +294,9 @@
 
       <h2 class="text-header01 mb-gutter-y">Usability Test</h2>
       <div class="mb-gutter-y">
-        <h3 class="text-header04 text-left py-gutter-y-0.5">Usability study</h3>
-        <p class="text-left mb-gutter-y-0.5 whitespace-pre-wrap">
+        <p
+          class="text-left mb-gutter-y-0.5 whitespace-pre-wrap lg:w-[min(760px,59.375vw)] m-auto"
+        >
           {{ caseStudy.usabilityTest.usabilityStudy[0].content }}
         </p>
       </div>
@@ -335,8 +336,10 @@
               <p class="text-left whitespace-pre-wrap mb-5">
                 {{ section.content }}
               </p>
-              <p>{{ section.quotes }}</p>
-              <p>{{ section.modify }}</p>
+              <p class="whitespace-pre-wrap mb-5">{{ section.quotes }}</p>
+              <p class="text-left whitespace-pre-wrap">
+                {{ section.modify }}
+              </p>
             </div>
             <img :src="section.image" alt="" />
           </li>
@@ -381,6 +384,65 @@
           >
         </p>
       </div>
+
+      <div v-if="caseStudy.usabilityTestHigh">
+        <h3 class="text-header04 text-left py-gutter-y-0.5">
+          Usability Test - High-fidelity Prototype
+        </h3>
+
+        <div class="mb-gutter-y">
+          <p class="text-left mb-gutter-y-0.5 whitespace-pre-wrap">
+            {{ caseStudy.usabilityTestHigh.usabilityStudy[0].content }}
+          </p>
+        </div>
+        <div v-if="caseStudy.usabilityTestHigh.affinityDiagram" class="mb-8">
+          <h3 class="text-header04 text-left py-gutter-y-0.5">
+            Affinity diagram
+          </h3>
+          <p class="text-left mb-4">
+            {{ caseStudy.usabilityTestHigh.affinityDiagram.content }}
+          </p>
+          <img
+            :src="caseStudy.usabilityTestHigh.affinityDiagram.images[0].image"
+            :alt="caseStudy.usabilityTestHigh.affinityDiagram.images[0].alt"
+          />
+        </div>
+        <div
+          v-if="caseStudy.usabilityTestHigh.prioritizedInsights"
+          class="mb-8"
+        >
+          <h3 class="text-header04 text-left py-gutter-y-0.5">
+            Prioritized Insights
+          </h3>
+          <p class="text-left mb-8">
+            {{ caseStudy.usabilityTestHigh.prioritizedInsights.content }}
+          </p>
+          <ul>
+            <li
+              v-for="(section, index) in caseStudy.usabilityTestHigh
+                .prioritizedInsights.lists"
+              :key="index"
+              class="mb-8 grid md:grid-cols-2 gap-gutter-x bg-BG-secondary p-10 last:mb-0"
+            >
+              <div class="">
+                <div>
+                  <p class="text-header03 mb-5">0{{ index + 1 }}</p>
+                  <h4 class="text-left text-header06 mb-6">
+                    {{ section.header }}
+                  </h4>
+                </div>
+                <p class="text-left whitespace-pre-wrap mb-5">
+                  {{ section.content }}
+                </p>
+                <p>{{ section.quotes }}</p>
+                <p>{{ section.modify }}</p>
+              </div>
+              <img :src="section.image" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <div v-if="caseStudy.logo">
         <h3 class="text-header04 text-left py-gutter-y-0.5">Icon</h3>
         <img :src="caseStudy.logo[0].image" :alt="caseStudy.logo[0].alt" />

@@ -1,7 +1,7 @@
 export default {
   home: {
-    title: "Crafting Meaningful Interactions",
-    description: "Purpose and Empathy in Every Detail",
+    title: "Crafting\nMeaningful\nExperiences",
+    description: "Deep Insights and Empathy-Led design \nwith a Touch of Joy",
   },
   about: {
     content:
@@ -60,7 +60,7 @@ export default {
       link: [
         {
           name: "High-Fidelity prototype",
-          url: "",
+          url: "https://www.figma.com/proto/BoqfATRjhVyCEjQY8qVVSM/H%C5%8Dsync?page-id=135%3A393&node-id=138-1076&viewport=1442%2C1154%2C0.5&t=ifOroanJ9mMQqXCI-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=138%3A1076",
         },
       ],
       research:
@@ -270,7 +270,7 @@ export default {
         },
       ],
       prototype:
-        "ガブリエルの目的を達成できるためのプロトタイプの作成に移ります。",
+        "吉田 卓也の目的を達成できるためのプロトタイプの作成に移ります。",
       wireframes: {
         content: "",
 
@@ -300,12 +300,30 @@ export default {
           },
         ],
       },
-      usabilityStudy: [
-        {
-          content:
-            "ユーザーが自分に関連する法令を簡単に探せて情報を得られる設計になっているか把握する必要があるため、ユーザビリティテストを実施しました。",
+
+      usabilityTest: {
+        usabilityStudy: [
+          {
+            content:
+              "ユーザーが自分に関連する法令を簡単に探せて情報を得られる設計になっているか把握する必要があるため、ユーザビリティテストを実施しました。そこで作成したLow-fidelity prototypeのユーザビリティテストを実施しました。\n\n",
+          },
+        ],
+        prioritizedInsights: {
+          content: "テストの結果得られた洞察の変更を実施しました。",
+          lists: [
+            {
+              header:
+                "オンボーディングがわかりにくく、先に進むのに時間がかかった。",
+              content: "",
+              quotes:
+                "“ちょっと混乱があったので少し難しかったです。最初の6つのボタンがフォローをするボタンかわからなかったが、その後に遷移した画面にフォローするとあったのでそれでわかった” ",
+              modify:
+                "説明を追加し、ボタンだとわかりやすいようにデザインを変更しました。",
+              image: "/images/hosync/insight01.png",
+            },
+          ],
         },
-      ],
+      },
       design:
         "ユーザビリティテストの結果をもとにモックアップの作成を行いました。",
       mockups: [
@@ -317,12 +335,13 @@ export default {
       ],
       highFidelityPrototype: [
         {
-          image: "",
+          image: "/images/hosync/high-fidelity-prototype.png",
           alt: "High-fidelity prototype",
-          link: "",
+          link: "https://www.figma.com/proto/BoqfATRjhVyCEjQY8qVVSM/H%C5%8Dsync?page-id=135%3A393&node-id=138-1076&viewport=1442%2C1154%2C0.5&t=ifOroanJ9mMQqXCI-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=138%3A1076",
         },
       ],
-      nextStep: "aaa",
+      nextStep:
+        "Courseraの2つ目の課題でUXデザインのプロセスを通してアプリデザインを完成させました。前回よりも1つ1つのプロセスの意味を理解しながら進めることができました。\n\n今後のステップとしては以下です。\n・High-fidelity prototypeのテストの実施\n・具体的な実装の計画",
     },
 
     {
@@ -622,6 +641,7 @@ export default {
           link: "https://www.figma.com/proto/uCk4y0U1mv4M7lEsB0s7KW/Audio-guide-app?page-id=788%3A1712&node-id=788-3855&viewport=673%2C435%2C0.25&t=oimzBNZ08ito30BV-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=788%3A3855",
         },
       ],
+
       website: {
         content: "このアプリのWebサイトのデザインを作成しました。",
         images: [
