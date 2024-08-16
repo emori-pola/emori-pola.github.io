@@ -24,12 +24,14 @@
         class="m-auto md:absolute w-[min(1040px,81.25vw)] py-10 whitespace-pre-wrap"
         :class="caseStudy.heroClass"
       >
-        <h1
-          class="text-header02 mb-4 md:text-header04 lg:text-header02 md:text-left"
-        >
-          {{ caseStudy.name }}
-        </h1>
-        <p class="text-left">{{ caseStudy.intro }}</p>
+        <div :class="caseStudy.heroClassWrap">
+          <h1
+            class="text-header02 mb-4 md:text-header04 lg:text-header02 md:text-left"
+          >
+            {{ caseStudy.name }}
+          </h1>
+          <p class="text-left">{{ caseStudy.intro }}</p>
+        </div>
       </div>
       <img :src="caseStudy.hero" :alt="caseStudy.name" class="block" />
     </section>
@@ -149,7 +151,7 @@
     >
       <h2 class="text-header01 mb-gutter-y">Defining the Problems</h2>
       <p class="text-left mb-6">
-        ここまでの調査をもとにガブリエルのさらなる理解のため問題の提起を行いました。
+        {{ caseStudy.definingTheProblemsContent }}
       </p>
       <div
         v-for="(section, index) in caseStudy.definingTheProblems"
@@ -159,17 +161,21 @@
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           <li class="md:col-span-2 py-10 px-6 border border-Label-primary">
             <h3 class="text-header03 mb-2">User Story</h3>
-            <p class="">
+            <p class="text-left whitespace-pre-wrap max-w-[760px] m-auto">
               {{ section.userStory }}
             </p>
           </li>
           <li class="py-10 px-6 border border-Label-primary">
             <h3 class="text-header03 mb-4">Problem Statement</h3>
-            <p class="text-left">{{ section.problemStatement }}</p>
+            <p class="text-left whitespace-pre-wrap">
+              {{ section.problemStatement }}
+            </p>
           </li>
           <li class="py-10 px-6 border border-Label-primary">
             <h3 class="text-header03 mb-4">Goal Statement</h3>
-            <p class="text-left">{{ section.goalStatement }}</p>
+            <p class="text-left whitespace-pre-wrap">
+              {{ section.goalStatement }}
+            </p>
           </li>
         </ul>
       </div>
@@ -217,10 +223,13 @@
         <p class="text-left mb-4">
           {{ caseStudy.animation[0].content }}
         </p>
-        <img
-          :src="caseStudy.animation[0].image"
-          :alt="caseStudy.animation[0].alt"
-        />
+        <div class="text-center w-full bg-[#b5beab] py-10 px-10">
+          <img
+            class="inline h-[500px]"
+            :src="caseStudy.animation[0].image"
+            :alt="caseStudy.animation[0].alt"
+          />
+        </div>
         <p class="mt-2 text-label01">{{ caseStudy.animation[0].caption }}</p>
 
         <p class="mt-4">
@@ -234,24 +243,26 @@
           Paper wireframes
         </h3>
         <p class="text-left mb-gutter-y-0.5">
-          同じく事実に内談人は同時にその講演だろございばかりに立ち竦んからいないがは矛盾いたないて、ますますにも射しましありうまし。人を云っでしのはどうか今日に無論あっなけれだろ。
+          {{ caseStudy.wireframes.content }}
         </p>
         <img
-          :src="caseStudy.wireframes[0].image"
-          :alt="caseStudy.wireframes[0].alt"
+          :src="caseStudy.wireframes.images[0].image"
+          :alt="caseStudy.wireframes.images[0].alt"
         />
+        <p class="mt-2 text-label01">
+          {{ caseStudy.wireframes.images[0].caption }}
+        </p>
       </div>
       <div v-if="caseStudy.digitalWireframes" class="mb-gutter-y">
         <h3 class="text-header04 text-left py-gutter-y-0.5">
           Digital wireframes
         </h3>
         <p class="text-left mb-4">
-          Paper wireframeをもとにさらにブラッシュアップしたDigital
-          wireframesをFigmaで作成しました。
+          {{ caseStudy.digitalWireframes.content }}
         </p>
         <img
-          :src="caseStudy.digitalWireframes[0].image"
-          :alt="caseStudy.digitalWireframes[0].alt"
+          :src="caseStudy.digitalWireframes.images[0].image"
+          :alt="caseStudy.digitalWireframes.images[0].alt"
         />
       </div>
       <div v-if="caseStudy.lowFidelityPrototype" class="">
@@ -259,16 +270,15 @@
           Low-fidelity prototype
         </h3>
         <p class="text-left mb-4">
-          Digital
-          wireframesをもとにプロトタイプを作り、足りない画面を追加で作成しました。
+          {{ caseStudy.lowFidelityPrototype.content }}
         </p>
         <img
-          :src="caseStudy.lowFidelityPrototype[0].image"
-          :alt="caseStudy.lowFidelityPrototype[0].alt"
+          :src="caseStudy.lowFidelityPrototype.images[0].image"
+          :alt="caseStudy.lowFidelityPrototype.images[0].alt"
         />
         <p class="text-right mt-2">
           <a
-            :href="caseStudy.lowFidelityPrototype[0].link"
+            :href="caseStudy.lowFidelityPrototype.images[0].link"
             target="_blank"
             class="border-b border-Link-primary text-Link-primary"
             >View Low-fidelity prototype</a
@@ -277,43 +287,56 @@
       </div>
     </section>
     <section
-      v-if="caseStudy.usabilityStudy"
+      v-if="caseStudy.usabilityTest"
       class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto py-gutter-y-2"
     >
+      <!-- <UsabilityTest :data="caseStudy.usabilityTestLow" /> -->
+
       <h2 class="text-header01 mb-gutter-y">Usability Test</h2>
       <div class="mb-gutter-y">
         <h3 class="text-header04 text-left py-gutter-y-0.5">Usability study</h3>
-        <p class="text-left mb-gutter-y-0.5">
-          {{ caseStudy.usabilityStudy[0].content }}
+        <p class="text-left mb-gutter-y-0.5 whitespace-pre-wrap">
+          {{ caseStudy.usabilityTest.usabilityStudy[0].content }}
         </p>
       </div>
-      <div v-if="caseStudy.affinityDiagram" class="mb-8">
+      <div v-if="caseStudy.usabilityTest.affinityDiagram" class="mb-8">
         <h3 class="text-header04 text-left py-gutter-y-0.5">
           Affinity diagram
         </h3>
+        <p class="text-left mb-4">
+          {{ caseStudy.usabilityTest.affinityDiagram.content }}
+        </p>
         <img
-          :src="caseStudy.affinityDiagram[0].image"
-          :alt="caseStudy.affinityDiagram[0].alt"
+          :src="caseStudy.usabilityTest.affinityDiagram.images[0].image"
+          :alt="caseStudy.usabilityTest.affinityDiagram.images[0].alt"
         />
       </div>
-      <div v-if="caseStudy.prioritizedInsights" class="">
+      <div v-if="caseStudy.usabilityTest.prioritizedInsights" class="">
         <h3 class="text-header04 text-left py-gutter-y-0.5">
           Prioritized Insights
         </h3>
         <p class="text-left mb-8">
-          ユーザビリティテストの中から優先度の高い変更を３つに絞りました。
+          {{ caseStudy.usabilityTest.prioritizedInsights.content }}
         </p>
         <ul>
           <li
-            v-for="(section, index) in caseStudy.prioritizedInsights"
+            v-for="(section, index) in caseStudy.usabilityTest
+              .prioritizedInsights.lists"
             :key="index"
-            class="mb-8 grid md:grid-cols-2 gap-gutter-x"
+            class="mb-8 grid md:grid-cols-2 gap-gutter-x bg-BG-secondary p-10 last:mb-0"
           >
             <div class="">
-              <h4 class="text-left text-header06 mb-6">
-                {{ index + 1 }}.{{ section.header }}
-              </h4>
-              <p class="text-left whitespace-pre-wrap">{{ section.content }}</p>
+              <div>
+                <p class="text-header03 mb-5">0{{ index + 1 }}</p>
+                <h4 class="text-left text-header06 mb-6">
+                  {{ section.header }}
+                </h4>
+              </div>
+              <p class="text-left whitespace-pre-wrap mb-5">
+                {{ section.content }}
+              </p>
+              <p>{{ section.quotes }}</p>
+              <p>{{ section.modify }}</p>
             </div>
             <img :src="section.image" alt="" />
           </li>
@@ -363,6 +386,22 @@
         <img :src="caseStudy.logo[0].image" :alt="caseStudy.logo[0].alt" />
         <p class="mt-2 text-label01">{{ caseStudy.logo[0].caption }}</p>
       </div>
+      <div v-if="caseStudy.website">
+        <h3 class="text-header04 text-left py-gutter-y-0.5">Web site</h3>
+        <p class="text-left mb-2">{{ caseStudy.website.content }}</p>
+        <img
+          :src="caseStudy.website.images[0].image"
+          :alt="caseStudy.website.images[0].alt"
+        />
+        <p class="mt-2 text-right">
+          <a
+            :href="caseStudy.website.images[0].link"
+            target="_blank"
+            class="border-b border-Link-primary text-Link-primary"
+            >View High-fidelity prototype</a
+          >
+        </p>
+      </div>
     </section>
     <section v-if="caseStudy.nextStep" class="bg-BG-secondary">
       <div
@@ -390,6 +429,7 @@ import MoreWorks from "@/components/MoreWorks.vue";
 import UserJourneyMap from "@/components/UserJourneyMap.vue";
 import PersonaCard from "@/components/PersonaCard.vue";
 import FlexibleCard from "@/components/FlexibleCard.vue";
+// import UsabilityTest from "@/components/UsabilityTest.vue";
 
 export default {
   name: "CaseStudyView",
@@ -398,6 +438,7 @@ export default {
     UserJourneyMap,
     PersonaCard,
     FlexibleCard,
+    // UsabilityTest,
   },
   setup() {
     const { tm } = useI18n();

@@ -3,14 +3,14 @@
   <div>
     <h3 class="text-header04 text-left my-gutter-y-0.5">User journey map</h3>
     <p class="text-left my-gutter-y-0.5">
-      ペルソナの中で特に重要なペルソナのガブリエルがどのような体験をするかユーザージャーニーマップを作成しました。
+      {{ data.content }}
     </p>
     <div
-      v-for="(persona, personaIndex) in data"
+      v-for="(persona, personaIndex) in data.map"
       :key="'persona-' + personaIndex"
       class="mb-10"
     >
-      <h4 class="text-header05 text-left mb-2">
+      <h4 class="text-header06 text-left mb-2">
         {{ persona.name }}
       </h4>
       <div class="overflow-auto relative whitespace-nowrap">

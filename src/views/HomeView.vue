@@ -27,7 +27,9 @@
                   {{ product.name }}
                 </h2>
 
-                <p class="mb-gutter-y-0.5">{{ product.intro }}</p>
+                <p class="mb-gutter-y-0.5 whitespace-pre-wrap">
+                  {{ product.intro }}
+                </p>
                 <ul>
                   <li
                     v-for="(tag, idx) in product.tags"
