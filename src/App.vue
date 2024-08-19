@@ -11,16 +11,31 @@
     </div>
     <div class="flex items-center">
       <nav class="mr-gutter-x">
-        <router-link
-          class="font-sortsMillGoudy text-[1.5rem] mr-4 transition-opacity duration-300 ease-out hover:opacity-30"
-          to="/"
-          >Home</router-link
-        >
-        <router-link
-          class="font-sortsMillGoudy text-[1.5rem] transition-opacity duration-300 ease-out hover:opacity-30"
-          to="/about"
-          >About</router-link
-        >
+        <!-- Home Link -->
+        <template v-if="!isCurrentPage('/')">
+          <router-link
+            class="font-sortsMillGoudy text-[1.5rem] mr-4 transition-opacity duration-300 ease-out hover:opacity-30"
+            :to="{ name: 'Home' }"
+          >
+            Home
+          </router-link>
+        </template>
+        <template v-else>
+          <span class="font-sortsMillGoudy text-[1.5rem] mr-4"> Home </span>
+        </template>
+
+        <!-- About Link -->
+        <template v-if="!isCurrentPage('/about')">
+          <router-link
+            class="font-sortsMillGoudy text-[1.5rem] transition-opacity duration-300 ease-out hover:opacity-30"
+            :to="{ name: 'About' }"
+          >
+            About
+          </router-link>
+        </template>
+        <template v-else>
+          <span class="font-sortsMillGoudy text-[1.5rem]"> About </span>
+        </template>
       </nav>
       <div :class="currentLangClass">
         <button
@@ -50,25 +65,45 @@
 </template>
 
 <script>
+import { useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
-import { computed } from "vue";
+import { computed, onMounted } from "vue";
 
 export default {
   setup() {
+    // 言語切り替えロジック
     const { locale } = useI18n();
+
+    onMounted(() => {
+      const savedLanguage = localStorage.getItem("language");
+      if (savedLanguage) {
+        locale.value = savedLanguage;
+      }
+    });
+
     const currentLangClass = computed(() =>
       locale.value === "en" ? "font-english" : "font-japanese"
     );
+
     const currentLanguage = computed(() => locale.value);
 
     const switchLanguage = (lang) => {
       locale.value = lang;
+      localStorage.setItem("language", lang);
+    };
+
+    // ナビゲーションリンクロジック
+    const route = useRoute();
+
+    const isCurrentPage = (path) => {
+      return route.path === path;
     };
 
     return {
       currentLangClass,
       currentLanguage,
       switchLanguage,
+      isCurrentPage,
     };
   },
 };

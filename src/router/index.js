@@ -7,7 +7,7 @@ import TestPageView from "@/views/TestPageView.vue";
 const routes = [
   {
     path: "/",
-    name: "home",
+    name: "Home",
     component: HomeView,
   },
   {
