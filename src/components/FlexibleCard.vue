@@ -6,7 +6,7 @@
     <li
       v-for="(card, index) in data"
       :key="index"
-      class="bg-BG-secondary p-gutter-x-1.5 md:p-gutter-x-0.5"
+      class="bg-BG-secondary p-gutter-x-1.5 md:p-5"
     >
       <h4 class="text-header06 text-olive mb-2 text-left">{{ card.header }}</h4>
       <p class="text-left">{{ card.content }}</p>

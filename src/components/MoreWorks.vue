@@ -1,8 +1,12 @@
 <template>
-  <section class="py-gutter-y-2 px-[min(60px,4.6875vw)]">
-    <h2 class="text-header01 mb-gutter-y-0.5 text-left">More Works</h2>
+  <section class="py-20 px-[min(60px,4.6875vw)]">
+    <h2 class="text-header01 mb-5 text-left">More Works</h2>
     <ul class="grid grid-cols-1 md:grid-cols-3 gap-gutter-x">
-      <li v-for="(product, index) in filteredProducts" :key="index">
+      <li
+        class="mb-8 md:mb-0"
+        v-for="(product, index) in filteredProducts"
+        :key="index"
+      >
         <a
           class="transition-opacity duration-300 ease-out hover:opacity-70"
           :href="'/' + product.id"

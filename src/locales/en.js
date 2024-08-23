@@ -5,13 +5,12 @@ export default {
   },
   about: {
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus arcu, eleifend sed malesuada in, auctor nec lectus. Aliquam varius sodales elit id hendrerit. Duis quis enim in quam tempor venenatis.",
+      "For 9 years, I have been involved in the management and redesign of large-scale websites across various industries, including education, finance, and health product manufacturing. I have focused primarily on UI design, UI improvement, and CSS architecture using Sass, collaborating closely with engineers to create user-friendly websites.\n\nI have worked as a designer at two companies, and after moving to Ireland, I began working as a freelancer. I currently reside in Sapporo.\n\nAfterward, I developed an interest in UX design and earned the Google UX Design Professional Certificate from Coursera in 2024.",
     content2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus arcu, eleifend sed malesuada in, auctor nec lectus. Aliquam varius sodales elit id hendrerit. Duis quis enim in quam tempor venenatis.",
+      "With a user-centered approach, I emphasize deep insight and empathy, striving to understand user behavior and needs. My goal is to create visually appealing yet user-friendly designs.\n\nIn coding, I aim to write clear and maintainable code that is easy for the entire team to manage. Drawing on my web design experience, I am strongly attracted to UX design, which allows for closer interaction with users. Solving user problems and enhancing experiences are what drive me in my design work.\n\nCurrently, I am interested in key steps of the UX design process, such as user interviews, competitor analysis, and creating personas and storyboards, and I aim to incorporate these elements actively into my designs.",
     content3:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus arcu, eleifend sed malesuada in, auctor nec lectus. Aliquam varius sodales elit id hendrerit. Duis quis enim in quam tempor venenatis.",
-    content4:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus arcu, eleifend sed malesuada in, auctor nec lectus. Aliquam varius sodales elit id hendrerit. Duis quis enim in quam tempor venenatis.",
+      "In my personal life, I enjoy hobbies such as illustration, travel, learning Italian, and cooking. I love learning new things and quickly try out whatever catches my interest. Having lived abroad, I have developed a sense of different cultures, even though my English isn't perfect.\n\nI also create and sell iOS apps on my own, with a focus on apps that add value to daily life.",
+    content4: "",
   },
   caseStudies: [
     {
@@ -21,7 +20,7 @@ export default {
       tags: ["iOS App", "Coursera"],
       image: "/images/hosync/thumbnail.jpg",
       intro:
-        "A useful legal information app for everyday life for those who are not familiar with the law",
+        "A useful legal information app for everyday life for those who are not familiar with the law, which I created as part of a Coursera assignment.",
       hero: "/images/hosync/hero.jpg",
       heroClass:
         "md:translate-y-[-50%] md:left-[min(120px,9.375vw)] lg:left-[min(200px,15.625vw)] md:top-[50%] md:w-[33vw] lg:w-[25vw]",
@@ -48,7 +47,7 @@ export default {
         },
         {
           header: "Year of Production",
-          content: "2023",
+          content: "2023-2024",
         },
         {
           header: "Software",
@@ -62,24 +61,25 @@ export default {
         },
       ],
       research:
-        "We interviewed general people who are not directly involved with the law in their work but are interested in it. The interviews were conducted to understand the following points: ・To what extent general people have come into contact with the law ・How to create a service that general people would use ・How this app could potentially benefit the general public The main user group identified through the interviews were general people who do not professionally deal with the law in their work but are interested in laws related to their jobs or lives. Although they have some interest and may have looked into the law after coming across it on social media, they often found it difficult to understand, or even if they did understand, they only researched it at the moment and did not follow up on the developments afterward.",
+        "We interviewed general people who are not directly involved with the law in their work but are interested in it.\n\nThe interviews were conducted to understand the following points:\n\n・To what extent general people have come into contact with the law\n・In what ways and what types of laws they typically encounter\n・How this app could potentially benefit the general public\n\nThrough the interviews, we discovered that while these individuals are not professionally involved with the law, they do have an interest in laws related to their jobs or lives. They may look into legal matters when they come across them on social media, but often find it difficult to understand, and even when they do, they tend to only research at the moment without following up on further developments.",
+
       painPointsContent:
-        "We summarized the problems identified through the interviews into the following three points.",
+        "I summarized the problems identified through the interviews into the following three points.",
 
       painPoints: [
         {
           header: "Clarity",
-          content: "There is a language barrier for foreigners.",
+          content:
+            "The original text of the law is difficult for the general public to understand.",
         },
         {
           header: "Ease of Finding",
-          content:
-            "Audio guide apps only provide voice, with no support options.",
+          content: "It's hard to know which laws are relevant to oneself.",
         },
         {
-          header: "Convenience Features",
+          header: "Continuity",
           content:
-            "Audio guide apps do not provide support during crowded times.",
+            "A system is needed that allows for repeated and regular use.",
         },
       ],
       persona: {
@@ -125,7 +125,7 @@ export default {
               "To find and use convenient systems during tax filing",
             ],
             frustrations: [
-              "If I am not aware of tax-saving systems, I could lose money.",
+              "Not being aware of tax-saving systems has cost me money.",
               "I keep an eye out for laws related to designers, but I get information from others, so it is not always reliable.",
             ],
             bio: "Natsumi Hasegawa works as a freelance designer in Tokyo. She files her taxes every year. Due to the nature of her work, she has researched copyright, but she is not an expert. She has a basic knowledge from her own research.",
@@ -155,7 +155,7 @@ export default {
               {
                 action: "Researches laws related to building a house",
                 task: "A. Searches Google for laws\nB. Finds Hōsync",
-                feeling: "Anxiety about whether he can understand",
+                feeling: "Anxiety about whether I can understand",
               },
               {
                 action: "Finds a site that compiles laws",
@@ -178,8 +178,8 @@ export default {
             name: "Natsumi Hasegawa",
             table: [
               {
-                action: "Learns about a copyright amendment on social media",
-                task: "A. Looks at social media\nB. Learns about the copyright amendment",
+                action: "Finds out about a copyright amendment on social media",
+                task: "A. Looks at social media\nB. Finds out about the copyright amendment",
                 feeling: "Stress from not understanding the details",
                 opportunities:
                   "Posting on social media as well can help users find information faster",
@@ -220,7 +220,7 @@ export default {
         {
           header: "Competitor Analysis",
           content:
-            "Since there were few services providing legal information to the general public, we focused our research on how news sites present information to the public.",
+            "Since there were few services providing legal information to the general public, I focused my research on how news sites present information to the public.",
           strengths: [
             "Users can register as members, but the service is also usable without registration",
             "Clear and consistent navigation",
@@ -253,7 +253,7 @@ export default {
           userStory:
             "As a professional designer, I want to work responsibly with knowledge of industry information. Therefore, I want to collect information in a more efficient and reliable way.",
           problemStatement:
-            "Natsumi Hasegawa is a freelance designer. She needs to be aware of changes in laws that affect her work because keeping up with these changes is crucial for her profession.",
+            "Natsumi Hasegawa is a freelance designer. She needs to be able to easily gather legal knowledge that she can use for her work because she wants to use that knowledge to make her work go more smoothly.",
           goalStatement:
             "Hōsync provides a function to register laws of interest. This function helps ordinary people who are not tracking laws to notice amendments related to their work. We will measure the effectiveness by tracking the usage of the notification function in the app.",
         },
@@ -278,7 +278,7 @@ export default {
       ],
 
       prototype:
-        "We will move on to creating a prototype to achieve Gabriel's goals.",
+        "We will move on to creating a prototype to achieve Takuya Yoshida's goals.",
       wireframes: {
         content: "",
 
@@ -312,7 +312,7 @@ export default {
         usabilityStudy: [
           {
             content:
-              "We conducted a usability test to understand if the design allows users to easily find and obtain information about laws relevant to them.",
+              "I needed to ensure that the design allows users to easily find and obtain information on laws relevant to them, so I conducted a usability test on the low-fidelity prototype that I created.",
           },
         ],
         prioritizedInsights: {
@@ -324,9 +324,9 @@ export default {
                 "The onboarding process was unclear, and it took time to proceed.",
               content: "",
               quotes:
-                "“It was a bit confusing, so it was a little difficult. I wasn't sure if the first six buttons were for following, but then I realized they were after transitioning to the next screen.”",
+                "“ちょっと混乱があったので少し難しかったです。最初の6つのボタンがフォローをするボタンかわからなかったが、その後に遷移した画面にフォローするとあったのでそれでわかった” ",
               modify:
-                "We added explanations and redesigned the buttons to make them more easily recognizable.",
+                "I added explanations and redesigned the buttons to make them more easily recognizable.",
               image: "/images/hosync/insight01.png",
             },
           ],
@@ -359,7 +359,7 @@ export default {
       tags: ["iOS App", "Coursera"],
       image: "/images/national-gallery/thumbnail.jpg",
       intro:
-        "I created an easy-to-understand audio guide app for museum visitors, even if it's not in their native language, as part of a Coursera assignment.",
+        "An easy-to-understand audio guide app for museum visitors, even if it's not in their native language, which I created as part of a Coursera assignment.",
       hero: "/images/national-gallery/hero.jpg",
       heroClass:
         " md:translate-x-[-50%] md:translate-y-[-50%] md:left-[50%] md:top-[48%] md:text-BG-tertiary",
@@ -648,7 +648,7 @@ export default {
 
     {
       id: "oshitimer",
-      name: "Oshi Timer",
+      name: "OshiTimer",
       year: "2020",
       tags: ["iOS App", "Available"],
       image: "/images/oshitimer/thumbnail.jpg",
@@ -676,7 +676,7 @@ export default {
         {
           header: "Responsibilities",
           content:
-            "・Defining the problem\n・iOS design\n・Icon design\n・Website design\n・Motion design\n・Direction",
+            "・Defining the problem\n・iOS app design\n・Icon design\n・Website design\n・Motion design\n・Direction",
         },
         {
           header: "Year of Production",
@@ -684,7 +684,7 @@ export default {
         },
         {
           header: "Software Used",
-          content: "Figma, Adobe AfterEffects, Xcode, Illustrator",
+          content: "Figma, Adobe AfterEffects, Xcode, Adobe Illustrator",
         },
       ],
       link: [
@@ -739,7 +739,7 @@ export default {
         },
       ],
       design:
-        "After finalizing the feature requirements and solidifying the image with animations, here is the latest mockup. It has been well-received since its release, and we have also added features. The additions include:\n・Added a paid plan\n・Expanded functionality to allow multiple images to be registered\n・Added color variations",
+        "Here is the latest mockup after finalizing the feature requirements and clarifying the idea with animations. It has been well-received since its release, and we have also added features. The additions include:\n・Added a paid plan\n・Expanded functionality to allow multiple images to be registered\n・Added color variations",
       mockups: [
         {
           image: "/images/oshitimer/mockups.png",
@@ -770,7 +770,7 @@ export default {
         },
       ],
       nextStep:
-        "The timer app we created was filled with our ideals, and we were pleasantly surprised by how many people used it. We believe the reason it was chosen among the many timer apps was the unique ideas and direction. Up until now, we have been creating what we wanted, but in the future, we aim to clearly define the user and conduct user tests to develop an app that is more user-friendly and convenient. The upcoming features we plan to add are as follows:\n・Ability to set multiple timers\n・SNS share button\n・Calendar function",
+        "The timer app we created was filled with our ideals, and we were pleasantly surprised by how many people used it. We believe the reason it was chosen among the many timer apps was the unique ideas and direction. \n\nUp until now, we have been creating what we wanted, but in the future, we aim to clearly define the user and conduct user tests to develop an app that is more user-friendly and convenient. \n\nThe upcoming features we plan to add are as follows:\n・Ability to set multiple timers\n・SNS share button\n・Calendar function",
     },
   ],
 };

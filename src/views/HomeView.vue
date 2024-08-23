@@ -1,20 +1,25 @@
 <template>
   <div class="">
     <main>
-      <section class="mb-gutter-y pb-gutter-y relative">
+      <section
+        class="max-w-[1280px] mx-auto mb-gutter-y-2 pb-gutter-y relative h-[min(560px,60vw)] md:h-[min(560px,43.75vw)]"
+      >
         <div
-          class="m-auto absolute translate-y-[-50%] top-[61%] left-[16vw] text-left"
+          class="m-auto absolute translate-y-[-50%] top-[68%] md:top-[75%] left-[9.375vw] md:left-[16vw] text-left w-[max(26.5625vw,140px)]"
         >
-          <h1 class="text-header03 md:text-header01 mb-2 whitespace-pre-wrap">
+          <h1
+            class="text-[6.15384vw] font-sortsMillGoudy leading-7 md:text-header03 lg:text-header01 mb-2 whitespace-pre-wrap"
+          >
             {{ $tm("home.title") }}
           </h1>
-          <p class="text-header06 whitespace-pre-wrap">
+          <p class="text-[max(1.5625vw,12px)] whitespace-pre-wrap">
             {{ $tm("home.description") }}
           </p>
         </div>
-        <img class="w-full" src="/images/kv.png" alt="" />
+
+        <img class="max-h-[560px] inline-block" src="/images/kv.png" alt="" />
       </section>
-      <section class="w-[min(1040px,81.25vw)] m-auto">
+      <section class="w-[min(1040px,81.25vw)] m-auto mb-20">
         <ul>
           <li
             v-for="(product, index) in caseStudies"

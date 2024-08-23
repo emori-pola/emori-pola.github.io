@@ -1,6 +1,6 @@
 <!-- src/views/CaseStudyView.vue -->
 <template>
-  <div class="md:pt-[120px] lg:pt-[120px] pt-[90px]" v-if="caseStudy">
+  <div class="md:pt-[120px] lg:pt-[120px] pt-[60px]" v-if="caseStudy">
     <section class="relative">
       <div
         v-if="caseStudy.id === 'oshitimer'"
@@ -26,7 +26,7 @@
       >
         <div :class="caseStudy.heroClassWrap">
           <h1
-            class="text-header02 mb-4 md:text-header04 lg:text-header02 md:text-left"
+            class="text-header02 mb-4 md:text-[2rem] md:font-sortsMillGoudy lg:text-header02 md:text-left"
           >
             {{ caseStudy.name }}
           </h1>
@@ -99,7 +99,7 @@
         >
           <div
             v-if="caseStudy.competitor[0].strengths"
-            class="text-left bg-BG-secondary p-gutter-x-1.5 md:p-gutter-x-0.5"
+            class="text-left bg-BG-secondary p-gutter-x-1.5 md:p-5"
           >
             <h4 class="text-header06 text-olive mb-2 text-left">強み</h4>
             <ul>
@@ -225,7 +225,7 @@
         </p>
         <div class="text-center w-full bg-[#b5beab] py-10 px-10">
           <img
-            class="inline h-[500px]"
+            class="inline max-h-[500px]"
             :src="caseStudy.animation[0].image"
             :alt="caseStudy.animation[0].alt"
           />
