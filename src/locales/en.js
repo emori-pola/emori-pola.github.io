@@ -61,7 +61,7 @@ export default {
         },
       ],
       research:
-        "We interviewed general people who are not directly involved with the law in their work but are interested in it.\n\nThe interviews were conducted to understand the following points:\n\n・To what extent general people have come into contact with the law\n・In what ways and what types of laws they typically encounter\n・How this app could potentially benefit the general public\n\nThrough the interviews, we discovered that while these individuals are not professionally involved with the law, they do have an interest in laws related to their jobs or lives. They may look into legal matters when they come across them on social media, but often find it difficult to understand, and even when they do, they tend to only research at the moment without following up on further developments.",
+        "I interviewed general people who are not directly involved with the law in their work but are interested in it.\n\nThe interviews were conducted to understand the following points:\n\n・To what extent general people have come into contact with the law\n・In what ways and what types of laws they typically encounter\n・How this app could potentially benefit the general public\n\nThrough the interviews, I discovered that while these individuals are not professionally involved with the law, they do have an interest in laws related to their jobs or lives. They may look into legal matters when they come across them on social media, but often find it difficult to understand, and even when they do, they tend to only research at the moment without following up on further developments.",
 
       painPointsContent:
         "I summarized the problems identified through the interviews into the following three points.",
@@ -84,7 +84,7 @@ export default {
       ],
       persona: {
         content:
-          "Through conducting interviews and deriving insights, we created two personas.",
+          "Through conducting interviews and deriving insights, I created two personas.",
         personas: [
           {
             name: "Takuya Yoshida",
@@ -246,7 +246,7 @@ export default {
           problemStatement:
             "Takuya Yoshida is a parent of two children. He needs to easily understand the laws related to building a house because he is about to start preparing to build one but is not an expert and lacks knowledge.",
           goalStatement:
-            "Hōsync provides a function to search for laws in categories of interest. This function allows ordinary people who are not familiar with laws to understand them and use the information to improve their lives. We will measure the effectiveness by tracking the number of accesses to the general public pages in the app.",
+            "Hōsync provides a function to search for laws in categories of interest. This function allows ordinary people who are not familiar with laws to understand them and use the information to improve their lives. I will measure the effectiveness by tracking the number of accesses to the general public pages in the app.",
         },
         {
           name: "Natsumi Hasegawa",
@@ -255,12 +255,12 @@ export default {
           problemStatement:
             "Natsumi Hasegawa is a freelance designer. She needs to be able to easily gather legal knowledge that she can use for her work because she wants to use that knowledge to make her work go more smoothly.",
           goalStatement:
-            "Hōsync provides a function to register laws of interest. This function helps ordinary people who are not tracking laws to notice amendments related to their work. We will measure the effectiveness by tracking the usage of the notification function in the app.",
+            "Hōsync provides a function to register laws of interest. This function helps ordinary people who are not tracking laws to notice amendments related to their work. I will measure the effectiveness by tracking the usage of the notification function in the app.",
         },
       ],
       storyboard: {
         content:
-          "We created a storyboard imagining the scene where Takuya Yoshida uses the app.",
+          "I created a storyboard imagining the scene where Takuya Yoshida uses the app.",
         bigPicture: {
           image: "/images/hosync/storyboard_bigpicture.jpg",
           alt: "Big Picture",
@@ -278,7 +278,7 @@ export default {
       ],
 
       prototype:
-        "We will move on to creating a prototype to achieve Takuya Yoshida's goals.",
+        "I will move on to creating a prototype to achieve Takuya Yoshida's goals.",
       wireframes: {
         content: "",
 
@@ -317,7 +317,7 @@ export default {
         ],
         prioritizedInsights: {
           content:
-            "We implemented changes based on the insights gained from the test results.",
+            "I implemented changes based on the insights gained from the test results.",
           lists: [
             {
               header:
@@ -334,7 +334,7 @@ export default {
       },
 
       design:
-        "Based on the results of the usability test, we created the mockups.",
+        "Based on the results of the usability test, I created the mockups.",
       mockups: [
         {
           image: "/images/hosync/mockups.png",
@@ -401,9 +401,9 @@ export default {
         },
       ],
       research:
-        "I conducted fictional interviews and created empathy maps to understand the users I’m designing for and their needs. A primary use group identified through research was foreigner interested in art who don’t fully enjoy audio-tour to have a language barrier. This user group confirmed initial assumptions about audio-tour app customers,  but research also revealed that language was not the only factor limiting users from enjoying the audio-tour app. Other user problems included crowded or time that make it difficult for them to finish seeing the museum",
+        "First, to understand the actions and feelings of users when using an audio guide, I conducted a hypothetical interview. The interview was conducted to understand the following points:\n\n・When do users use audio guides?\n・When do they feel stressed or inconvenienced by the audio guide?\n・What do they expect from the audio guide?\n\nThe main user group identified through the interviews was art enthusiasts who are foreigners and face language barriers, making it difficult for them to fully enjoy the audio guide. This group matched our initial assumptions, but I also discovered that language is not the only factor limiting their enjoyment of the audio guide app. Other issues include difficulties in completing the museum tour due to crowding or time constraints.",
       painPointsContent:
-        "We summarized the problems identified through the interviews into the following four points.",
+        "I summarized the problems identified through the interviews into the following four points.",
 
       painPoints: [
         {
@@ -425,7 +425,7 @@ export default {
         },
       ],
       persona: {
-        content: "We created personas based on the interviews.",
+        content: "I created personas based on the interviews.",
         personas: [
           {
             name: "Gabriel",
@@ -437,7 +437,7 @@ export default {
             family: "Lives with parents",
             occupation: "Full time student",
             header:
-              "If I am paying to use an audio guide,\nI want to use it to its fullest.",
+              "If I am paying to use an audio guide, I want to use it to its fullest.",
             goals: [
               "to completely understand of the content of the audio guide",
               "To obtain information that would only be available at the museum",
@@ -451,7 +451,7 @@ export default {
       },
       userJourney: {
         content:
-          "We created a user journey map to illustrate the experience of Gabriel, the most important persona.",
+          "I created a user journey map to illustrate the experience of Gabriel, the most important persona.",
         map: [
           {
             name: "Gabriel",
@@ -463,7 +463,7 @@ export default {
                   "happy to find the interesting exhibition\nWorried that language might be a barrier",
               },
               {
-                action: "Buy a ticket and audio-tour app",
+                action: "Buy a ticket and audio guide app",
                 task: "A. queue at the ticket office\nB. buy a ticket and audio-tour",
                 feeling: "Disappointed that the line is long",
                 opportunities:
@@ -475,7 +475,7 @@ export default {
                 feeling: "Excited about the museum",
               },
               {
-                action: "Use the audio-tour app",
+                action: "Use the audio guide app",
                 task: "A. select English\nB. listen the audio guide\nC. listen again same section",
                 feeling:
                   "Overwhelmed by audio-tour speed\nIrritated by difficult understanding the audio-tour",
@@ -498,7 +498,7 @@ export default {
         {
           header: "Competitor Analysis",
           content:
-            "To understand the industry, we conducted research on how competitors offering audio guide apps provide their experiences.",
+            "To understand the industry, I conducted research on how competitors offering audio guide apps provide their experiences.",
           strengths: [
             "Uses maps and shows the current location",
             "Reliable explanations",
@@ -515,25 +515,25 @@ export default {
         },
       ],
       researchResult:
-        "From the above research, we became convinced that providing support when a language is not supported can further enhance the value of the app.",
+        "From the above research, I became convinced that providing support when a language is not supported can further enhance the value of the app.",
       definingTheProblemsContent:
-        "Based on the research so far, we identified problems to deepen our understanding of Gabriel.",
+        "Based on the research so far, I identified problems to deepen our understanding of Gabriel.",
       definingTheProblems: [
         {
           name: "Gabriel",
           userStory:
-            "As an International student interested in art I want to change speed and display text of an audio guideso that I can fully enjoy the contents of the museum.",
+            "As an International student interested in art I want to change speed and display text of an audio guide, so that I can fully enjoy the contents of the museum.",
 
           problemStatement:
             "Gabriel is a foreigner student who needs to completely understand of the content of the audio guide if they select non-native language because they can pay same amount of money and receive equivalent service whether their native language or not",
           goalStatement:
-            "Our audio guide app will let users use an audio playback function that makes it easy for anyone to understand the content which will affect visitor who use the audio app in languages other than their native language by giving them to ability to enjoy same We will measure effectiveness by tracking uses the function in app.",
+            "Our audio guide app will let users use an audio playback function that makes it easy for anyone to understand the content which will affect visitor who use the audio app in languages other than their native language by giving them to ability to enjoy same. I will measure effectiveness by tracking uses the function in app.",
         },
       ],
 
       storyboard: {
         content:
-          "We created a storyboard envisioning the scene where Gabriel uses the app.",
+          "I created a storyboard imagining the scene where Gabriel uses the app.",
         bigPicture: {
           image: "/images/national-gallery/storyboard_bigpicture.jpg",
           alt: "Big Picture",
@@ -550,7 +550,7 @@ export default {
         },
       ],
       prototype:
-        "With a deeper understanding of Gabriel, we moved on to creating a prototype to achieve the goals.",
+        "With a deeper understanding of Gabriel, I moved on to creating a prototype to achieve the goals.",
 
       wireframes: {
         content: "",
@@ -563,7 +563,7 @@ export default {
       },
       digitalWireframes: {
         content:
-          "Based on the paper wireframes, we further refined and created digital wireframes in Figma.",
+          "Based on the paper wireframes, I further refined and created digital wireframes in Figma.",
         images: [
           {
             image: "/images/national-gallery/low-fidelity-prototype.png",
@@ -573,7 +573,7 @@ export default {
       },
       lowFidelityPrototype: {
         content:
-          "We created a prototype based on the digital wireframes and added any missing screens.",
+          "I created a prototype based on the digital wireframes and added any missing screens.",
         images: [
           {
             image: "/images/national-gallery/low-fidelity-prototype.png",
@@ -582,42 +582,63 @@ export default {
           },
         ],
       },
-      usabilityStudy: {
+      usabilityTest: {
         usabilityStudy: [
           {
             content:
-              "Users need a clearer map display with photos and descriptions.",
+              "I needed to determine whether selecting artworks from the map in the audio guide app and playing the audio guide was easy for users. Therefore, I conducted a usability test on the low-fidelity prototype that I created. \n\nParticipants: 5 people\nAge group: 20s to 30s\nAverage time: 15 minutes\nTask success rate: 20%\nError rate: 40%\n\nThe results of the test revealed many points where users encountered difficulties.",
           },
         ],
-        affinityDiagram: [
-          {
-            image: "/images/national-gallery/affinity-diagram.png",
-            alt: "Affinity Diagram",
-          },
-        ],
+        affinityDiagram: {
+          content:
+            "I grouped and organized the users' feedback and behaviors from the test into an Affinity diagram.",
+          images: [
+            {
+              image: "/images/national-gallery/affinity-diagram.png",
+              alt: "Affinity Diagram",
+            },
+          ],
+        },
+        prioritizedInsights: {
+          content:
+            "I implemented three high-priority changes based on the insights gained from the test results.",
+          lists: [
+            {
+              header:
+                "It was difficult to find the artworks due to not enough map descriptions.",
+              content:
+                "All 5 participants struggled to find the artworks on the map.",
+              quotes:
+                "“I was a bit confused when I saw the map from the home screen because the circle is a bit ambiguous and not sure what represents” (Participant C)",
+              modify:
+                "I redesigned the map by displaying the user's current location and using photos from the initial screen, making it more intuitive for users to recognize the museum map.",
+              image: "/images/national-gallery/insight01.png",
+            },
+            {
+              header:
+                "For many users, the difference between 'Artwork in detail' and 'Audio guide in detail' was not clear.",
+              content:
+                "3 out of 5 participants were confused by the difference between 'Artwork in detail' and 'Audio guide in detail'.",
+              quotes:
+                "“I don't see the difference between the audio guide and the artwork in detail. Isn't it the same thing? I'm not sure.” (Participant D)",
+              modify:
+                "Since it was unclear where 'Artwork in detail' and 'Audio guide in detail' were located, I combined them into one tab.",
+              image: "/images/national-gallery/insight02.png",
+            },
+            {
+              header: "Not everyone is familiar with music playback UI.",
+              content:
+                "3 out of 5 participants did not intuitively understand the music playback UI, like Apple Music or Spotify.",
+              quotes:
+                "“The color is a little bit darker than other parts, but I couldn't find it. It can be tappable, able to tap or not. ” (Participant E)",
+              modify:
+                "Since it was unclear to some users that tapping the music playback UI at the bottom of the screen would lead them to the details of the audio guide, I simplified the interface to only include play/pause and speed change functions.",
+              image: "/images/national-gallery/insight03.png",
+            },
+          ],
+        },
       },
-      prioritizedInsights: {
-        content:
-          "We implemented three high-priority changes based on the insights gained from the test results.",
-        lists: [
-          {
-            content:
-              "Based on the theme that: lack of map description made it difficult to find, an insight is: users need a clearer map display with photos and descriptions.",
-            image: "",
-          },
-          {
-            content:
-              "Based on the theme that: for most users, the differences between “the artwork in detail” and “the audio guide in detail” are not clear, an insight is: users need a more straightforward structure.",
-            image: "",
-          },
-          {
-            content:
-              "Based on the theme that: for not everyone, the music playback UI is familiar, an insight is: users need a UI that they can understand even if they are not familiar with music playback UI.",
-            image: "",
-          },
-        ],
-      },
-      design: "Based on the results of the usability test, we created mockups.",
+      design: "Based on the results of the usability test, I created mockups.",
 
       mockups: [
         {
@@ -633,7 +654,7 @@ export default {
         },
       ],
       website: {
-        content: "I designed the website for this app.",
+        content: "I also designed the website for this app.",
         images: [
           {
             image: "/images/national-gallery/website.png",
@@ -643,7 +664,7 @@ export default {
         ],
       },
       nextStep:
-        "This was my first time completing an app design through the UX design process in this assignment. As I progressed through the process, new ideas continuously emerged. I felt that by repeatedly testing, we gained further insights, making the app more user-friendly. However, at this point, it is still just a validation in Figma, so further testing will be necessary before completion.\n\nThe next steps are as follows: First, we need to implement the actual app, add missing features, and verify the usability of the existing features.\n\n・Implement and test audio playback\n・Implement and test the map\n・Add a favorites feature\n・Add a dictionary lookup feature for the audio guide text",
+        "This was my first time completing an app design through the UX design process in this assignment. As I progressed through the process, new ideas continuously emerged. I felt that by repeatedly testing, I gained further insights, making the app more user-friendly. However, at this point, it is still just a validation in Figma, so further testing will be necessary before completion.\n\nThe next steps are as follows: First, I need to implement the actual app, add missing features, and verify the usability of the existing features.\n\n・Implement and test audio playback\n・Implement and test the map\n・Add a favorites feature\n・Add a dictionary lookup feature for the audio guide text",
     },
 
     {

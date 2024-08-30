@@ -609,10 +609,10 @@ export default {
                 "多くのユーザーにとって、「詳細なアートワーク」と「詳細なオーディオガイド」の違いは明確ではない。",
               content:
                 "参加者の5人中3人が「詳細なアートワーク」と「詳細なオーディオガイド」の違いに混乱しました。",
-              modify:
-                "「詳細なアートワーク」と「詳細なオーディオガイド」がそれぞれどこにあるかわかりにくかったため、タブに2つをまとめました。",
               quotes:
                 "“I don't see the difference between the audio guide and the artwork in detail. Isn't it the same thing? I'm not sure.” (Participant D)",
+              modify:
+                "「詳細なアートワーク」と「詳細なオーディオガイド」がそれぞれどこにあるかわかりにくかったため、タブに2つをまとめました。",
               image: "/images/national-gallery/insight02.png",
             },
             {
@@ -620,10 +620,10 @@ export default {
                 "すべての人にとって音楽再生UIは馴染みがあるわけではない。",
               content:
                 "参加者の5人中3人がApple MusicやSpotifyのような音楽再生UIを直感的に理解できませんでした。",
-              modify:
-                "画面下部にある音楽再生UIをタップすることでオーディオガイドの詳細へ辿り着く操作はすべての人にはわかりにくかったため、再生・停止や倍速変更のみの機能にとどめました。",
               quotes:
                 "“The color is a little bit darker than other parts, but I couldn't find it. It can be tappable, able to tap or not. ” (Participant E)",
+              modify:
+                "画面下部にある音楽再生UIをタップすることでオーディオガイドの詳細へ辿り着く操作はすべての人にはわかりにくかったため、再生・停止や倍速変更のみの機能にとどめました。",
               image: "/images/national-gallery/insight03.png",
             },
           ],
