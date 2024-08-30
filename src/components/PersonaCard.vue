@@ -1,5 +1,5 @@
 <template>
-  <h3 class="text-header04 text-left py-gutter-y-0.5">ペルソナ</h3>
+  <h3 class="text-header04 text-left my-6">ペルソナ</h3>
   <p class="text-left mb-4">
     {{ data.content }}
   </p>

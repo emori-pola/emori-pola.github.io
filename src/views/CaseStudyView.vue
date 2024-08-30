@@ -37,9 +37,9 @@
     </section>
 
     <section v-if="caseStudy.overview" class="bg-BG-secondary py-20">
-      <h2 class="text-header01 mb-gutter-y">Overview</h2>
+      <h2 class="text-header01 mb-10">Overview</h2>
       <ul
-        class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto grid grid-cols-1 md:grid-cols-2 gap-gutter-x"
+        class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto grid grid-cols-1 md:grid-cols-2 gap-gutter-y"
       >
         <li v-for="(section, index) in caseStudy.overview" :key="index">
           <h3 class="text-header05 text-olive mb-gutter-y-0.5 text-left">
@@ -76,7 +76,7 @@
       </p>
       <div class="mb-10" v-if="caseStudy.painPoints">
         <h3 class="text-header04 text-left mb-6">Pain Points</h3>
-        <p class="text-left mb-2">
+        <p class="text-left mb-4">
           {{ caseStudy.painPointsContent }}
         </p>
         <FlexibleCard :data="caseStudy.painPoints" />
@@ -91,7 +91,7 @@
         <h3 class="text-header04 text-left mb-6">
           {{ caseStudy.competitor[0].header }}
         </h3>
-        <p class="text-left mb-6">
+        <p class="text-left mb-4">
           {{ caseStudy.competitor[0].content }}
         </p>
         <div
@@ -101,7 +101,7 @@
             v-if="caseStudy.competitor[0].strengths"
             class="text-left bg-BG-secondary p-gutter-x-1.5 md:p-5"
           >
-            <h4 class="text-header06 text-olive mb-2 text-left">強み</h4>
+            <h4 class="text-header06 text-olive mb-2 text-left">Strengths</h4>
             <ul>
               <li
                 v-for="(section, index) in caseStudy.competitor[0].strengths"
@@ -115,7 +115,7 @@
             v-if="caseStudy.competitor[0].weaknesses"
             class="text-left bg-BG-secondary p-gutter-x-1.5 md:p-gutter-x-0.5"
           >
-            <h4 class="text-header06 text-olive mb-2 text-left">弱み</h4>
+            <h4 class="text-header06 text-olive mb-2 text-left">Weaknesses</h4>
             <ul>
               <li
                 v-for="(section, index) in caseStudy.competitor[0].weaknesses"
@@ -129,7 +129,7 @@
             v-if="caseStudy.competitor[0].ideal"
             class="text-left bg-BG-secondary p-gutter-x-1.5 md:p-gutter-x-0.5"
           >
-            <h4 class="text-header06 text-olive mb-2 text-left">理想</h4>
+            <h4 class="text-header06 text-olive mb-2 text-left">Ideal</h4>
             <ul>
               <li
                 v-for="(section, index) in caseStudy.competitor[0].ideal"
@@ -149,7 +149,7 @@
       v-if="caseStudy.definingTheProblems"
       class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto py-20"
     >
-      <h2 class="text-header01 mb-gutter-y">Defining the Problems</h2>
+      <h2 class="text-header01 mb-10">Defining the Problems</h2>
       <p class="text-left mb-6">
         {{ caseStudy.definingTheProblemsContent }}
       </p>
@@ -157,7 +157,7 @@
         v-for="(section, index) in caseStudy.definingTheProblems"
         :key="index"
       >
-        <h3 class="text-header05 text-left mb-2">{{ section.name }}</h3>
+        <h3 class="text-header05 text-left mb-4">{{ section.name }}</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           <li class="md:col-span-2 py-10 px-6 border border-Label-primary">
             <h3 class="text-header03 mb-2">User Story</h3>
@@ -180,7 +180,7 @@
         </ul>
       </div>
       <div v-if="caseStudy.storyboard" class="mb-8">
-        <h3 class="text-header04 text-left py-gutter-y-0.5">Storyboard</h3>
+        <h3 class="text-header04 text-left mb-6">Storyboard</h3>
         <p class="text-left mb-4">
           {{ caseStudy.storyboard.content }}
         </p>
@@ -198,7 +198,7 @@
         </p>
       </div>
       <div v-if="caseStudy.userFlow">
-        <h3 class="text-header04 text-left py-gutter-y-0.5">User Flow</h3>
+        <h3 class="text-header04 text-left mb-6">User Flow</h3>
         <img
           :src="caseStudy.userFlow[0].image"
           :alt="caseStudy.userFlow[0].alt"
@@ -209,7 +209,7 @@
       v-if="caseStudy.prototype"
       class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto py-20"
     >
-      <h2 class="text-header01 mb-gutter-y">Prototype</h2>
+      <h2 class="text-header01 mb-10">Prototype</h2>
       <p class="text-left lg:w-[min(760px,59.375vw)] m-auto mb-gutter-y">
         {{ caseStudy.prototype }}
       </p>
@@ -292,7 +292,7 @@
     >
       <!-- <UsabilityTest :data="caseStudy.usabilityTestLow" /> -->
 
-      <h2 class="text-header01 mb-gutter-y">Usability Test</h2>
+      <h2 class="text-header01 mb-10">Usability Test</h2>
       <div class="mb-gutter-y">
         <p
           class="text-left mb-gutter-y-0.5 whitespace-pre-wrap lg:w-[min(760px,59.375vw)] m-auto"
@@ -324,7 +324,7 @@
             v-for="(section, index) in caseStudy.usabilityTest
               .prioritizedInsights.lists"
             :key="index"
-            class="mb-8 grid md:grid-cols-2 gap-gutter-x bg-BG-secondary p-10 last:mb-0"
+            class="mb-8 grid md:grid-cols-2 gap-gutter-x bg-BG-secondary p-gutter-x-2 md:p-10 last:mb-0"
           >
             <div class="">
               <div>
@@ -350,7 +350,7 @@
       v-if="caseStudy.design"
       class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto py-20"
     >
-      <h2 class="text-header01 mb-gutter-y">Design</h2>
+      <h2 class="text-header01 mb-10">Design</h2>
       <p
         class="text-left whitespace-pre-wrap lg:w-[min(760px,59.375vw)] m-auto mb-5"
       >
@@ -422,7 +422,7 @@
               v-for="(section, index) in caseStudy.usabilityTestHigh
                 .prioritizedInsights.lists"
               :key="index"
-              class="mb-8 grid md:grid-cols-2 gap-gutter-x bg-BG-secondary p-10 last:mb-0"
+              class="mb-8 grid md:grid-cols-2 gap-gutter-x bg-BG-secondary p-gutter-x-2 md:p-10 last:mb-0"
             >
               <div class="">
                 <div>
@@ -469,7 +469,7 @@
       <div
         class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto py-20"
       >
-        <h2 class="text-header01 mb-gutter-y">Next Step</h2>
+        <h2 class="text-header01 mb-10">Next Step</h2>
         <p
           class="text-left lg:w-[min(760px,59.375vw)] m-auto whitespace-pre-wrap"
         >

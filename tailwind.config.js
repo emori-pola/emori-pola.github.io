@@ -55,14 +55,19 @@ module.exports = {
         },
       },
       spacing: {
-        "gutter-x-0.5": "min(1.5625vw,1.25rem)", //20px
-        "gutter-x": "min(3.125vw,2.5rem)", //40px
-        "gutter-x-1.5": "min(4.6875vw,3.75rem)", //60px
-        "gutter-x-2": "min(6.25vw,5rem)", //80px
-        "gutter-y-0.5": "min(1.5625vw,1.25rem)",
-        "gutter-y": "min(3.125vw,2.5rem)",
-        "gutter-y-1.5": "min(4.6875vw,3.75rem)",
-        "gutter-y-2": "min(6.25vw,5rem)",
+        "gutter-x-8": "clamp(0.2rem,0.625vw,0.5rem)", //8px
+        "gutter-x-16": "clamp(0.4rem,1.25vw,1rem)", //16px
+        "gutter-x-0.5": "clamp(0.5rem,1.5625vw,1.25rem)", //20px
+        "gutter-x": "clamp(1rem,3.125vw,2.5rem)", //40px
+        "gutter-x-1.5": "clamp(1.5rem,4.6875vw,3.75rem)", //60px
+        "gutter-x-2": "clamp(2rem,6.25vw,5rem)", //80px
+
+        "gutter-y-8": "clamp(0.2rem,0.625vw,0.5rem)", //8px
+        "gutter-y-16": "clamp(0.4rem,1.25vw,1rem)", //16px
+        "gutter-y-0.5": "clamp(0.5rem,1.5625vw,1.25rem)",
+        "gutter-y": "clamp(1rem,3.125vw,2.5rem)",
+        "gutter-y-1.5": "clamp(1.5rem,4.6875vw,3.75rem)",
+        "gutter-y-2": "clamp(2rem,6.25vw,5rem)",
       },
       keyframes: {
         scroll: {

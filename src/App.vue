@@ -9,7 +9,40 @@
         ><img src="/images/logo.svg" alt=""
       /></router-link>
     </div>
-    <div class="flex items-center">
+
+    <!-- ハンバーガーアイコン -->
+    <!-- <button @click="toggleMenu" class="block md:hidden relative">
+      <span class="block w-[25px] h-[3px] bg-Label-primary my-[5px]"></span>
+      <span class="block w-[25px] h-[3px] bg-Label-primary my-[5px]"></span>
+      <span class="block w-[25px] h-[3px] bg-Label-primary my-[5px]"></span>
+    </button> -->
+
+    <button @click="toggleMenu" class="block w-[25px] md:hidden relative z-50">
+      <span
+        :class="[
+          ' w-[25px] h-[3px] bg-Label-primary transition-transform duration-300',
+          menuOpen
+            ? 'rotate-[45deg] absolute origin-center my-0 left-0 top-0'
+            : 'block my-[5px]',
+        ]"
+      ></span>
+      <span
+        :class="[
+          ' w-[25px] h-[3px] bg-Label-primary transition-opacity duration-300',
+          menuOpen ? 'opacity-0' : 'block my-[5px]',
+        ]"
+      ></span>
+      <span
+        :class="[
+          ' w-[25px] h-[3px] bg-Label-primary transition-transform duration-300',
+          menuOpen
+            ? 'rotate-[-45deg] absolute origin-center my-0 left-0 top-0'
+            : 'block my-[5px]',
+        ]"
+      ></span>
+    </button>
+
+    <div class="items-center hidden md:flex">
       <nav class="mr-gutter-x">
         <!-- Home Link -->
         <template v-if="!isCurrentPage('/')">
@@ -57,6 +90,80 @@
     </div>
   </header>
 
+  <!-- Full screan -->
+  <div
+    :class="[
+      { hidden: !menuOpen },
+      'fixed top-0 left-0 w-[100vw] h-[100vh] bg-BG-primary z-40 flex flex-col justify-center items-center',
+    ]"
+  >
+    <nav class="">
+      <div class="mb-10">
+        <!-- Home Link -->
+        <template v-if="!isCurrentPage('/')">
+          <router-link
+            class="font-sortsMillGoudy text-[2rem] transition-opacity duration-300 ease-out hover:opacity-30"
+            :to="{ name: 'Home' }"
+            @click="closeMenu"
+          >
+            Home
+          </router-link>
+        </template>
+        <template v-else>
+          <span class="font-sortsMillGoudy text-[2rem] text-olive"> Home </span>
+        </template>
+      </div>
+
+      <div class="mb-10">
+        <p
+          class="mb-5 font-sortsMillGoudy text-[2rem] transition-opacity duration-300 ease-out hover:opacity-30"
+        >
+          Works
+        </p>
+        <ul>
+          <li class="mb-5"><a href="">Hōsync</a></li>
+          <li class="mb-5"><a href="">National Gallery</a></li>
+          <li><a href="">推しタイマー</a></li>
+        </ul>
+      </div>
+      <div class="mb-10">
+        <!-- About Link -->
+        <template v-if="!isCurrentPage('/about')">
+          <router-link
+            class="font-sortsMillGoudy text-[2rem] transition-opacity duration-300 ease-out hover:opacity-30"
+            :to="{ name: 'About' }"
+            @click="closeMenu"
+          >
+            About
+          </router-link>
+        </template>
+        <template v-else>
+          <span class="font-sortsMillGoudy text-[2rem] text-olive">
+            About
+          </span>
+        </template>
+      </div>
+    </nav>
+
+    <div :class="currentLangClass">
+      <button
+        :class="{ 'text-olive font-bold': currentLanguage === 'en' }"
+        class="mr-1"
+        @click="switchLanguage('en')"
+      >
+        EN
+      </button>
+      /
+      <button
+        :class="{ 'text-olive font-bold': currentLanguage === 'ja' }"
+        class="ml-1"
+        @click="switchLanguage('ja')"
+      >
+        JP
+      </button>
+    </div>
+  </div>
+
   <router-view />
 
   <footer class="pb-4">
@@ -67,10 +174,20 @@
 <script>
 import { useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
-import { computed, onMounted } from "vue";
+import { computed, onMounted, ref } from "vue";
 
 export default {
   setup() {
+    // メニューの開閉状態
+    const menuOpen = ref(false);
+
+    const toggleMenu = () => {
+      menuOpen.value = !menuOpen.value;
+    };
+    const closeMenu = () => {
+      menuOpen.value = false;
+    };
+
     // 言語切り替えロジック
     const { locale } = useI18n();
 
@@ -100,6 +217,9 @@ export default {
     };
 
     return {
+      menuOpen,
+      toggleMenu,
+      closeMenu,
       currentLangClass,
       currentLanguage,
       switchLanguage,

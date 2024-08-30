@@ -5,14 +5,14 @@
         class="max-w-[1280px] mx-auto mb-gutter-y-2 pb-5 sm:pb-0 relative h-[min(640px,75vw)] sm:h-[min(640px,65vw)] md:h-[min(640px,56.25vw)]"
       >
         <div
-          class="m-auto absolute translate-y-[-50%] top-[55%] sm:top-[55%] md:top-[55%] left-[min(120px,9.375vw)] md:left-[min(200px,16vw)] text-left w-[max(26.5625vw,140px)]"
+          class="m-auto absolute translate-y-[-50%] top-[55%] sm:top-[55%] md:top-[55%] left-[min(120px,9.375vw)] md:left-[min(200px,16vw)] text-left w-[clamp(140px,26.5625vw,350px)]"
         >
           <h1
             class="text-[6.15384vw] font-sortsMillGoudy leading-[6.511627vw] md:text-header03 lg:text-header01 mb-1 whitespace-pre-wrap"
           >
             {{ $tm("home.title") }}
           </h1>
-          <p class="text-[max(1.5625vw,12px)] whitespace-pre-wrap">
+          <p class="text-[clamp(12px,1.5625vw,20px)] whitespace-pre-wrap">
             {{ $tm("home.description") }}
           </p>
         </div>
@@ -35,8 +35,8 @@
                 <img :src="product.image" :alt="product.name" />
               </div>
               <div class="text-left py-gutter-y md:py-0 lg:py-gutter-y-0.5">
-                <p class="text-[14px] mb-2">{{ product.year }}</p>
-                <h2 class="text-header05 mb-4">
+                <p class="text-[14px] mb-gutter-y-8">{{ product.year }}</p>
+                <h2 class="text-header05 mb-gutter-y-16">
                   {{ product.name }}
                 </h2>
 
