@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <title>Page Not Found</title>
     <script type="text/javascript">
-      // Redirect to the root with the original path appended as a hash
-      var redirectPath = window.location.pathname.replace(/^\//, "");
-      window.location.href = "/" + "#" + redirectPath;
+      var path = window.location.pathname;
+      var newUrl = window.location.origin + "/" + path.substring(1);
+      window.location.replace(newUrl);
     </script>
   </head>
   <body>
