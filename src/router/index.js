@@ -8,11 +8,13 @@ const routes = [
     path: "/",
     name: "Home",
     component: HomeView,
+    meta: { title: "" },
   },
   {
     path: "/about",
     name: "About",
     component: AboutView,
+    meta: { title: "About - " },
   },
   {
     path: "/:id",
@@ -32,6 +34,16 @@ const router = createRouter({
       return { top: 0 };
     }
   },
+});
+
+router.beforeEach((to, from, next) => {
+  const defaultTitle = "Yuka Yamada";
+  if (to.meta.title) {
+    document.title = to.meta.title + defaultTitle;
+  } else {
+    document.title = defaultTitle;
+  }
+  next();
 });
 
 export default router;

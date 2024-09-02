@@ -483,15 +483,13 @@
 </template>
 
 <script>
-// import { caseStudyData } from "@/case-study-data";
+import { computed, watchEffect } from "vue";
 import { useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
-import { computed } from "vue";
 import MoreWorks from "@/components/MoreWorks.vue";
 import UserJourneyMap from "@/components/UserJourneyMap.vue";
 import PersonaCard from "@/components/PersonaCard.vue";
 import FlexibleCard from "@/components/FlexibleCard.vue";
-// import UsabilityTest from "@/components/UsabilityTest.vue";
 
 export default {
   name: "CaseStudyView",
@@ -511,6 +509,15 @@ export default {
       const id = caseStudyId.value;
       const data = tm(`caseStudies`).find((study) => study.id === id);
       return data;
+    });
+
+    // ページタイトルを動的に設定
+    watchEffect(() => {
+      if (caseStudy.value && caseStudy.value.name) {
+        document.title = `${caseStudy.value.name} - Works`;
+      } else {
+        document.title = "Works"; // デフォルトのタイトル
+      }
     });
 
     return {

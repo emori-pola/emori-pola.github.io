@@ -7,4 +7,10 @@ module.exports = defineConfig({
   devServer: {
     historyApiFallback: true,
   },
+  chainWebpack: (config) => {
+    config.plugin("html").tap((args) => {
+      args[0].title = "Yuka Yamada";
+      return args;
+    });
+  },
 });
