@@ -10,13 +10,6 @@
       /></router-link>
     </div>
 
-    <!-- ハンバーガーアイコン -->
-    <!-- <button @click="toggleMenu" class="block md:hidden relative">
-      <span class="block w-[25px] h-[3px] bg-Label-primary my-[5px]"></span>
-      <span class="block w-[25px] h-[3px] bg-Label-primary my-[5px]"></span>
-      <span class="block w-[25px] h-[3px] bg-Label-primary my-[5px]"></span>
-    </button> -->
-
     <button @click="toggleMenu" class="block w-[25px] md:hidden relative z-50">
       <span
         :class="[
@@ -121,9 +114,18 @@
           Works
         </p>
         <ul>
-          <li class="mb-5"><a href="">Hōsync</a></li>
-          <li class="mb-5"><a href="">National Gallery</a></li>
-          <li><a href="">推しタイマー</a></li>
+          <li class="mb-5" v-for="(product, index) in caseStudies" :key="index">
+            <template v-if="!isCurrentPage('/' + product.id)">
+              <router-link :to="'/' + product.id" @click="closeMenu">
+                {{ product.name }}
+              </router-link>
+            </template>
+            <template v-else>
+              <span class="text-olive">
+                {{ product.name }}
+              </span>
+            </template>
+          </li>
         </ul>
       </div>
       <div class="mb-10">
@@ -174,7 +176,7 @@
 <script>
 import { useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
-import { computed, onMounted, ref } from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 
 export default {
   setup() {
@@ -188,8 +190,17 @@ export default {
       menuOpen.value = false;
     };
 
-    // 言語切り替えロジック
-    const { locale } = useI18n();
+    // メニューの状態に応じて body にクラスを追加/削除
+    watch(menuOpen, (newVal) => {
+      if (newVal) {
+        document.body.classList.add("overflow-hidden");
+      } else {
+        document.body.classList.remove("overflow-hidden");
+      }
+    });
+
+    // 言語切り替え
+    const { locale, tm } = useI18n();
 
     onMounted(() => {
       const savedLanguage = localStorage.getItem("language");
@@ -209,7 +220,11 @@ export default {
       localStorage.setItem("language", lang);
     };
 
-    // ナビゲーションリンクロジック
+    const caseStudies = computed(() => {
+      return tm("caseStudies");
+    });
+
+    // ナビゲーションリンク
     const route = useRoute();
 
     const isCurrentPage = (path) => {
@@ -223,6 +238,7 @@ export default {
       currentLangClass,
       currentLanguage,
       switchLanguage,
+      caseStudies,
       isCurrentPage,
     };
   },
@@ -239,8 +255,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #5f5a42;
-}
-.router-link-active {
-  color: #e3d8c3;
 }
 </style>
