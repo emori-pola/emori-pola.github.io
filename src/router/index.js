@@ -28,7 +28,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
   // eslint-disable-next-line no-unused-vars
   scrollBehavior(to, from, savedPosition) {
