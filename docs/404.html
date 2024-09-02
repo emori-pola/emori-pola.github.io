@@ -6,11 +6,12 @@
     <title>Page Not Found</title>
     <script type="text/javascript">
       var path = window.location.pathname;
-      var redirectUrl = window.location.origin + path;
+
+      var redirectUrl = window.location.origin + "/#" + path;
       window.location.replace(redirectUrl);
     </script>
   </head>
-  <body>
+  <body class="h-full mb-10">
     <h1>Page Not Found</h1>
     <p>Redirecting...</p>
   </body>
