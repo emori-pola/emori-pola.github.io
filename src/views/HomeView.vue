@@ -27,8 +27,8 @@
             :key="index"
             class="md:mb-gutter-y mb-gutter-y-2"
           >
-            <a
-              :href="'/' + product.id"
+            <router-link
+              :to="{ name: 'CaseStudy', params: { id: product.id } }"
               class="grid grid-cols-1 md:grid-cols-custom gap-x-gutter-x transition-opacity duration-300 ease-out hover:opacity-70"
             >
               <div>
@@ -53,7 +53,7 @@
                   </li>
                 </ul>
               </div>
-            </a>
+            </router-link>
           </li>
         </ul>
       </section>

@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import CaseStudyView from "@/views/CaseStudyView.vue";
-import TestPageView from "@/views/TestPageView.vue";
 
 const routes = [
   {
@@ -19,11 +18,6 @@ const routes = [
     path: "/:id",
     name: "CaseStudy",
     component: CaseStudyView,
-  },
-  {
-    path: "/test",
-    name: "Test",
-    component: TestPageView,
   },
 ];
 

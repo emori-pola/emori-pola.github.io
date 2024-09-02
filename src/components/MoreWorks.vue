@@ -7,9 +7,9 @@
         v-for="(product, index) in filteredProducts"
         :key="index"
       >
-        <a
+        <router-link
           class="transition-opacity duration-300 ease-out hover:opacity-70"
-          :href="'/' + product.id"
+          :to="{ name: 'CaseStudy', params: { id: product.id } }"
         >
           <img class="mb-4" :src="product.image" :alt="product.name" />
           <p class="text-left">{{ product.year }}</p>
@@ -23,7 +23,7 @@
               {{ tag }}
             </li>
           </ul>
-        </a>
+        </router-link>
       </li>
     </ul>
   </section>
