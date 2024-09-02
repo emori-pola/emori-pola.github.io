@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Not Found</title>
     <script type="text/javascript">
-      var path = window.location.pathname;
-      var newUrl = window.location.origin + "/" + path.substring(1);
-      window.location.replace(newUrl);
+      // GitHub Pages 用のリダイレクト処理
+      var redirectUrl = window.location.origin + window.location.pathname;
+      window.location.replace(redirectUrl);
     </script>
   </head>
   <body>
