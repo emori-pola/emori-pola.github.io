@@ -356,7 +356,7 @@ export default {
       id: "national-gallery",
       name: "National Gallery",
       year: "2022",
-      tags: ["iOS App", "Coursera"],
+      tags: ["Android App", "Coursera"],
       image: "/images/national-gallery/thumbnail.jpg",
       intro:
         "An easy-to-understand audio guide app for museum visitors, even if it's not in their native language, which I created as part of a Coursera assignment.",

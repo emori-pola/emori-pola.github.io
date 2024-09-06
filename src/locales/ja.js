@@ -347,7 +347,7 @@ export default {
       id: "national-gallery",
       name: "National Gallery",
       year: "2022",
-      tags: ["iOSアプリ", "Coursera"],
+      tags: ["Androidアプリ", "Coursera"],
       image: "/images/national-gallery/thumbnail.jpg",
       intro:
         "美術館を訪れた人が母国語ではなくてもわかりやすいオーディオガイドアプリをCourceraの課題で制作しました。",
