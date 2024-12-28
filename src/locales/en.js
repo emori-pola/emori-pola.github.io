@@ -5,7 +5,7 @@ export default {
   },
   about: {
     content:
-      "For 9 years, I have been involved in the management and redesign of large-scale websites across various industries, including education, finance, and health product manufacturing. I have focused primarily on UI design, UI improvement, and CSS architecture using Sass, collaborating closely with engineers to create user-friendly websites.\n\nI have worked as a designer at two companies, and after moving to Ireland, I began working as a freelancer. I currently reside in Sapporo.\n\nAfterward, I developed an interest in UX design and earned the Google UX Design Professional Certificate from Coursera in 2024.",
+      "For about 10 years, I have been involved in the management and redesign of large-scale websites across various industries, including education, finance, and health product manufacturing. I have focused primarily on UI design, UI improvement, and CSS architecture using Sass, collaborating closely with engineers to create user-friendly websites.\n\nI have worked as a designer at two companies, and after moving to Ireland, I began working as a freelancer. I currently reside in Sapporo.\n\nAfterward, I developed an interest in UX design and earned the Google UX Design Professional Certificate from Coursera in 2024.",
     content2:
       "With a user-centered approach, I emphasize deep insight and empathy, striving to understand user behavior and needs. My goal is to create visually appealing yet user-friendly designs.\n\nIn coding, I aim to write clear and maintainable code that is easy for the entire team to manage. Drawing on my web design experience, I am strongly attracted to UX design, which allows for closer interaction with users. Solving user problems and enhancing experiences are what drive me in my design work.\n\nCurrently, I am interested in key steps of the UX design process, such as user interviews, competitor analysis, and creating personas and storyboards, and I aim to incorporate these elements actively into my designs.",
     content3:
@@ -13,6 +13,132 @@ export default {
     content4: "",
   },
   caseStudies: [
+    {
+      id: "oshitimer",
+      name: "OshiTimer",
+      year: "2020",
+      tags: ["iOS App", "Available"],
+      image: "/images/oshitimer/thumbnail.jpg",
+      intro:
+        "A timer app with 24,000 downloads. It allows you to set your favorite image and visually measure time in a fun and easy way. We conducted a hackathon with an engineer and released the app.",
+      hero: "/images/oshitimer/hero.jpg",
+      heroClass:
+        "md:translate-y-[-50%] md:translate-x-[-50%] md:left-[75%] md:top-[50%] md:w-[35vw] lg:w-[29vw] md:text-BG-secondary",
+      overview: [
+        {
+          header: "Problem",
+          content:
+            "There are many timer apps available, but it's hard to find one that suits you.",
+        },
+        {
+          header: "Goal",
+          content:
+            "Provide an app that is stylish and motivating, even when placed on a desk or used during workouts.",
+        },
+        {
+          header: "My Role",
+          content:
+            "This was a personal project created in collaboration with an engineer as the app designer.",
+        },
+        {
+          header: "Responsibilities",
+          content:
+            "・Defining the problem\n・iOS app design\n・Icon design\n・Website design\n・Motion design\n・Direction",
+        },
+        {
+          header: "Year of Production",
+          content: "2020",
+        },
+        {
+          header: "Software Used",
+          content: "Figma, Adobe AfterEffects, Xcode, Adobe Illustrator",
+        },
+      ],
+      link: [
+        {
+          name: "iOS App Store",
+          url: "https://apps.apple.com/jp/app/%E6%8E%A8%E3%81%97%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id1503076204",
+        },
+        {
+          name: "Web site",
+          url: "https://oshitimer.pola.club/",
+        },
+      ],
+      research:
+        "I used a timer app while working out, but I felt that it was not very user-friendly and did not help with motivation. So, we decided to create our ideal timer app. First, we identified what was lacking in the current apps and what the ideal app would look like.",
+      competitor: [
+        {
+          header: "Competitor Analysis",
+          content: "",
+          weaknesses: [
+            "Unattractive appearance",
+            "Not compatible with iPad",
+            "Difficult to understand progress",
+            "No dark mode",
+            "Not supported in portrait mode",
+          ],
+          ideal: [
+            "Want to track how long I've been studying or working out",
+            "Stylish enough to leave on a desk",
+            "Motivating app",
+            "Easy to use and understand",
+            "Flexible setup for a set (e.g., 30sec x 1 and 15sec x 1)",
+            "No ads",
+          ],
+        },
+      ],
+      prototype:
+        "Once the requirements were gathered, we started brainstorming ideas.",
+      sketch: [
+        {
+          image: "/images/oshitimer/sketch.png",
+          alt: "Oshi Timer initial sketch",
+          caption:
+            "A rough sketch during the idea generation stage for Oshi Timer.",
+        },
+      ],
+      animation: [
+        {
+          content:
+            "I created an animation image of the most important timer function in After Effects and shared it with the engineer to convey the implementation idea.",
+          image: "/images/oshitimer/animation.gif",
+          alt: "Oshi Timer animation image",
+        },
+      ],
+      design:
+        "Here is the latest mockup after finalizing the feature requirements and clarifying the idea with animations. It has been well-received since its release, and we have also added features. The additions include:\n・Added a paid plan\n・Expanded functionality to allow multiple images to be registered\n・Added color variations",
+      mockups: [
+        {
+          image: "/images/oshitimer/mockups.png",
+          alt: "Mockups",
+          caption:
+            "Default color mockups. You can switch between light mode and dark mode.",
+        },
+        {
+          image: "/images/oshitimer/mockups2.png",
+          alt: "Mockups color variations",
+          caption:
+            "Color variation mockups. In addition to the initial green color, 10 more colors were added.",
+        },
+      ],
+      photo: [
+        {
+          image: "/images/oshitimer/photo.jpg",
+          alt: "Production scene",
+          caption:
+            "Production scene. Hackathon held at home in Ireland at the start of the new year.",
+        },
+      ],
+      logo: [
+        {
+          image: "/images/oshitimer/logo.png",
+          alt: "Rough sketch of the app icon",
+          caption: "Rough sketch of the app icon",
+        },
+      ],
+      nextStep:
+        "The timer app we created was filled with our ideals, and we were pleasantly surprised by how many people used it. We believe the reason it was chosen among the many timer apps was the unique ideas and direction. \n\nUp until now, we have been creating what we wanted, but in the future, we aim to clearly define the user and conduct user tests to develop an app that is more user-friendly and convenient. \n\nThe upcoming features we plan to add are as follows:\n・Ability to set multiple timers\n・SNS share button\n・Calendar function",
+    },
     {
       id: "hosync",
       name: "Hōsync",
@@ -665,133 +791,6 @@ export default {
       },
       nextStep:
         "This was my first time completing an app design through the UX design process in this assignment. As I progressed through the process, new ideas continuously emerged. I felt that by repeatedly testing, I gained further insights, making the app more user-friendly. However, at this point, it is still just a validation in Figma, so further testing will be necessary before completion.\n\nThe next steps are as follows: First, I need to implement the actual app, add missing features, and verify the usability of the existing features.\n\n・Implement and test audio playback\n・Implement and test the map\n・Add a favorites feature\n・Add a dictionary lookup feature for the audio guide text",
-    },
-
-    {
-      id: "oshitimer",
-      name: "OshiTimer",
-      year: "2020",
-      tags: ["iOS App", "Available"],
-      image: "/images/oshitimer/thumbnail.jpg",
-      intro:
-        "A timer app with 24,000 downloads. It allows you to set your favorite image and visually measure time in a fun and easy way. We conducted a hackathon with an engineer and released the app.",
-      hero: "/images/oshitimer/hero.jpg",
-      heroClass:
-        "md:translate-y-[-50%] md:translate-x-[-50%] md:left-[75%] md:top-[50%] md:w-[35vw] lg:w-[29vw] md:text-BG-secondary",
-      overview: [
-        {
-          header: "Problem",
-          content:
-            "There are many timer apps available, but it's hard to find one that suits you.",
-        },
-        {
-          header: "Goal",
-          content:
-            "Provide an app that is stylish and motivating, even when placed on a desk or used during workouts.",
-        },
-        {
-          header: "My Role",
-          content:
-            "This was a personal project created in collaboration with an engineer as the app designer.",
-        },
-        {
-          header: "Responsibilities",
-          content:
-            "・Defining the problem\n・iOS app design\n・Icon design\n・Website design\n・Motion design\n・Direction",
-        },
-        {
-          header: "Year of Production",
-          content: "2020",
-        },
-        {
-          header: "Software Used",
-          content: "Figma, Adobe AfterEffects, Xcode, Adobe Illustrator",
-        },
-      ],
-      link: [
-        {
-          name: "iOS App Store",
-          url: "https://apps.apple.com/jp/app/%E6%8E%A8%E3%81%97%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id1503076204",
-        },
-        {
-          name: "Web site",
-          url: "https://oshitimer.pola.club/",
-        },
-      ],
-      research:
-        "I used a timer app while working out, but I felt that it was not very user-friendly and did not help with motivation. So, we decided to create our ideal timer app. First, we identified what was lacking in the current apps and what the ideal app would look like.",
-      competitor: [
-        {
-          header: "Competitor Analysis",
-          content: "",
-          weaknesses: [
-            "Unattractive appearance",
-            "Not compatible with iPad",
-            "Difficult to understand progress",
-            "No dark mode",
-            "Not supported in portrait mode",
-          ],
-          ideal: [
-            "Want to track how long I've been studying or working out",
-            "Stylish enough to leave on a desk",
-            "Motivating app",
-            "Easy to use and understand",
-            "Flexible setup for a set (e.g., 30sec x 1 and 15sec x 1)",
-            "No ads",
-          ],
-        },
-      ],
-      prototype:
-        "Once the requirements were gathered, we started brainstorming ideas.",
-      sketch: [
-        {
-          image: "/images/oshitimer/sketch.png",
-          alt: "Oshi Timer initial sketch",
-          caption:
-            "A rough sketch during the idea generation stage for Oshi Timer.",
-        },
-      ],
-      animation: [
-        {
-          content:
-            "I created an animation image of the most important timer function in After Effects and shared it with the engineer to convey the implementation idea.",
-          image: "/images/oshitimer/animation.gif",
-          alt: "Oshi Timer animation image",
-        },
-      ],
-      design:
-        "Here is the latest mockup after finalizing the feature requirements and clarifying the idea with animations. It has been well-received since its release, and we have also added features. The additions include:\n・Added a paid plan\n・Expanded functionality to allow multiple images to be registered\n・Added color variations",
-      mockups: [
-        {
-          image: "/images/oshitimer/mockups.png",
-          alt: "Mockups",
-          caption:
-            "Default color mockups. You can switch between light mode and dark mode.",
-        },
-        {
-          image: "/images/oshitimer/mockups2.png",
-          alt: "Mockups color variations",
-          caption:
-            "Color variation mockups. In addition to the initial green color, 10 more colors were added.",
-        },
-      ],
-      photo: [
-        {
-          image: "/images/oshitimer/photo.jpg",
-          alt: "Production scene",
-          caption:
-            "Production scene. Hackathon held at home in Ireland at the start of the new year.",
-        },
-      ],
-      logo: [
-        {
-          image: "/images/oshitimer/logo.png",
-          alt: "Rough sketch of the app icon",
-          caption: "Rough sketch of the app icon",
-        },
-      ],
-      nextStep:
-        "The timer app we created was filled with our ideals, and we were pleasantly surprised by how many people used it. We believe the reason it was chosen among the many timer apps was the unique ideas and direction. \n\nUp until now, we have been creating what we wanted, but in the future, we aim to clearly define the user and conduct user tests to develop an app that is more user-friendly and convenient. \n\nThe upcoming features we plan to add are as follows:\n・Ability to set multiple timers\n・SNS share button\n・Calendar function",
     },
   ],
 };
