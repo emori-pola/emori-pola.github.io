@@ -20,7 +20,7 @@ export default {
       tags: ["iOS App", "Available"],
       image: "/images/oshitimer/thumbnail.jpg",
       intro:
-        "A timer app with 24,000 downloads. It allows you to set your favorite image and visually measure time in a fun and easy way. We conducted a hackathon with an engineer and released the app.",
+        "A timer app with 30,000 downloads. It allows you to set your favorite image and visually measure time in a fun and easy way. We conducted a hackathon with an engineer and released the app.",
       hero: "/images/oshitimer/hero.jpg",
       heroClass:
         "md:translate-y-[-50%] md:translate-x-[-50%] md:left-[75%] md:top-[50%] md:w-[35vw] lg:w-[29vw] md:text-BG-secondary",
