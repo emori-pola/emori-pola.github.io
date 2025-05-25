@@ -16,7 +16,7 @@ export default {
     {
       id: "oshitimer",
       name: "OshiTimer",
-      year: "2020",
+      year: "2020-2025",
       tags: ["iOS App", "Available"],
       image: "/images/oshitimer/thumbnail.jpg",
       intro:
@@ -47,7 +47,7 @@ export default {
         },
         {
           header: "Year of Production",
-          content: "2020",
+          content: "2020-2025",
         },
         {
           header: "Software Used",

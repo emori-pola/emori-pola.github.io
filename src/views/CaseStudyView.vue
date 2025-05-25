@@ -465,6 +465,82 @@
         </p>
       </div>
     </section>
+    <section
+      v-if="caseStudy.update"
+      class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto py-20"
+    >
+      <h2 class="text-header01 mb-10">Update</h2>
+      <p
+        class="text-left lg:w-[min(760px,59.375vw)] m-auto whitespace-pre-wrap"
+      >
+        {{ caseStudy.update }}
+      </p>
+      <div v-if="caseStudy.multipleTimers">
+        <h3 class="text-header04 text-left py-gutter-y-0.5">Multipul Timers</h3>
+        <p class="text-left mb-4">
+          {{ caseStudy.multipleTimers[0].content }}
+        </p>
+        <div
+          class="mb-8"
+          v-for="(multipleTimers, index) in caseStudy.multipleTimers"
+          :key="index"
+        >
+          <img :src="multipleTimers.image" :alt="multipleTimers.alt" />
+          <p class="mt-2 text-label01">{{ multipleTimers.caption }}</p>
+        </div>
+        <!-- <img
+          :src="caseStudy.multipleTimers[0].image"
+          :alt="caseStudy.multipleTimers[0].alt"
+        />
+        <p class="mt-2 text-label01">
+          {{ caseStudy.multipleTimers[0].caption }}
+        </p> -->
+      </div>
+      <div v-if="caseStudy.onbording">
+        <h3 class="text-header04 text-left py-gutter-y-0.5">Onbording</h3>
+
+        <p class="text-left mb-4">
+          {{ caseStudy.onbording[0].content }}
+        </p>
+        <!--  <img
+          :src="caseStudy.onbording[0].image"
+          :alt="caseStudy.onbording[0].alt"
+        />
+        <p class="mt-2 text-label01">{{ caseStudy.onbording[0].caption }}</p> -->
+        <div class="text-center w-full bg-[#b5beab] py-10 px-10 mb-8">
+          <div
+            class="inline-block px-5"
+            v-for="(onbording, index) in caseStudy.onbording"
+            :key="index"
+          >
+            <img
+              class="max-h-[500px]"
+              :src="onbording.image"
+              :alt="onbording.alt"
+            />
+            <p class="mt-2 text-label01">{{ onbording.caption }}</p>
+          </div>
+        </div>
+      </div>
+      <div v-if="caseStudy.store">
+        <h3 class="text-header04 text-left py-gutter-y-0.5">Store Image</h3>
+        <p class="text-left mb-4">
+          {{ caseStudy.store[0].content }}
+        </p>
+        <!-- <div
+          class="mb-8"
+          v-for="(store, index) in caseStudy.store"
+          :key="index"
+        >
+          <img :src="store.image" :alt="store.alt" />
+          <p class="mt-2 text-label01">{{ store.caption }}</p>
+        </div> -->
+
+        <img :src="caseStudy.store[0].image" :alt="caseStudy.store[0].alt" />
+        <p class="mt-2 text-label01">{{ caseStudy.store[0].caption }}</p>
+      </div>
+    </section>
+
     <section v-if="caseStudy.nextStep" class="bg-BG-secondary">
       <div
         class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto py-20"
