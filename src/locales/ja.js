@@ -186,6 +186,143 @@ export default {
         "自分たちの理想を詰め込んだタイマーアプリでしたが、想像以上にたくさんの方に使ってもらうことができました。今までにないアイディアと方向性が数あるタイマーアプリの中から選んでもらえる理由になったのではないかと考えています。\n\n今までは自分たちが欲しいと思うものを作っていましたが、今後はユーザーを明確に定義しユーザーテストなどの実施により、ユーザーがより使いやすく便利になるようなアプリを目指しています。\n\n今後の追加予定の機能は下記です。\n・SNSシェアボタン\n・記録機能",
     },
     {
+      id: "corporate",
+      name: "コーポレート・採用サイト",
+      year: "2017",
+      tags: ["Webデザイン", "コーポレートサイト"],
+      image: "/images/corporate/thumbnail.jpg",
+      intro:
+        "メインデザイナーとして手がけた自社のコーポレートサイトと採用サイトです。",
+      hero: "/images/corporate/hero.jpg",
+      heroClass: "md:relative px-[min(120px,9.375vw)] w-full",
+
+      overview: [
+        {
+          header: "My Role",
+          content: "メインデザイナー",
+        },
+        {
+          header: "Responsibilities",
+          content:
+            "デザイン制作、HTML/CSSコーディング、デザイン品質チェックデザインチームメンバーのタスク、スケジュール管理",
+        },
+        {
+          header: "制作年",
+          content: "2017年",
+        },
+        {
+          header: "使用ソフト",
+          content: "Adobe Photoshop",
+        },
+      ],
+      link: [
+        {
+          name: "Corporate site",
+          url: "https://www.itokuro.jp/",
+        },
+        {
+          name: "Recruit site",
+          url: "https://recruit.itokuro.jp/",
+        },
+      ],
+      design:
+        "会社のイメージがより伝わるよう、コーポレートサイトと採用サイトのデザインを全面的に刷新しました。デザインだけでなく、掲載するインタビュー記事の構成や文章の読みやすさにもこだわり、ユーザーにとって親しみやすいサイトを目指しました。\n\nプロジェクト全体では、メインデザイナーとしてデザインチーム内のタスクやスケジュールの調整・管理も担当し、円滑な進行を図りました。",
+      websites: [
+        {
+          title: "Corporate site",
+          content:
+            "信頼感と企業らしさを意識したメインビジュアルを制作し、ブランドイメージの統一を図りました。",
+          content2: "",
+
+          images: [
+            {
+              image: "/images/corporate/corporate.png",
+              alt: "Webサイトデザイン",
+              link: "",
+            },
+            {
+              image: "/images/corporate/corporate2.png",
+              alt: "Webサイトデザイン2",
+            },
+          ],
+        },
+        {
+          title: "Recruit site",
+          content:
+            "青と黒を基調にしたスタイリッシュなビジュアルに仕上げました。動きを加えることで印象に残るよう工夫し、インタビュー記事のセクションでは、見出しや段落の構成に注意を払い、読みやすさ・親しみやすさを意識しました。",
+          content2: "",
+
+          images: [
+            {
+              image: "/images/corporate/recruit.png",
+              alt: "採用サイトデザイン",
+              link: "",
+            },
+            {
+              image: "/images/corporate/recruit2.png",
+              alt: "採用サイトデザイン",
+            },
+          ],
+        },
+      ],
+    },
+    // {
+    //   id: "minkou",
+    //   name: "みんなの学校情報",
+    //   year: "2015-2018",
+    //   tags: ["Webデザイン", "運用", "イトクロ"],
+    //   image: "/images/minkou/thumbnail.jpg",
+    //   hero: "/images/minkou/hero.jpg",
+
+    //   overview: [
+    //     {
+    //       header: "My Role",
+    //       content: "デザイナー",
+    //     },
+    //     {
+    //       header: "Responsibilities",
+    //       content:
+    //         "デザイン制作、HTML/CSSコーディング、デザイン品質チェック、専門学校サイトのデザイン担当、デザインシステム・CSS設計の管理運用",
+    //     },
+    //     {
+    //       header: "制作年",
+    //       content: "2015-2018年",
+    //     },
+    //     {
+    //       header: "使用ソフト",
+    //       content: "Adobe Photoshop",
+    //     },
+    //   ],
+    //   link: [
+    //     {
+    //       name: "みんなの専門学校情報",
+    //       url: "",
+    //     },
+    //   ],
+    //   design:
+    //     "月間500万UUを超える「みんなの学校情報」をはじめとする教育分野の自社ポータルサイトの運用・改善業務を中心に担当しました。UIデザインに特化し、見やすく使いやすいサイトづくりを心がけてきました。また、企画担当やエンジニアなど多職種のメンバーと密に連携し、プロジェクトが円滑に進むよう取り組みました。プロジェクト全体の進捗や課題の状況を把握しつつ、先を見通した相談や調整を行うことで、チーム全体でスムーズなプロジェクトの遂行と高い成果を目指してきました。",
+    //   websites: [
+    //     {
+    //       title: "Corporate site",
+    //       content: "このアプリのWebサイトのデザインを作成しました。",
+    //       content2: "このアプリのWebサイトのデザインを作成しました。",
+
+    //       images: [
+    //         {
+    //           image: "/images/corporate/corporate.png",
+    //           alt: "Webサイトデザイン",
+    //           link: "",
+    //         },
+    //         {
+    //           image: "/images/corporate/corporate2.png",
+    //           alt: "Webサイトデザイン2",
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
+
+    {
       id: "hosync",
       name: "Hōsync",
       year: "2023",
@@ -819,16 +956,18 @@ export default {
         },
       ],
 
-      website: {
-        content: "このアプリのWebサイトのデザインを作成しました。",
-        images: [
-          {
-            image: "/images/national-gallery/website.png",
-            alt: "Webサイトデザイン",
-            link: "https://www.figma.com/proto/uCk4y0U1mv4M7lEsB0s7KW/Audio-guide-app?page-id=1117%3A3883&node-id=1117-3884&viewport=1272%2C703%2C0.15&t=0arOz29bjkKvj0ON-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1117%3A3884",
-          },
-        ],
-      },
+      websites: [
+        {
+          content: "このアプリのWebサイトのデザインを作成しました。",
+          images: [
+            {
+              image: "/images/national-gallery/website.png",
+              alt: "Webサイトデザイン",
+              link: "https://www.figma.com/proto/uCk4y0U1mv4M7lEsB0s7KW/Audio-guide-app?page-id=1117%3A3883&node-id=1117-3884&viewport=1272%2C703%2C0.15&t=0arOz29bjkKvj0ON-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1117%3A3884",
+            },
+          ],
+        },
+      ],
       nextStep:
         "この課題で初めてUXデザインのプロセスを通してアプリデザインを完成させました。プロセスを通してどんどん新たなアイディアが生まれていきました。テストを繰り返すことによってさらなる洞察が得られ、より使いやすいアプリになっていくのを感じました。ですが、現時点ではFigmaでの検証に過ぎませんので、今後完成までにはさらなるテストが必要になるでしょう。\n\n今後のステップとしてはまず実際に実装をし、足りない機能を追加し、今ある機能の使用感を確かめる必要があります。\n\n・音声の再生の実装、テスト\n・マップの実装、テスト\n・お気に入り機能の追加\n・オーディオガイドのテキストの辞書検索機能の追加",
     },

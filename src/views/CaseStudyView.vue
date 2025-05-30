@@ -448,7 +448,52 @@
         <img :src="caseStudy.logo[0].image" :alt="caseStudy.logo[0].alt" />
         <p class="mt-2 text-label01">{{ caseStudy.logo[0].caption }}</p>
       </div>
-      <div v-if="caseStudy.website">
+    </section>
+
+    <section class="-mt-20">
+      <div v-if="caseStudy.websites">
+        <div
+          v-for="(site, index) in caseStudy.websites"
+          :key="index"
+          class="mb-8 even:bg-BG-secondary even:pt-20 pb-20"
+        >
+          <div class="">
+            <div
+              class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto mb-8"
+            >
+              <h3 class="text-header04 text-left py-gutter-y-0.5">
+                {{ site.title ? site.title : "Web site" }}
+              </h3>
+              <p class="text-left mb-2">{{ site.content }}</p>
+            </div>
+            <div
+              v-for="(img, imgIndex) in site.images"
+              :key="imgIndex"
+              class="mb-8 w-[min(1280px,81.25vw)] m-auto"
+            >
+              <img :src="img.image" :alt="img.alt" />
+              <p v-if="img.link" class="mt-2 text-right">
+                <a
+                  :href="img.link"
+                  target="_blank"
+                  class="border-b border-Link-primary text-Link-primary"
+                >
+                  View High-fidelity prototype
+                </a>
+              </p>
+            </div>
+            <!-- <div
+              class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto mb-4"
+            >
+              <p class="text-left mb-2">{{ site.content2 }}</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div v-if="caseStudy.website">
+        
         <h3 class="text-header04 text-left py-gutter-y-0.5">Web site</h3>
         <p class="text-left mb-2">{{ caseStudy.website.content }}</p>
         <img
@@ -463,8 +508,8 @@
             >View High-fidelity prototype</a
           >
         </p>
-      </div>
-    </section>
+      </div> -->
+
     <section
       v-if="caseStudy.update"
       class="w-[min(1040px,81.25vw)] lg:w-[min(880px,68.75vw)] m-auto py-20"
